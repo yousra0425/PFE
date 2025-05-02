@@ -1,20 +1,31 @@
 <template lang="">
     <div class="row">
-        <div class="cold-md-6 mx-auto">
+        <div class="col-md-6 mx-auto">
             <AddCourse  @add="addCourse($event)"/>
         </div>
     </div>
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-6">
+
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">List Courses</li>
+                </ol>
+              </nav>
+
             <h1>All Courses
                 <hr>
             </h1>
+        </div>
+        <div class="cold-md-6 text-right">
+            <button class="btn btn-sm btn-success">New</button>
         </div>
     </div>
 
     <div class="row">
        <div class="col-md-4" v-for="course in courses">
-         <OneCourse :id="course.id" :title="course.title" :image="course.image" @delete="deleteOneCourse($event)" />
+         <OneCourse :course="course" @delete="deleteOneCourse($event)" />
        </div>
     </div>
  </template>
@@ -33,6 +44,8 @@
                 {
                     id: 1,
                     title: "Learn ReactJS",
+                    category: 'Framework',
+                    tags: [],
                     image:"https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/DXitcrOkSqig73mA6GPS"
 
                 },
@@ -40,6 +53,8 @@
                 {
                     id: 2,
                     title: "Learn ReactJS",
+                    category: 'Framework',
+                    tags: [],
                     image:"https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/DXitcrOkSqig73mA6GPS"
 
                 },
@@ -47,6 +62,8 @@
                 {
                     id: 3,
                     title: "Learn ReactJS",
+                    category: 'Framework',
+                    tags: [],
                     image:"https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/DXitcrOkSqig73mA6GPS"
 
                 }

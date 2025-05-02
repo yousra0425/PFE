@@ -1,5 +1,47 @@
-<script setup>
-// Add any required logic or bindings here later
+<script>
+import axios from 'axios';
+export default {
+  data() {
+    return {
+      first_name:'',
+      last_name:'',
+      email: '',
+      password:'',
+      confirmPassword:'',
+      city:'',
+      telephone:'',
+      birth_date:'',
+      error:'',
+      showPassword: false,
+      showConfirmPassword: false
+    }; 
+  },
+  methods: {
+    async handleSignup() {
+      try {
+        await axios.get('http://127.0.0.1:8000/sanctum/csrf-cookie', { withCredentials: true });
+
+        const response = await axios.post('http://127.0.0.1:8000/api/register', {
+          full_name: this.first_name + ' ' + this.last_name,
+          email: this.email,
+          password: this.password,
+          password_confirmation: this.confirmPassword,
+          country: 'Morocco',
+          telephone: this.telephone,
+          birth_date: this.birth_date,
+          city: this.city
+        }, {
+           withCredentials: true
+          });
+
+          console.log('Signup successful', response.data);
+      } catch (err) {
+        console.error("Signup error:", err.response);
+        this.error = err.response?.data?.message || 'Signup failed';
+      }
+    }
+  }
+};
 </script>
 
 <template>
@@ -10,20 +52,40 @@
           <h3 class="signup-title">Signup with email</h3>
           <hr />
           <form @submit.prevent="handleSignup">
-            <div class="form-group">
-              <label for="fullName">Full Name</label>
-              <input
-                type="text"
-                class="form-control"
-                id="fullName"
-                placeholder="Enter your full name"
-                required
-              />
+            <!-- Updated name fields row -->
+            <div class="name-row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="firstName">First Name</label>
+                  <input
+                    v-model="first_name"
+                    type="text"
+                    class="form-control"
+                    id="firstName"
+                    placeholder="Enter your first name"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="lastName">Last Name</label>
+                  <input
+                    v-model="last_name"
+                    type="text"
+                    class="form-control"
+                    id="lastName"
+                    placeholder="Enter your last name"
+                    required
+                  />
+                </div>
+              </div>
             </div>
 
             <div class="form-group">
               <label for="email">Email</label>
               <input
+                v-model="email"
                 type="email"
                 class="form-control"
                 id="email"
@@ -35,6 +97,7 @@
             <div class="form-group">
               <label for="password">Password</label>
               <input
+                v-model="password"
                 type="password"
                 class="form-control"
                 id="password"
@@ -46,6 +109,7 @@
             <div class="form-group">
               <label for="confirmPassword">Confirm Password</label>
               <input
+                v-model="confirmPassword"
                 type="password"
                 class="form-control"
                 id="confirmPassword"
@@ -55,25 +119,45 @@
             </div>
 
             <div class="form-group">
-              <label for="city">City</label>
+              <label for="telephone">Telephone</label>
               <input
-                type="text"
+                v-model="telephone"
+                type="tel"
                 class="form-control"
-                id="city"
-                placeholder="Enter your city"
+                id="telephone"
+                placeholder="Enter your phone number"
                 required
               />
             </div>
 
             <div class="form-group">
-              <label for="country">Country</label>
-              <select class="form-control" id="country" required>
-                <option value="" disabled selected>Select your country</option>
-                <option value="US">United States</option>
-                <option value="CA">Canada</option>
-                <option value="GB">United Kingdom</option>
+              <label for="birthDate">Date of Birth</label>
+              <input
+                v-model="birth_date"
+                type="date"
+                class="form-control"
+                id="birthDate"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+             <label for="city">City</label>
+              <select v-model="city" class="form-control" id="city" required>
+                 <option value="" disabled selected>Select your city</option>
+                 <option value="Casablanca">Casablanca</option>
+                 <option value="Rabat">Rabat</option>
+                 <option value="Marrakech">Marrakech</option>
+                 <option value="Fes">Fès</option>
+                 <option value="Tangier">Tangier</option>
+                 <option value="Agadir">Agadir</option>
+                 <option value="Oujda">Oujda</option>
+                 <option value="Kenitra">Kenitra</option>
+                 <option value="Tetouan">Tétouan</option>   
               </select>
             </div>
+
+            <p v-if="error" class="text-danger mt-2">{{ error }}</p>
 
             <div class="my-3">
               <button type="submit" class="btn btn-primary w-100">Signup</button>
@@ -81,8 +165,8 @@
 
             <div class="text-center mt-3">
               <p>
-                 Already have an account?
-                 <router-link to="/login" class="login-link">Login here</router-link>
+                Already have an account?
+                <router-link to="/login" class="login-link">Login here</router-link>
               </p>
             </div>
           </form>
@@ -106,13 +190,23 @@
   margin-top: 0 auto;
 }
 
+.name-row {
+  display: flex;
+  gap: 1rem;
+  width: 96%;
+}
+
+.name-row .form-group {
+  flex: 1;
+}
+
 .signup-box {
   background: #ffffff;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 500px;
+  max-width: 600px;
 }
 
 .signup-title {
@@ -163,11 +257,18 @@
 
 .login-link:hover {
   text-decoration: underline;
-  color: var(--primary-hover); /* if using theme variables */
+  color: var(--primary-hover); 
 }
 
 hr {
   margin: 20px 0;
   border-color: #ddd;
+}
+
+/* Add some spacing between the name fields on small screens */
+@media (max-width: 767px) {
+  .col-md-6:first-child {
+    margin-bottom: 15px;
+  }
 }
 </style>

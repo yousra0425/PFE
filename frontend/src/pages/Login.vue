@@ -1,5 +1,31 @@
-<script setup>
-// Add necessary imports and setup here (if required)
+<script>
+import axios from 'axios';
+
+export default {
+  data() {
+    return {
+      email: '',
+      password: '',
+      error:''
+    };
+  },
+  methods: {
+    async handleLogin() {
+        try{
+            const response = await axios.post('http://127.0.0.1:8000/api/login', {
+                email: this.email,
+                password: this.password
+            }, {
+                withCredentials: true
+               });
+               console.log('Login successful', response.data);
+               this.$router.push('/dashboard');
+        } catch (err) {
+            this.error = err.response?.data?.message || 'Login failed';
+        }   
+    }
+  }
+};
 </script>
 
 <template>
@@ -7,17 +33,17 @@
     <div class="row">
       <div class="col-md-6 offset-md-3">
         <div class="login-box">
-          <h3 class="login-title">Log in to continue your leaning journey</h3>
+          <h3 class="login-title">Log in </h3>
           <hr />
           <form @submit.prevent="handleLogin">
             
             <div class="form-group">
               <label for="email">Email</label>
               <input
+                v-model="email"
                 type="email"
                 class="form-control"
                 id="email"
-                v-model="email"
                 placeholder="Enter your email"
                 required
               />
@@ -26,14 +52,17 @@
             <div class="form-group">
               <label for="password">Password</label>
               <input
+                v-model="password"
                 type="password"
                 class="form-control"
                 id="password"
-                v-model="password"
                 placeholder="Enter your password"
                 required
               />
             </div>
+
+            <p v-if="error" class="text-danger mt-2">{{ error }}</p>
+
 
             <div class="my-3">
               <button type="submit" class="btn btn-primary w-100">Login</button>

@@ -12,8 +12,13 @@ class UserController extends Controller
      
     //List all users (admin)
     public function index() {
+        if (Auth::user()->role !== 'admin') {
+            return response()->json(['message' => 'Unauthorized'], 403);
+        }
+    
         return response()->json(User::all());
     }
+    
 
     //show single user
     public function show($id) {
@@ -34,23 +39,31 @@ class UserController extends Controller
     public function store(Request $request) {
 
         $request->validate([
-            'full_name' => 'required|string|max:255',
-            'email' => 'required|email|unique:users',
+            'first_name' => 'required|string|max:255',
+            'last_name'  => 'required|string|max:255',
+            'telephone'  => 'required|string|max:20',
+            'email'      => 'required|string|email|unique:users',
             'password' => 'required|string|min:8',
-            'country' => 'nullable|string|max:255',
+            'date_of_birth' => 'sometimes|date',
             'city' => 'nullable|string|max:255',
-            'role'     => 'required|in:admin,instructor,user',
+            'address'    => 'required|string|max:255',
+            'role'     => 'required|in:admin,provider,client',
         ]);
 
         $user = User::create([
-            'full_name'  => $request->input('full_name'),
+            'first_name'  => $request->first_name,
+            'last_name'  => $request->last_name,
+            'date_of_birth' => $request->date_of_birth,
             'email' => $request->email,
             'password' => Hash::make($request->password),
-            'country' => $request->country,
+            'telephone' => $request->telephone,
             'city' => $request->city,
+            'address' => $request->address,
             'role'     => $request->role,
 
         ]);
+
+        $user->makeHidden(['password']);
 
         return response()->json(['message' => 'User created', 'user' => $user], 201);
 
@@ -69,19 +82,25 @@ class UserController extends Controller
         }
 
         $request->validate([
-            'full_name' => 'required|string|max:255',
-            'email' => 'required|email|unique:users,email,' .$id,
-            'password' => 'required|string|min:8',
-            'country' => 'nullable|string|max:255',
+            'first_name' => 'sometimes|string|max:255',
+            'last_name'  => 'sometimes|string|max:255',
+            'telephone'  => 'sometimes|string|max:20',
+            'email'      => 'sometimes|string|email|unique:users,email,' . $user->id,
+            'password' => 'nullable|string|min:8',
+            'date_of_birth' => 'sometimes|date',
+            'address'    => 'sometimes|string|max:255',
             'city' => 'nullable|string|max:255',
-            'role'     => 'required|in:admin,instructor,user',
+            'role'     => 'required|in:admin,provider,client',
         ]);
 
         $user->update([
-            'full_name' => $request->input('full_name'),
+            'first_name'  => $request->first_name,
+            'last_name'  => $request->last_name,
             'email'    => $request->email,
             'password' => $request->password ? Hash::make($request->password) : $user->password,
-            'country' => $request->country ?? $user->country,
+            'telephone' => $request->telephone ?? $user->telephone,
+            'date_of_birth' => $request->date_of_birth ?? $user->date_of_birth,
+            'address' => $request->address ?? $user->address,
             'city' => $request->city ?? $user->city,
             'role' => $request->role,
         ]);

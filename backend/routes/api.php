@@ -1,10 +1,12 @@
 <?php
 
 use App\Http\Controllers\AuthController;
-use App\Http\Controllers\CourseController;
+
 use App\Http\Controllers\CategoryController;
+
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
+use App\Http\Controllers\CinVerificationController;
 
 // Routes accessibles sans être connecté
 Route::post('/register', [AuthController::class, 'register']);
@@ -22,7 +24,10 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('/profile', function (Request $request) {
         return response()->json($request->user());
     });
-
-    Route::apiResource('courses', CourseController::class);
+    
+    Route::post('/verify-cin', [CinVerificationController::class, 'verifyCin']);
+    
     Route::resource('categories', CategoryController::class);
+ 
+
 });

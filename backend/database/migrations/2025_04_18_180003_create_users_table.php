@@ -13,11 +13,16 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('full_name');
+            $table->string('first_name');
+            $table->string('last_name');
             $table->string('email')->unique();
             $table->string('password');
-            $table->string('country')->nullable();
+            $table->string('address')->nullable();
+            $table->date('birth_date')->nullable();
+            $table->string('telephone')->nullable();
             $table->string('city')->nullable();
+            $table->string('cin')->nullable();
+            $table->enum('cin_status', ['pending', 'approved', 'rejected'])->default('pending');
             $table->rememberToken();
             $table->timestamps();
         });

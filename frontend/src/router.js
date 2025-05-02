@@ -3,6 +3,8 @@ import DefaultLayout from './components/DefaultLayout.vue';
 import Login from './pages/Login.vue';
 import Signup from './pages/Signup.vue';
 import Courses from './components/Courses.vue';
+import Dashboard from './pages/Dashboard.vue';
+import CinVerif from './components/CinVerif.vue';
 
 
 const routes = [
@@ -14,6 +16,8 @@ const routes = [
     { path: '/courses', component: Courses },
     { path: '/login', component: Login },
     { path: '/signup', component: Signup },
+    { path: '/dashboard', component: Dashboard },
+    { path: '/cinverif', component: CinVerif },
    
     /*{ path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFound },*/
 ];
