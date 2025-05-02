@@ -1,0 +1,570 @@
+2025-04-30 15:51:20,376 [WARNING]  * Debugger is active!
+2025-04-30 15:51:20,384 [INFO]  * Debugger PIN: 140-956-481
+2025-04-30 15:51:26,945 [DEBUG] ['tesseract', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_pbnieudl_input.JPEG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_pbnieudl', 'txt']
+2025-04-30 15:51:26,975 [INFO] 127.0.0.1 - - [30/Apr/2025 15:51:26] "[35m[1mPOST /verify-cin HTTP/1.1[0m" 500 -
+2025-04-30 15:51:28,961 [DEBUG] ['tesseract', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_vbhwzx81_input.JPEG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_vbhwzx81', 'txt']
+2025-04-30 15:51:28,993 [INFO] 127.0.0.1 - - [30/Apr/2025 15:51:28] "[35m[1mPOST /verify-cin HTTP/1.1[0m" 500 -
+2025-04-30 15:51:31,590 [DEBUG] ['tesseract', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_cuxte3x1_input.JPEG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_cuxte3x1', 'txt']
+2025-04-30 15:51:31,616 [INFO] 127.0.0.1 - - [30/Apr/2025 15:51:31] "[35m[1mPOST /verify-cin HTTP/1.1[0m" 500 -
+2025-04-30 15:51:51,172 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-30 15:51:51,173 [INFO] [33mPress CTRL+C to quit[0m
+2025-04-30 15:51:51,174 [INFO]  * Restarting with stat
+2025-04-30 15:51:51,493 [WARNING]  * Debugger is active!
+2025-04-30 15:51:51,497 [INFO]  * Debugger PIN: 140-956-481
+2025-04-30 15:51:53,804 [DEBUG] ['tesseract', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_5b3j_ccj_input.JPEG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_5b3j_ccj', 'txt']
+2025-04-30 15:51:53,839 [INFO] 127.0.0.1 - - [30/Apr/2025 15:51:53] "[35m[1mPOST /verify-cin HTTP/1.1[0m" 500 -
+2025-04-30 15:58:28,093 [INFO]  * Detected change in 'C:\\Users\\amami\\pyhtonAPI\\app.py', reloading
+2025-04-30 15:58:28,162 [INFO]  * Restarting with stat
+2025-04-30 15:58:28,928 [WARNING]  * Debugger is active!
+2025-04-30 15:58:28,934 [INFO]  * Debugger PIN: 140-956-481
+2025-04-30 15:58:34,122 [INFO]  * Detected change in 'C:\\Users\\amami\\pyhtonAPI\\app.py', reloading
+2025-04-30 15:58:34,168 [INFO]  * Restarting with stat
+2025-04-30 15:58:34,891 [WARNING]  * Debugger is active!
+2025-04-30 15:58:34,897 [INFO]  * Debugger PIN: 140-956-481
+2025-04-30 15:58:49,953 [DEBUG] ['C:\\Program Files\\Tesseract-OCR', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_sccjzr9d_input.JPEG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_sccjzr9d', 'txt']
+2025-04-30 15:58:49,976 [INFO] 127.0.0.1 - - [30/Apr/2025 15:58:49] "[35m[1mPOST /verify-cin HTTP/1.1[0m" 500 -
+2025-04-30 15:59:48,028 [INFO]  * Detected change in 'C:\\Users\\amami\\pyhtonAPI\\app.py', reloading
+2025-04-30 15:59:48,086 [INFO]  * Restarting with stat
+2025-04-30 15:59:48,824 [WARNING]  * Debugger is active!
+2025-04-30 15:59:48,833 [INFO]  * Debugger PIN: 140-956-481
+2025-04-30 15:59:53,839 [INFO]  * Detected change in 'C:\\Users\\amami\\pyhtonAPI\\app.py', reloading
+2025-04-30 15:59:53,875 [INFO]  * Restarting with stat
+2025-04-30 15:59:54,715 [WARNING]  * Debugger is active!
+2025-04-30 15:59:54,720 [INFO]  * Debugger PIN: 140-956-481
+2025-04-30 15:59:56,934 [INFO]  * Detected change in 'C:\\Users\\amami\\pyhtonAPI\\app.py', reloading
+2025-04-30 15:59:56,971 [INFO]  * Restarting with stat
+2025-04-30 15:59:57,661 [WARNING]  * Debugger is active!
+2025-04-30 15:59:57,667 [INFO]  * Debugger PIN: 140-956-481
+2025-04-30 16:00:04,110 [INFO]  * Detected change in 'C:\\Users\\amami\\pyhtonAPI\\app.py', reloading
+2025-04-30 16:00:04,146 [INFO]  * Restarting with stat
+2025-04-30 16:00:04,777 [WARNING]  * Debugger is active!
+2025-04-30 16:00:04,783 [INFO]  * Debugger PIN: 140-956-481
+2025-04-30 16:00:06,932 [INFO]  * Detected change in 'C:\\Users\\amami\\pyhtonAPI\\app.py', reloading
+2025-04-30 16:00:06,969 [INFO]  * Restarting with stat
+2025-04-30 16:00:07,718 [WARNING]  * Debugger is active!
+2025-04-30 16:00:07,723 [INFO]  * Debugger PIN: 140-956-481
+2025-04-30 16:00:09,833 [INFO]  * Detected change in 'C:\\Users\\amami\\pyhtonAPI\\app.py', reloading
+2025-04-30 16:00:09,871 [INFO]  * Restarting with stat
+2025-04-30 16:00:10,459 [WARNING]  * Debugger is active!
+2025-04-30 16:00:10,465 [INFO]  * Debugger PIN: 140-956-481
+2025-04-30 16:00:12,684 [INFO]  * Detected change in 'C:\\Users\\amami\\pyhtonAPI\\app.py', reloading
+2025-04-30 16:00:12,729 [INFO]  * Restarting with stat
+2025-04-30 16:00:13,491 [WARNING]  * Debugger is active!
+2025-04-30 16:00:13,498 [INFO]  * Debugger PIN: 140-956-481
+2025-04-30 16:00:15,743 [INFO]  * Detected change in 'C:\\Users\\amami\\pyhtonAPI\\app.py', reloading
+2025-04-30 16:00:15,788 [INFO]  * Restarting with stat
+2025-04-30 16:00:16,627 [WARNING]  * Debugger is active!
+2025-04-30 16:00:16,632 [INFO]  * Debugger PIN: 140-956-481
+2025-04-30 16:00:20,126 [INFO]  * Detected change in 'C:\\Users\\amami\\pyhtonAPI\\app.py', reloading
+2025-04-30 16:00:20,173 [INFO]  * Restarting with stat
+2025-04-30 16:00:20,837 [WARNING]  * Debugger is active!
+2025-04-30 16:00:20,845 [INFO]  * Debugger PIN: 140-956-481
+2025-04-30 16:00:21,705 [INFO]  * Detected change in 'C:\\Users\\amami\\pyhtonAPI\\app.py', reloading
+2025-04-30 16:00:21,737 [INFO]  * Restarting with stat
+2025-04-30 16:00:22,284 [WARNING]  * Debugger is active!
+2025-04-30 16:00:22,289 [INFO]  * Debugger PIN: 140-956-481
+2025-04-30 16:00:35,537 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-30 16:00:35,538 [INFO] [33mPress CTRL+C to quit[0m
+2025-04-30 16:00:35,540 [INFO]  * Restarting with stat
+2025-04-30 16:00:35,847 [WARNING]  * Debugger is active!
+2025-04-30 16:00:35,854 [INFO]  * Debugger PIN: 140-956-481
+2025-04-30 16:00:40,688 [INFO] Incoming request to /verify-cin
+2025-04-30 16:00:40,689 [DEBUG] Reading image from uploaded file
+2025-04-30 16:00:40,708 [DEBUG] Running Tesseract OCR
+2025-04-30 16:00:40,723 [DEBUG] ['C:\\Program Files\\Tesseract-OCR', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_b8yixz9j_input.JPEG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_b8yixz9j', 'txt']
+2025-04-30 16:00:40,731 [ERROR] Exception occurred during CIN verification: [WinError 5] Access is denied
+Traceback (most recent call last):
+  File "C:\Users\amami\pyhtonAPI\app.py", line 43, in verify_cin
+    text = pytesseract.image_to_string(image)
+  File "C:\Users\amami\AppData\Roaming\Python\Python313\site-packages\pytesseract\pytesseract.py", line 486, in image_to_string
+    return {
+           ~
+    ...<2 lines>...
+        Output.STRING: lambda: run_and_get_output(*args),
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    }[output_type]()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\amami\AppData\Roaming\Python\Python313\site-packages\pytesseract\pytesseract.py", line 489, in <lambda>
+    Output.STRING: lambda: run_and_get_output(*args),
+                           ~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\amami\AppData\Roaming\Python\Python313\site-packages\pytesseract\pytesseract.py", line 352, in run_and_get_output
+    run_tesseract(**kwargs)
+    ~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\amami\AppData\Roaming\Python\Python313\site-packages\pytesseract\pytesseract.py", line 275, in run_tesseract
+    proc = subprocess.Popen(cmd_args, **subprocess_args())
+  File "C:\Python313\Lib\subprocess.py", line 1038, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        pass_fds, cwd, env,
+                        ^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+                        gid, gids, uid, umask,
+                        ^^^^^^^^^^^^^^^^^^^^^^
+                        start_new_session, process_group)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\subprocess.py", line 1550, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+                             # no special security
+                             ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+                             cwd,
+                             ^^^^
+                             startupinfo)
+                             ^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied
+2025-04-30 16:00:40,738 [INFO] 127.0.0.1 - - [30/Apr/2025 16:00:40] "[35m[1mPOST /verify-cin HTTP/1.1[0m" 500 -
+2025-04-30 16:01:28,177 [INFO]  * Detected change in 'C:\\Users\\amami\\pyhtonAPI\\app.py', reloading
+2025-04-30 16:01:28,237 [INFO]  * Restarting with stat
+2025-04-30 16:01:28,948 [WARNING]  * Debugger is active!
+2025-04-30 16:01:28,953 [INFO]  * Debugger PIN: 140-956-481
+2025-04-30 16:02:08,844 [INFO] Incoming request to /verify-cin
+2025-04-30 16:02:08,847 [DEBUG] Reading image from uploaded file
+2025-04-30 16:02:08,863 [DEBUG] Running Tesseract OCR
+2025-04-30 16:02:08,883 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_rc70e2em_input.JPEG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_rc70e2em', 'txt']
+2025-04-30 16:02:09,847 [INFO]  OCR Text Extracted:
+ROYAUME DU MAROC Bp pao) ac)
+CARTE NATIONALE D'IDENTITE Az eS 4b 5]! 43a)
+is?
+YOUSRA :
+gel
+AMAMI
+Née'le 25.04.2005 See.
+
+Abnol dec 46 gte 9 =
+a-CHARF MGHOGHA TANGER ASSILAH
+
+No FRED <
+bs Qual oa’ ==
+
+> blll ne “=
+
+xn K608798 4, Valablejusqu'au 09.05.2031 ie _!
+
+ft CAN 201010
+
+2025-04-30 16:02:09,853 [INFO]  Extracted CIN: Valablejusqu
+2025-04-30 16:02:09,855 [INFO] 127.0.0.1 - - [30/Apr/2025 16:02:09] "POST /verify-cin HTTP/1.1" 200 -
+2025-04-30 16:51:18,528 [INFO]  * Detected change in 'C:\\Users\\amami\\pyhtonAPI\\app.py', reloading
+2025-04-30 16:51:18,638 [INFO]  * Restarting with stat
+2025-04-30 16:53:09,466 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-30 16:53:09,466 [INFO] [33mPress CTRL+C to quit[0m
+2025-04-30 16:53:09,467 [INFO]  * Restarting with stat
+2025-04-30 16:53:09,672 [WARNING]  * Debugger is active!
+2025-04-30 16:53:09,680 [INFO]  * Debugger PIN: 140-956-481
+2025-04-30 16:53:13,505 [INFO] Incoming request to /verify-cin
+2025-04-30 16:53:13,507 [DEBUG] Reading image from uploaded file
+2025-04-30 16:53:13,522 [DEBUG] Running Tesseract OCR
+2025-04-30 16:53:13,531 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_bx_ikgr3_input.JPEG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_bx_ikgr3', 'txt']
+2025-04-30 16:53:13,873 [INFO]  OCR Text Extracted:
+ROYAUME DU MAROC Bp pao) ac)
+CARTE NATIONALE D'IDENTITE Az eS 4b 5]! 43a)
+is?
+YOUSRA :
+gel
+AMAMI
+Née'le 25.04.2005 See.
+
+Abnol dec 46 gte 9 =
+a-CHARF MGHOGHA TANGER ASSILAH
+
+No FRED <
+bs Qual oa’ ==
+
+> blll ne “=
+
+xn K608798 4, Valablejusqu'au 09.05.2031 ie _!
+
+ft CAN 201010
+
+2025-04-30 16:53:13,875 [INFO]  Extracted CIN: Valablejusqu
+2025-04-30 16:53:13,875 [INFO] 127.0.0.1 - - [30/Apr/2025 16:53:13] "POST /verify-cin HTTP/1.1" 200 -
+2025-04-30 16:53:24,254 [INFO]  * Detected change in 'C:\\Users\\amami\\pyhtonAPI\\app.py', reloading
+2025-04-30 16:53:24,292 [INFO]  * Restarting with stat
+2025-04-30 16:53:24,764 [WARNING]  * Debugger is active!
+2025-04-30 16:53:24,768 [INFO]  * Debugger PIN: 140-956-481
+2025-04-30 16:53:25,667 [INFO] Incoming request to /verify-cin
+2025-04-30 16:53:25,668 [DEBUG] Reading image from uploaded file
+2025-04-30 16:53:25,677 [DEBUG] Running Tesseract OCR
+2025-04-30 16:53:25,685 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_cijibicr_input.JPEG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_cijibicr', 'txt']
+2025-04-30 16:53:26,005 [INFO]  OCR Text Extracted:
+ROYAUME DU MAROC Bp pao) ac)
+CARTE NATIONALE D'IDENTITE Az eS 4b 5]! 43a)
+is?
+YOUSRA :
+gel
+AMAMI
+Née'le 25.04.2005 See.
+
+Abnol dec 46 gte 9 =
+a-CHARF MGHOGHA TANGER ASSILAH
+
+No FRED <
+bs Qual oa’ ==
+
+> blll ne “=
+
+xn K608798 4, Valablejusqu'au 09.05.2031 ie _!
+
+ft CAN 201010
+
+2025-04-30 16:53:26,006 [INFO]  Extracted CIN: None
+2025-04-30 16:53:26,006 [WARNING] CIN extraction failed from OCR text
+2025-04-30 16:53:26,007 [INFO] 127.0.0.1 - - [30/Apr/2025 16:53:26] "[31m[1mPOST /verify-cin HTTP/1.1[0m" 400 -
+2025-04-30 16:53:38,117 [INFO]  * Detected change in 'C:\\Users\\amami\\pyhtonAPI\\app.py', reloading
+2025-04-30 16:53:38,148 [INFO]  * Restarting with stat
+2025-04-30 16:53:38,370 [WARNING]  * Debugger is active!
+2025-04-30 16:53:38,374 [INFO]  * Debugger PIN: 140-956-481
+2025-04-30 16:53:40,084 [INFO] Incoming request to /verify-cin
+2025-04-30 16:53:40,085 [DEBUG] Reading image from uploaded file
+2025-04-30 16:53:40,096 [DEBUG] Running Tesseract OCR
+2025-04-30 16:53:40,104 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_w81klkxq_input.JPEG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_w81klkxq', 'txt']
+2025-04-30 16:53:40,411 [INFO]  OCR Text Extracted:
+ROYAUME DU MAROC Bp pao) ac)
+CARTE NATIONALE D'IDENTITE Az eS 4b 5]! 43a)
+is?
+YOUSRA :
+gel
+AMAMI
+Née'le 25.04.2005 See.
+
+Abnol dec 46 gte 9 =
+a-CHARF MGHOGHA TANGER ASSILAH
+
+No FRED <
+bs Qual oa’ ==
+
+> blll ne “=
+
+xn K608798 4, Valablejusqu'au 09.05.2031 ie _!
+
+ft CAN 201010
+
+2025-04-30 16:53:40,412 [INFO]  Extracted CIN: Valablejusqu
+2025-04-30 16:53:40,413 [INFO] 127.0.0.1 - - [30/Apr/2025 16:53:40] "POST /verify-cin HTTP/1.1" 200 -
+2025-04-30 16:59:16,509 [INFO] Incoming request to /verify-cin
+2025-04-30 16:59:16,511 [DEBUG] Reading image from uploaded file
+2025-04-30 16:59:16,511 [DEBUG] Running Tesseract OCR
+2025-04-30 16:59:16,530 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_a6cokgvl_input.JPEG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_a6cokgvl', 'txt']
+2025-04-30 16:59:16,902 [INFO]  OCR Text Extracted:
+ROYAUME Du MAROC
+CARTE NATIONALE D'IDENTITE
+
+ody ats we) zat
+
+ere
+
+YOUSRA ea
+
+AMAMI
+
+Née le 25.04. _—
+a CHARF MGHOGHA TANGER ASSILAH
+
+KTIRID...
+» ales celal eal
+
+Oo
+
+Valablejusquau 09.05.2034 42 ,
+
+
+2025-04-30 16:59:16,903 [INFO]  Extracted CIN: None
+2025-04-30 16:59:16,903 [WARNING] CIN extraction failed from OCR text
+2025-04-30 16:59:16,904 [INFO] 127.0.0.1 - - [30/Apr/2025 16:59:16] "[31m[1mPOST /verify-cin HTTP/1.1[0m" 400 -
+2025-04-30 16:59:27,636 [INFO] Incoming request to /verify-cin
+2025-04-30 16:59:27,637 [DEBUG] Reading image from uploaded file
+2025-04-30 16:59:27,638 [DEBUG] Running Tesseract OCR
+2025-04-30 16:59:27,647 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_4k7fmdes_input.JPEG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_4k7fmdes', 'txt']
+2025-04-30 16:59:27,953 [INFO]  OCR Text Extracted:
+ROYAUME DU MAROC Bp pao) ac)
+CARTE NATIONALE D'IDENTITE Az eS 4b 5]! 43a)
+is?
+YOUSRA :
+gel
+AMAMI
+Née'le 25.04.2005 See.
+
+Abnol dec 46 gte 9 =
+a-CHARF MGHOGHA TANGER ASSILAH
+
+No FRED <
+bs Qual oa’ ==
+
+> blll ne “=
+
+xn K608798 4, Valablejusqu'au 09.05.2031 ie _!
+
+ft CAN 201010
+
+2025-04-30 16:59:27,953 [INFO]  Extracted CIN: Valablejusqu
+2025-04-30 16:59:27,954 [INFO] 127.0.0.1 - - [30/Apr/2025 16:59:27] "POST /verify-cin HTTP/1.1" 200 -
+2025-04-30 23:37:14,830 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-30 23:37:14,831 [INFO] [33mPress CTRL+C to quit[0m
+2025-04-30 23:37:14,834 [INFO]  * Restarting with stat
+2025-04-30 23:37:15,053 [WARNING]  * Debugger is active!
+2025-04-30 23:37:15,057 [INFO]  * Debugger PIN: 140-956-481
+2025-04-30 23:42:34,099 [INFO]  * Detected change in 'C:\\Users\\amami\\pyhtonAPI\\app.py', reloading
+2025-04-30 23:42:34,138 [INFO]  * Restarting with stat
+2025-04-30 23:42:34,599 [WARNING]  * Debugger is active!
+2025-04-30 23:42:34,602 [INFO]  * Debugger PIN: 140-956-481
+2025-04-30 23:44:48,877 [INFO]  * Detected change in 'C:\\Users\\amami\\pyhtonAPI\\app.py', reloading
+2025-04-30 23:44:48,905 [INFO]  * Restarting with stat
+2025-04-30 23:44:49,279 [WARNING]  * Debugger is active!
+2025-04-30 23:44:49,282 [INFO]  * Debugger PIN: 140-956-481
+2025-04-30 23:45:16,417 [INFO] 127.0.0.1 - - [30/Apr/2025 23:45:16] "[33mPOST /api/verify-cin HTTP/1.1[0m" 404 -
+2025-04-30 23:46:14,422 [INFO]  * Detected change in 'C:\\Users\\amami\\pyhtonAPI\\app.py', reloading
+2025-04-30 23:46:14,456 [INFO]  * Restarting with stat
+2025-04-30 23:46:14,715 [WARNING]  * Debugger is active!
+2025-04-30 23:46:14,719 [INFO]  * Debugger PIN: 140-956-481
+2025-04-30 23:46:16,397 [INFO]  * Detected change in 'C:\\Users\\amami\\pyhtonAPI\\app.py', reloading
+2025-04-30 23:46:16,422 [INFO]  * Restarting with stat
+2025-04-30 23:46:16,679 [WARNING]  * Debugger is active!
+2025-04-30 23:46:16,683 [INFO]  * Debugger PIN: 140-956-481
+2025-04-30 23:46:58,706 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-30 23:46:58,706 [INFO] [33mPress CTRL+C to quit[0m
+2025-04-30 23:46:58,707 [INFO]  * Restarting with stat
+2025-04-30 23:46:58,889 [WARNING]  * Debugger is active!
+2025-04-30 23:46:58,892 [INFO]  * Debugger PIN: 140-956-481
+2025-04-30 23:48:32,889 [INFO]  * Detected change in 'C:\\Users\\amami\\pyhtonAPI\\app.py', reloading
+2025-04-30 23:48:32,916 [INFO]  * Restarting with stat
+2025-04-30 23:48:33,288 [WARNING]  * Debugger is active!
+2025-04-30 23:48:33,292 [INFO]  * Debugger PIN: 140-956-481
+2025-04-30 23:49:30,493 [INFO] Incoming request to /verify-cin
+2025-04-30 23:49:30,495 [DEBUG] Reading image from uploaded file
+2025-04-30 23:49:30,495 [DEBUG] Image read successfully (88569 bytes)
+2025-04-30 23:49:30,572 [DEBUG] Running Tesseract OCR
+2025-04-30 23:49:30,589 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_h6d4fxjz_input.JPEG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_h6d4fxjz', '--psm', '6', '-c', 'tessedit_char_whitelist=ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789', 'txt']
+2025-04-30 23:49:31,415 [INFO] OCR Text Extracted:
+ROYAUMEDUMAROC BJ A1
+CARTENATIONALEDIDENTITE WAS445I43UL
+2
+YOUSRA
+AMAMI
+2SN 25042005 SG
+2S 4CHARFMGHOGHATANGERASSILAH
+SS GU 5
+E
+K6087984 V090520312JL
+
+2025-04-30 23:49:31,415 [DEBUG] Text received for CIN extraction:
+ROYAUMEDUMAROC BJ A1
+CARTENATIONALEDIDENTITE WAS445I43UL
+2
+YOUSRA
+AMAMI
+2SN 25042005 SG
+2S 4CHARFMGHOGHATANGERASSILAH
+SS GU 5
+E
+K6087984 V090520312JL
+
+2025-04-30 23:49:31,416 [DEBUG] No CIN match found.
+2025-04-30 23:49:31,416 [INFO] Extracted CIN: None
+2025-04-30 23:49:31,416 [WARNING] CIN extraction failed from OCR text
+2025-04-30 23:49:31,417 [INFO] 127.0.0.1 - - [30/Apr/2025 23:49:31] "[31m[1mPOST /verify-cin HTTP/1.1[0m" 400 -
+2025-04-30 23:50:41,454 [INFO]  * Detected change in 'C:\\Users\\amami\\pyhtonAPI\\app.py', reloading
+2025-04-30 23:50:41,486 [INFO]  * Restarting with stat
+2025-04-30 23:50:41,747 [WARNING]  * Debugger is active!
+2025-04-30 23:50:41,750 [INFO]  * Debugger PIN: 140-956-481
+2025-04-30 23:50:47,401 [INFO] Incoming request to /verify-cin
+2025-04-30 23:50:47,402 [DEBUG] Reading image from uploaded file
+2025-04-30 23:50:47,403 [DEBUG] Image read successfully (88569 bytes)
+2025-04-30 23:50:47,412 [DEBUG] Running Tesseract OCR
+2025-04-30 23:50:47,421 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_i6mw_qic_input.JPEG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_i6mw_qic', '--psm', '6', '-c', 'tessedit_char_whitelist=ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789', 'txt']
+2025-04-30 23:50:47,719 [INFO] OCR Text Extracted:
+ROYAUMEDUMAROC BJ A1
+CARTENATIONALEDIDENTITE WAS445I43UL
+2
+YOUSRA
+AMAMI
+2SN 25042005 SG
+2S 4CHARFMGHOGHATANGERASSILAH
+SS GU 5
+E
+K6087984 V090520312JL
+
+2025-04-30 23:50:47,720 [DEBUG] Text received for CIN extraction:
+ROYAUMEDUMAROC BJ A1
+CARTENATIONALEDIDENTITE WAS445I43UL
+2
+YOUSRA
+AMAMI
+2SN 25042005 SG
+2S 4CHARFMGHOGHATANGERASSILAH
+SS GU 5
+E
+K6087984 V090520312JL
+
+2025-04-30 23:50:47,720 [DEBUG] CIN match found: WAS445I43UL
+2025-04-30 23:50:47,720 [INFO] Extracted CIN: WAS445I43UL
+2025-04-30 23:50:47,721 [INFO] 127.0.0.1 - - [30/Apr/2025 23:50:47] "POST /verify-cin HTTP/1.1" 200 -
+2025-04-30 23:53:17,488 [INFO]  * Detected change in 'C:\\Users\\amami\\pyhtonAPI\\app.py', reloading
+2025-04-30 23:53:17,535 [INFO]  * Restarting with stat
+2025-05-01 00:01:04,919 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-01 00:01:04,919 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-01 00:01:04,920 [INFO]  * Restarting with stat
+2025-05-01 00:01:05,172 [WARNING]  * Debugger is active!
+2025-05-01 00:01:05,176 [INFO]  * Debugger PIN: 140-956-481
+2025-05-01 00:01:08,714 [INFO] Incoming request to /verify-cin
+2025-05-01 00:01:08,715 [DEBUG] Reading image from uploaded file
+2025-05-01 00:01:08,725 [DEBUG] Running Tesseract OCR
+2025-05-01 00:01:08,747 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_tya93hs1_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_tya93hs1', '--psm', '6', 'txt']
+2025-05-01 00:01:09,002 [INFO] OCR Text Extracted:
+ROYAUME DU MAROC se ap pre) AS l.0)
+CARTE NATIONALE D'IDENTITE Ge ee iy  Aydl gJ} 43a)
+Agee
+ooo
+_. YOUSRA ;
+E = AMAMI
+2 a-CHARF MGHOGHA TANGER ASSILAH
+a Sale = o
+a wie gl et plall sult ~- 3S
+- = = ; _- <
+F ptigem ich ace &
+w  K608798 ay Valablejusquiau 09.05.2031  _-! sas
+
+2025-05-01 00:01:09,003 [INFO] Extracted CIN: K608798
+2025-05-01 00:01:09,004 [INFO] 127.0.0.1 - - [01/May/2025 00:01:09] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-01 00:07:52,485 [INFO] Incoming request to /verify-cin
+2025-05-01 00:07:52,486 [DEBUG] Reading image from uploaded file
+2025-05-01 00:07:52,493 [DEBUG] Running Tesseract OCR
+2025-05-01 00:07:52,502 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_zakpa_tn_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_zakpa_tn', '--psm', '6', 'txt']
+2025-05-01 00:07:52,744 [INFO] OCR Text Extracted:
+;
+ROVAUME DU MAROC 6 Age Ac!) aal.))
+CARTE NATIONALE DIDENTITE wr teby yal) Agile 3) 4aU
+BENAISSA
+yl
+AMAMI
+Ne le 14.04.1960 fej
+| a TAFERSIT DRIOUCH
+2 ¢ \
+oe pila gt eb pall yes “_° z
++ get ae> ible ce)
+w K85438 ac Valablejusquiau 07.12.2030 ae (| dae
+
+2025-05-01 00:07:52,749 [INFO] Extracted CIN: None
+2025-05-01 00:07:52,750 [WARNING] CIN extraction failed from OCR text
+2025-05-01 00:07:52,750 [INFO] 127.0.0.1 - - [01/May/2025 00:07:52] "[31m[1mPOST /verify-cin HTTP/1.1[0m" 400 -
+2025-05-01 00:11:10,264 [INFO] Incoming request to /verify-cin
+2025-05-01 00:11:10,265 [DEBUG] Reading image from uploaded file
+2025-05-01 00:11:10,273 [DEBUG] Running Tesseract OCR
+2025-05-01 00:11:10,285 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_u0af3w1k_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_u0af3w1k', '--psm', '6', 'txt']
+2025-05-01 00:11:10,526 [INFO] OCR Text Extracted:
+;
+ROVAUME DU MAROC 6 Age Ac!) aal.))
+CARTE NATIONALE DIDENTITE wr teby yal) Agile 3) 4aU
+BENAISSA
+yl
+AMAMI
+Ne le 14.04.1960 fej
+| a TAFERSIT DRIOUCH
+2 ¢ \
+oe pila gt eb pall yes “_° z
++ get ae> ible ce)
+w K85438 ac Valablejusquiau 07.12.2030 ae (| dae
+
+2025-05-01 00:11:10,527 [INFO] Extracted CIN: None
+2025-05-01 00:11:10,527 [WARNING] CIN extraction failed from OCR text
+2025-05-01 00:11:10,528 [INFO] 127.0.0.1 - - [01/May/2025 00:11:10] "[31m[1mPOST /verify-cin HTTP/1.1[0m" 400 -
+2025-05-01 00:11:55,702 [INFO] Incoming request to /verify-cin
+2025-05-01 00:11:55,703 [DEBUG] Reading image from uploaded file
+2025-05-01 00:11:55,712 [DEBUG] Running Tesseract OCR
+2025-05-01 00:11:55,722 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_i9_w_gi0_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_i9_w_gi0', '--psm', '6', 'txt']
+2025-05-01 00:11:55,976 [INFO] OCR Text Extracted:
+ROYAUME DU MAROC se ap pre) AS l.0)
+CARTE NATIONALE D'IDENTITE Ge ee iy  Aydl gJ} 43a)
+Agee
+ooo
+_. YOUSRA ;
+E = AMAMI
+2 a-CHARF MGHOGHA TANGER ASSILAH
+a Sale = o
+a wie gl et plall sult ~- 3S
+- = = ; _- <
+F ptigem ich ace &
+w  K608798 ay Valablejusquiau 09.05.2031  _-! sas
+
+2025-05-01 00:11:55,976 [INFO] Extracted CIN: K608798
+2025-05-01 00:11:55,977 [INFO] 127.0.0.1 - - [01/May/2025 00:11:55] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-01 00:33:30,636 [INFO] Incoming request to /verify-cin
+2025-05-01 00:33:30,637 [DEBUG] Reading image from uploaded file
+2025-05-01 00:33:30,647 [DEBUG] Running Tesseract OCR
+2025-05-01 00:33:30,656 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_ja6mgob6_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_ja6mgob6', '--psm', '6', 'txt']
+2025-05-01 00:33:30,914 [INFO] OCR Text Extracted:
+ROYAUME DU MAROC se ap pre) AS l.0)
+CARTE NATIONALE D'IDENTITE Ge ee iy  Aydl gJ} 43a)
+Agee
+ooo
+_. YOUSRA ;
+E = AMAMI
+2 a-CHARF MGHOGHA TANGER ASSILAH
+a Sale = o
+a wie gl et plall sult ~- 3S
+- = = ; _- <
+F ptigem ich ace &
+w  K608798 ay Valablejusquiau 09.05.2031  _-! sas
+
+2025-05-01 00:33:30,914 [INFO] Extracted CIN: K608798
+2025-05-01 00:33:30,915 [INFO] 127.0.0.1 - - [01/May/2025 00:33:30] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-01 00:52:28,204 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-01 00:52:28,205 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-01 00:52:28,207 [INFO]  * Restarting with stat
+2025-05-01 00:52:28,754 [WARNING]  * Debugger is active!
+2025-05-01 00:52:28,762 [INFO]  * Debugger PIN: 140-956-481
+2025-05-01 00:52:40,515 [INFO]  * Detected change in 'C:\\Users\\amami\\pyhtonAPI\\app.py', reloading
+2025-05-01 00:52:40,579 [INFO]  * Restarting with stat
+2025-05-01 00:54:08,808 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-01 00:54:08,809 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-01 00:54:08,810 [INFO]  * Restarting with stat
+2025-05-01 00:54:09,215 [WARNING]  * Debugger is active!
+2025-05-01 00:54:09,221 [INFO]  * Debugger PIN: 140-956-481
+2025-05-01 00:54:12,090 [INFO] Incoming request to /verify-cin
+2025-05-01 00:54:12,091 [DEBUG] Reading image from uploaded file
+2025-05-01 00:54:12,108 [DEBUG] Running Tesseract OCR
+2025-05-01 00:54:12,137 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_nyind1_a_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_nyind1_a', '--psm', '6', 'txt']
+2025-05-01 00:54:12,554 [INFO] OCR Text Extracted:
+ROYAUME DU MAROC se ap pre) AS l.0)
+CARTE NATIONALE D'IDENTITE Ge ee iy  Aydl gJ} 43a)
+Agee
+ooo
+_. YOUSRA ;
+E = AMAMI
+2 a-CHARF MGHOGHA TANGER ASSILAH
+a Sale = o
+a wie gl et plall sult ~- 3S
+- = = ; _- <
+F ptigem ich ace &
+w  K608798 ay Valablejusquiau 09.05.2031  _-! sas
+
+2025-05-01 00:54:12,555 [INFO] Extracted CIN: K608798
+2025-05-01 00:54:12,557 [INFO] 127.0.0.1 - - [01/May/2025 00:54:12] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-01 01:02:54,097 [INFO] Incoming request to /verify-cin
+2025-05-01 01:02:54,100 [DEBUG] Reading image from uploaded file
+2025-05-01 01:02:54,114 [DEBUG] Running Tesseract OCR
+2025-05-01 01:02:54,128 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_84ryh33i_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_84ryh33i', '--psm', '6', 'txt']
+2025-05-01 01:02:54,708 [INFO] OCR Text Extracted:
+ROYAUME DU MAROC se ap pre) AS l.0)
+CARTE NATIONALE D'IDENTITE Ge ee iy  Aydl gJ} 43a)
+Agee
+ooo
+_. YOUSRA ;
+E = AMAMI
+2 a-CHARF MGHOGHA TANGER ASSILAH
+a Sale = o
+a wie gl et plall sult ~- 3S
+- = = ; _- <
+F ptigem ich ace &
+w  K608798 ay Valablejusquiau 09.05.2031  _-! sas
+
+2025-05-01 01:02:54,709 [INFO] Extracted CIN: K608798
+2025-05-01 01:02:54,711 [INFO] 127.0.0.1 - - [01/May/2025 01:02:54] "POST /verify-cin HTTP/1.1" 200 -

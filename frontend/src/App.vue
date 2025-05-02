@@ -6,14 +6,12 @@
 <script>
 import Header from './components/Header.vue';
 import Signup from './pages/Signup.vue';
-import Courses from './components/Courses.vue';
 import Footer from './components/Footer.vue';
 import CinVerif from './components/CinVerif.vue';
 export default {
   name: 'App',
   components: {
     Header,
-    Courses,
     Footer,
     CinVerif
   }
