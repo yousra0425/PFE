@@ -8,15 +8,11 @@ import re
 import cv2
 import numpy as np
 
-# Point to the Tesseract executable
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
-
-
 
 app = Flask(__name__)
 CORS(app)
 
-# Logging configuration
 logging.basicConfig(
     level=logging.DEBUG,
     format='%(asctime)s [%(levelname)s] %(message)s',
@@ -30,14 +26,12 @@ logging.basicConfig(
 def verify_cin():
     logging.info("Incoming request to /verify-cin")
 
-    # Check if 'cin_image' is in the request
     if 'cin_image' not in request.files:
         logging.warning("No file part found in request")
         return jsonify({'error': 'No file part'}), 400
 
     file = request.files['cin_image']
 
-    # Ensure the file has a name
     if file.filename == '':
         logging.warning("File uploaded with empty filename")
         return jsonify({'error': 'No selected file'}), 400
@@ -70,9 +64,8 @@ def verify_cin():
         logging.error("Exception occurred during CIN verification: %s", str(e), exc_info=True)
         return jsonify({'error': 'Internal server error: ' + str(e)}), 500
 
-# Regex to extract CIN (capital letter followed by 6 digits)
+# Regex to extract CIN 
 def extract_cin(text):
-    # Look for pattern: a capital letter followed by exactly 6 digits
     matches = re.findall(r'\b[A-Z]\d{6}\b', text)
     return matches[0] if matches else None
 
