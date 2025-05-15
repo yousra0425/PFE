@@ -1867,3 +1867,48 @@ Ly K608788 as Valable jus a. C9 05 2031 .- | a
 2025-05-11 01:44:14,391 [INFO]  * Restarting with stat
 2025-05-11 01:44:14,755 [WARNING]  * Debugger is active!
 2025-05-11 01:44:14,759 [INFO]  * Debugger PIN: 140-956-481
+2025-05-11 01:44:15,912 [INFO] Incoming request to /verify-cin
+2025-05-11 01:44:15,913 [DEBUG] Reading image from uploaded file
+2025-05-11 01:44:15,934 [DEBUG] Running Tesseract OCR
+2025-05-11 01:44:15,958 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_u9pf94rb_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_u9pf94rb', '--psm', '6', 'txt']
+2025-05-11 01:44:16,276 [INFO] OCR Text Extracted:
+~'ROYAUME DU MAROC Bas Cool 2S lov Il
+CARTE NATIONALE D'IDENTITE. - _ 2 44 pei duilagll agli
+AICHA oS p7 -
+AMEZIAN ¢ gSek Ai ( iid
+
+S Néele 7 PMAZASTES BRO NUE solo Ee
+
+| a TAFERSIT ORIOUCH =" SNES Se ees Lik
+Valable jusqu'au =. 16.12:2028 - = le Ji alo hl _
+
+log! GoW plall saaiE K220841 FF
+
+2025-05-11 01:44:16,277 [INFO] Extracted CIN: K220841
+2025-05-11 01:44:16,277 [INFO] Extracted Name: None
+2025-05-11 01:44:16,279 [INFO] 127.0.0.1 - - [11/May/2025 01:44:16] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-11 01:44:18,799 [INFO] Incoming request to /verify-cin
+2025-05-11 01:44:18,800 [DEBUG] Reading image from uploaded file
+2025-05-11 01:44:18,807 [DEBUG] Running Tesseract OCR
+2025-05-11 01:44:18,813 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_uzcsukys_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_uzcsukys', '--psm', '6', 'txt']
+2025-05-11 01:44:19,085 [INFO] OCR Text Extracted:
+ROYALIME DU MAROC 7. Sys pre) ASeal 3)
+
+CARTE NATIONALE DIDENTITE Fn a 2 Agi gt 43a)
+so
+
+; YOUSRA
+me = AMAMI
+Noe ia 25.04.2005 Sree
+a , 4 Dine! dein 2 ge bs
+ian a CHARF MGHOGHA TANGER ASSILAd
+
+wort yl) 0 plall ypralt ~~ 3
+Cr = 2
+. v4 = <
+ere tell sc o
+»  K608798 4, Valablo pus au 09 05.2031 sa wh
+
+2025-05-11 01:44:19,086 [INFO] Extracted CIN: K608798
+2025-05-11 01:44:19,086 [INFO] Extracted Name: {'first_name': 'Yousra', 'last_name': 'Amami'}
+2025-05-11 01:44:19,087 [INFO] 127.0.0.1 - - [11/May/2025 01:44:19] "POST /verify-cin HTTP/1.1" 200 -
