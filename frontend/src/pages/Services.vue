@@ -15,7 +15,7 @@
         </button>
       </div>
       <div class="auth-buttons">
-        <button class="auth-btn sign-in">Sign In</button>
+        <button class="auth-btn login">Login</button>
         <button class="auth-btn sign-up">Sign Up</button>
       </div>
     </header>
@@ -63,7 +63,7 @@
                   <p class="service-description">{{ service.description }}</p>
                 </div>
                 <div class="service-cta">
-                  <button class="book-btn">Book Now</button>
+                  <button class="select-btn">Select Service</button>
                 </div>
               </div>
             </div>
@@ -77,12 +77,14 @@
 
 <script setup>
 import { ref } from 'vue'
+import { useRouter } from 'vue-router'
 import HowItWorks from '../components/HowItWorks.vue'
 import Hero from '../components/Hero.vue'
 import  BecomeProvider from '../components/ProviderForm.vue'
 
 const activeCategory = ref(null)
 const selectedService = ref(null)
+const router = useRouter()
 
 const categories = ref([
   {
@@ -167,12 +169,14 @@ const toggleCategory = (categoryId) => {
 const selectService = (service) => {
   selectedService.value = service
   console.log('Selected service:', service)
+  router.push({ name: 'ServiceDetails', params: { id: service.id } })
 }
 </script>
 
 <style scoped>
 :root {
-  --primary: #4361ee;
+  --primary-color: #1ca79b;
+  --primary-hover: #1ca79bce;
   --primary-light: #4895ef;
   --secondary: #3f37c9;
   --dark: #1b263b;
@@ -220,9 +224,9 @@ const selectService = (service) => {
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 700;
-  color: var(--primary);
+  color: var(--primary-color);
   letter-spacing: -0.5px;
 }
 
@@ -249,13 +253,13 @@ const selectService = (service) => {
 
 .search-input:focus {
   outline: none;
-  border-color: var(--primary-light);
+  border-color: var(--primary-hover);
   box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.1);
 }
 
 .search-button {
   padding: 0.75rem 1rem;
-  background-color: var(--primary);
+  background-color: var(--primary-color);
   color: white;
   border: none;
   border-radius: 0 8px 8px 0;
@@ -264,7 +268,7 @@ const selectService = (service) => {
 }
 
 .search-button:hover {
-  background-color: var(--secondary);
+  background-color: var(--primary-hover);
 }
 
 .auth-buttons {
@@ -281,26 +285,26 @@ const selectService = (service) => {
   transition: var(--transition);
 }
 
-.sign-in {
+.login {
   background-color: transparent;
-  border: 1px solid var(--gray);
-  color: var(--dark);
+  border: 1px solid var(--primary);
+  color: rgb(0, 0, 0);
 }
 
-.sign-in:hover {
-  border-color: var(--primary);
-  color: var(--primary);
+.login:hover {
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
 }
 
 .sign-up {
-  background-color: var(--primary);
+  background-color: transparent;
   border: 1px solid var(--primary);
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .sign-up:hover {
-  background-color: var(--secondary);
-  border-color: var(--secondary);
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
 }
 
 .main-content {
@@ -350,6 +354,8 @@ const selectService = (service) => {
 
 .category-card.expanded {
   box-shadow: var(--shadow-lg);
+  border: 2px solid var(--primary);
+  background-color: #eef2ff;
 }
 
 .category-header {
@@ -426,11 +432,11 @@ const selectService = (service) => {
   line-height: 1.5;
 }
 
-.book-btn {
+.select-btn {
   padding: 0.5rem 1rem;
   font-size: 0.8rem;
   font-weight: 500;
-  background-color: var(--primary);
+  background-color: var(--primary-color);
   color: white;
   border: none;
   border-radius: 6px;
@@ -439,8 +445,8 @@ const selectService = (service) => {
   white-space: nowrap;
 }
 
-.book-btn:hover {
-  background-color: var(--secondary);
+.select-btn:hover {
+  background-color: var(--primary-hover);
   transform: translateY(-1px);
 }
 
