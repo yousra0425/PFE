@@ -19,10 +19,11 @@ export default {
   methods: {
     async handleSignup() {
       try {
-        await axios.get('http://127.0.0.1:8000/sanctum/csrf-cookie', { withCredentials: true });
 
+        
         const response = await axios.post('http://127.0.0.1:8000/api/register', {
-          full_name: this.first_name + ' ' + this.last_name,
+          first_name: this.first_name ,
+          last_name: this.last_name,
           email: this.email,
           password: this.password,
           password_confirmation: this.confirmPassword,
@@ -30,9 +31,13 @@ export default {
           telephone: this.telephone,
           birth_date: this.birth_date,
           city: this.city
-        }, {
-           withCredentials: true
-          });
+        });
+
+        localStorage.setItem('token', response.data.access_token);
+        localStorage.setItem('user', JSON.stringify(response.data.user));
+        axios.defaults.headers.common['Authorization'] = `Bearer ${response.data.access_token}`;
+
+        this.$router.push('/services');
 
           console.log('Signup successful', response.data);
       } catch (err) {
@@ -166,7 +171,7 @@ export default {
             <div class="text-center mt-3">
               <p>
                 Already have an account?
-                <router-link to="/login" class="login-link">Login here</router-link>
+                <router-link to="/login" class="login-link">Login</router-link>
               </p>
             </div>
           </form>

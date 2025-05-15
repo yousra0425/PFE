@@ -127,5 +127,41 @@ class UserController extends Controller
 
     }
 
+    
+    /*public function getUsers(Request $request)
+    {
+        $user = auth()->user();
+
+        if ($user->role === 'admin') {
+            // Admin can see all users
+            return User::all();
+        } elseif ($user->role === 'service_provider' || $user->role === 'client') {
+            // Provider and Client see only their own data
+            return $user;
+        }
+
+        return response()->json(['message' => 'Unauthorized'], 403);
+    }
+     
+    public function approveProvider($id)
+    {
+         $user = auth()->user();
+ 
+         if ($user->role !== 'admin') {
+             return response()->json(['message' => 'Unauthorized'], 403);
+         }
+ 
+         $provider = User::findOrFail($id);
+ 
+         if ($provider->role === 'service_provider') {
+             $provider->status = 'approved';
+             $provider->save();
+ 
+             return response()->json(['message' => 'Provider approved']);
+         }
+ 
+         return response()->json(['message' => 'Not a valid provider'], 400);
+    }*/
+
 
 }

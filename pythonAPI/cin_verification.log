@@ -568,3 +568,1302 @@ w  K608798 ay Valablejusquiau 09.05.2031  _-! sas
 
 2025-05-01 01:02:54,709 [INFO] Extracted CIN: K608798
 2025-05-01 01:02:54,711 [INFO] 127.0.0.1 - - [01/May/2025 01:02:54] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-02 10:45:20,980 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-02 10:45:20,981 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-02 10:45:20,990 [INFO]  * Restarting with stat
+2025-05-02 10:45:21,546 [WARNING]  * Debugger is active!
+2025-05-02 10:45:21,562 [INFO]  * Debugger PIN: 140-956-481
+2025-05-02 10:45:22,565 [INFO] Incoming request to /verify-cin
+2025-05-02 10:45:22,567 [DEBUG] Reading image from uploaded file
+2025-05-02 10:45:22,601 [DEBUG] Running Tesseract OCR
+2025-05-02 10:45:22,801 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_pk6abthz_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_pk6abthz', '--psm', '6', 'txt']
+2025-05-02 10:45:24,417 [INFO] OCR Text Extracted:
+ROYAUME DU MAROC se ap pre) AS l.0)
+CARTE NATIONALE D'IDENTITE Ge ee iy  Aydl gJ} 43a)
+Agee
+ooo
+_. YOUSRA ;
+E = AMAMI
+2 a-CHARF MGHOGHA TANGER ASSILAH
+a Sale = o
+a wie gl et plall sult ~- 3S
+- = = ; _- <
+F ptigem ich ace &
+w  K608798 ay Valablejusquiau 09.05.2031  _-! sas
+
+2025-05-02 10:45:24,418 [INFO] Extracted CIN: K608798
+2025-05-02 10:45:24,419 [INFO] 127.0.0.1 - - [02/May/2025 10:45:24] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-02 11:01:39,683 [INFO] Incoming request to /verify-cin
+2025-05-02 11:01:39,684 [DEBUG] Reading image from uploaded file
+2025-05-02 11:01:39,699 [DEBUG] Running Tesseract OCR
+2025-05-02 11:01:39,719 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_t90xivj7_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_t90xivj7', '--psm', '6', 'txt']
+2025-05-02 11:01:39,971 [INFO] OCR Text Extracted:
+ROYAUME DU MAROC se ap pre) AS l.0)
+CARTE NATIONALE D'IDENTITE Ge ee iy  Aydl gJ} 43a)
+Agee
+ooo
+_. YOUSRA ;
+E = AMAMI
+2 a-CHARF MGHOGHA TANGER ASSILAH
+a Sale = o
+a wie gl et plall sult ~- 3S
+- = = ; _- <
+F ptigem ich ace &
+w  K608798 ay Valablejusquiau 09.05.2031  _-! sas
+
+2025-05-02 11:01:39,971 [INFO] Extracted CIN: K608798
+2025-05-02 11:01:39,972 [INFO] 127.0.0.1 - - [02/May/2025 11:01:39] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-02 12:55:14,422 [INFO] Incoming request to /verify-cin
+2025-05-02 12:55:14,427 [DEBUG] Reading image from uploaded file
+2025-05-02 12:55:14,440 [DEBUG] Running Tesseract OCR
+2025-05-02 12:55:14,455 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_k47zsa02_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_k47zsa02', '--psm', '6', 'txt']
+2025-05-02 12:55:14,714 [INFO] OCR Text Extracted:
+;
+ROVAUME DU MAROC 6 Age Ac!) aal.))
+CARTE NATIONALE DIDENTITE wr teby yal) Agile 3) 4aU
+BENAISSA
+yl
+AMAMI
+Ne le 14.04.1960 fej
+| a TAFERSIT DRIOUCH
+2 ¢ \
+oe pila gt eb pall yes “_° z
++ get ae> ible ce)
+w K85438 ac Valablejusquiau 07.12.2030 ae (| dae
+
+2025-05-02 12:55:14,715 [INFO] Extracted CIN: None
+2025-05-02 12:55:14,721 [WARNING] CIN extraction failed from OCR text
+2025-05-02 12:55:14,723 [INFO] 127.0.0.1 - - [02/May/2025 12:55:14] "[31m[1mPOST /verify-cin HTTP/1.1[0m" 400 -
+2025-05-02 12:55:30,218 [INFO] Incoming request to /verify-cin
+2025-05-02 12:55:30,219 [DEBUG] Reading image from uploaded file
+2025-05-02 12:55:30,226 [DEBUG] Running Tesseract OCR
+2025-05-02 12:55:30,233 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_d9acioub_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_d9acioub', '--psm', '6', 'txt']
+2025-05-02 12:55:30,487 [INFO] OCR Text Extracted:
+ROYAUME DU MAROC se ap pre) AS l.0)
+CARTE NATIONALE D'IDENTITE Ge ee iy  Aydl gJ} 43a)
+Agee
+ooo
+_. YOUSRA ;
+E = AMAMI
+2 a-CHARF MGHOGHA TANGER ASSILAH
+a Sale = o
+a wie gl et plall sult ~- 3S
+- = = ; _- <
+F ptigem ich ace &
+w  K608798 ay Valablejusquiau 09.05.2031  _-! sas
+
+2025-05-02 12:55:30,488 [INFO] Extracted CIN: K608798
+2025-05-02 12:55:30,489 [INFO] 127.0.0.1 - - [02/May/2025 12:55:30] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-02 12:57:45,631 [INFO] Incoming request to /verify-cin
+2025-05-02 12:57:45,641 [DEBUG] Reading image from uploaded file
+2025-05-02 12:57:45,662 [DEBUG] Running Tesseract OCR
+2025-05-02 12:57:45,679 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_ozjidbyk_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_ozjidbyk', '--psm', '6', 'txt']
+2025-05-02 12:57:45,902 [INFO] OCR Text Extracted:
+- ROYAUMEDUMAROC =§ EG as pte BSW
+| GARTE NATIONALE D'IDENTITE (ae: ey el Ay ile gi 48Ulay!1
+ee, YOUSRA
+eo a CHARF MGHOGHA TANGER ASSILAH
+x K608798 i, Vatablejusqu’au 09.05.2031 ape 1) dade
+
+2025-05-02 12:57:45,903 [INFO] Extracted CIN: K608798
+2025-05-02 12:57:45,905 [INFO] 127.0.0.1 - - [02/May/2025 12:57:45] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-02 12:59:44,036 [INFO] Incoming request to /verify-cin
+2025-05-02 12:59:44,044 [DEBUG] Reading image from uploaded file
+2025-05-02 12:59:44,072 [DEBUG] Running Tesseract OCR
+2025-05-02 12:59:44,087 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_j58ouo_3_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_j58ouo_3', '--psm', '6', 'txt']
+2025-05-02 12:59:44,304 [INFO] OCR Text Extracted:
+- ROYAUMEDUMAROC =§ EG as pte BSW
+| GARTE NATIONALE D'IDENTITE (ae: ey el Ay ile gi 48Ulay!1
+ee, YOUSRA
+eo a CHARF MGHOGHA TANGER ASSILAH
+x K608798 i, Vatablejusqu’au 09.05.2031 ape 1) dade
+
+2025-05-02 12:59:44,305 [INFO] Extracted CIN: K608798
+2025-05-02 12:59:44,306 [INFO] 127.0.0.1 - - [02/May/2025 12:59:44] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-02 13:00:01,201 [INFO] Incoming request to /verify-cin
+2025-05-02 13:00:01,204 [DEBUG] Reading image from uploaded file
+2025-05-02 13:00:01,217 [DEBUG] Running Tesseract OCR
+2025-05-02 13:00:01,225 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_2_8b9rfn_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_2_8b9rfn', '--psm', '6', 'txt']
+2025-05-02 13:00:01,466 [INFO] OCR Text Extracted:
+ROYAUME DU MAROC se ap pre) AS l.0)
+CARTE NATIONALE D'IDENTITE Ge ee iy  Aydl gJ} 43a)
+Agee
+ooo
+_. YOUSRA ;
+E = AMAMI
+2 a-CHARF MGHOGHA TANGER ASSILAH
+a Sale = o
+a wie gl et plall sult ~- 3S
+- = = ; _- <
+F ptigem ich ace &
+w  K608798 ay Valablejusquiau 09.05.2031  _-! sas
+
+2025-05-02 13:00:01,467 [INFO] Extracted CIN: K608798
+2025-05-02 13:00:01,467 [INFO] 127.0.0.1 - - [02/May/2025 13:00:01] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-02 13:00:36,313 [INFO] Incoming request to /verify-cin
+2025-05-02 13:00:36,320 [DEBUG] Reading image from uploaded file
+2025-05-02 13:00:36,335 [DEBUG] Running Tesseract OCR
+2025-05-02 13:00:36,347 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_cnswy2a1_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_cnswy2a1', '--psm', '6', 'txt']
+2025-05-02 13:00:36,600 [INFO] OCR Text Extracted:
+ROYAUME DU MAROC se ap pre) AS l.0)
+CARTE NATIONALE D'IDENTITE Ge ee iy  Aydl gJ} 43a)
+Agee
+ooo
+_. YOUSRA ;
+E = AMAMI
+2 a-CHARF MGHOGHA TANGER ASSILAH
+a Sale = o
+a wie gl et plall sult ~- 3S
+- = = ; _- <
+F ptigem ich ace &
+w  K608798 ay Valablejusquiau 09.05.2031  _-! sas
+
+2025-05-02 13:00:36,600 [INFO] Extracted CIN: K608798
+2025-05-02 13:00:36,601 [INFO] 127.0.0.1 - - [02/May/2025 13:00:36] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-02 13:01:30,788 [INFO] Incoming request to /verify-cin
+2025-05-02 13:01:30,789 [DEBUG] Reading image from uploaded file
+2025-05-02 13:01:30,797 [DEBUG] Running Tesseract OCR
+2025-05-02 13:01:30,809 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_7_of7t10_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_7_of7t10', '--psm', '6', 'txt']
+2025-05-02 13:01:31,067 [INFO] OCR Text Extracted:
+ROYAUME DU MAROC se ap pre) AS l.0)
+CARTE NATIONALE D'IDENTITE Ge ee iy  Aydl gJ} 43a)
+Agee
+ooo
+_. YOUSRA ;
+E = AMAMI
+2 a-CHARF MGHOGHA TANGER ASSILAH
+a Sale = o
+a wie gl et plall sult ~- 3S
+- = = ; _- <
+F ptigem ich ace &
+w  K608798 ay Valablejusquiau 09.05.2031  _-! sas
+
+2025-05-02 13:01:31,068 [INFO] Extracted CIN: K608798
+2025-05-02 13:01:31,069 [INFO] 127.0.0.1 - - [02/May/2025 13:01:31] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-02 13:05:45,241 [INFO] Incoming request to /verify-cin
+2025-05-02 13:05:45,243 [DEBUG] Reading image from uploaded file
+2025-05-02 13:05:45,251 [DEBUG] Running Tesseract OCR
+2025-05-02 13:05:45,264 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_9_l_0rt0_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_9_l_0rt0', '--psm', '6', 'txt']
+2025-05-02 13:05:45,524 [INFO] OCR Text Extracted:
+ROYAUME DU MAROC se ap pre) AS l.0)
+CARTE NATIONALE D'IDENTITE Ge ee iy  Aydl gJ} 43a)
+Agee
+ooo
+_. YOUSRA ;
+E = AMAMI
+2 a-CHARF MGHOGHA TANGER ASSILAH
+a Sale = o
+a wie gl et plall sult ~- 3S
+- = = ; _- <
+F ptigem ich ace &
+w  K608798 ay Valablejusquiau 09.05.2031  _-! sas
+
+2025-05-02 13:05:45,525 [INFO] Extracted CIN: K608798
+2025-05-02 13:05:45,526 [INFO] 127.0.0.1 - - [02/May/2025 13:05:45] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-02 13:10:06,103 [INFO] Incoming request to /verify-cin
+2025-05-02 13:10:06,111 [DEBUG] Reading image from uploaded file
+2025-05-02 13:10:06,127 [DEBUG] Running Tesseract OCR
+2025-05-02 13:10:06,137 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_wa3vorjf_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_wa3vorjf', '--psm', '6', 'txt']
+2025-05-02 13:10:06,378 [INFO] OCR Text Extracted:
+ROYAUME DU MAROC se ap pre) AS l.0)
+CARTE NATIONALE D'IDENTITE Ge ee iy  Aydl gJ} 43a)
+Agee
+ooo
+_. YOUSRA ;
+E = AMAMI
+2 a-CHARF MGHOGHA TANGER ASSILAH
+a Sale = o
+a wie gl et plall sult ~- 3S
+- = = ; _- <
+F ptigem ich ace &
+w  K608798 ay Valablejusquiau 09.05.2031  _-! sas
+
+2025-05-02 13:10:06,383 [INFO] Extracted CIN: K608798
+2025-05-02 13:10:06,384 [INFO] 127.0.0.1 - - [02/May/2025 13:10:06] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-02 13:11:35,016 [INFO] Incoming request to /verify-cin
+2025-05-02 13:11:35,018 [DEBUG] Reading image from uploaded file
+2025-05-02 13:11:35,031 [DEBUG] Running Tesseract OCR
+2025-05-02 13:11:35,037 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_rrwmlvrg_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_rrwmlvrg', '--psm', '6', 'txt']
+2025-05-02 13:11:35,273 [INFO] OCR Text Extracted:
+ROYAUME DU MAROC se ap pre) AS l.0)
+CARTE NATIONALE D'IDENTITE Ge ee iy  Aydl gJ} 43a)
+Agee
+ooo
+_. YOUSRA ;
+E = AMAMI
+2 a-CHARF MGHOGHA TANGER ASSILAH
+a Sale = o
+a wie gl et plall sult ~- 3S
+- = = ; _- <
+F ptigem ich ace &
+w  K608798 ay Valablejusquiau 09.05.2031  _-! sas
+
+2025-05-02 13:11:35,274 [INFO] Extracted CIN: K608798
+2025-05-02 13:11:35,275 [INFO] 127.0.0.1 - - [02/May/2025 13:11:35] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-02 13:15:04,854 [INFO] Incoming request to /verify-cin
+2025-05-02 13:15:04,856 [DEBUG] Reading image from uploaded file
+2025-05-02 13:15:04,870 [DEBUG] Running Tesseract OCR
+2025-05-02 13:15:04,878 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_y1f3hc3h_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_y1f3hc3h', '--psm', '6', 'txt']
+2025-05-02 13:15:05,138 [INFO] OCR Text Extracted:
+ROYAUME DU MAROC se ap pre) AS l.0)
+CARTE NATIONALE D'IDENTITE Ge ee iy  Aydl gJ} 43a)
+Agee
+ooo
+_. YOUSRA ;
+E = AMAMI
+2 a-CHARF MGHOGHA TANGER ASSILAH
+a Sale = o
+a wie gl et plall sult ~- 3S
+- = = ; _- <
+F ptigem ich ace &
+w  K608798 ay Valablejusquiau 09.05.2031  _-! sas
+
+2025-05-02 13:15:05,139 [INFO] Extracted CIN: K608798
+2025-05-02 13:15:05,140 [INFO] 127.0.0.1 - - [02/May/2025 13:15:05] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-02 13:16:24,463 [INFO] Incoming request to /verify-cin
+2025-05-02 13:16:24,470 [DEBUG] Reading image from uploaded file
+2025-05-02 13:16:24,476 [DEBUG] Running Tesseract OCR
+2025-05-02 13:16:24,488 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_ify6_5n7_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_ify6_5n7', '--psm', '6', 'txt']
+2025-05-02 13:16:24,745 [INFO] OCR Text Extracted:
+ROYAUME DU MAROC se ap pre) AS l.0)
+CARTE NATIONALE D'IDENTITE Ge ee iy  Aydl gJ} 43a)
+Agee
+ooo
+_. YOUSRA ;
+E = AMAMI
+2 a-CHARF MGHOGHA TANGER ASSILAH
+a Sale = o
+a wie gl et plall sult ~- 3S
+- = = ; _- <
+F ptigem ich ace &
+w  K608798 ay Valablejusquiau 09.05.2031  _-! sas
+
+2025-05-02 13:16:24,745 [INFO] Extracted CIN: K608798
+2025-05-02 13:16:24,746 [INFO] 127.0.0.1 - - [02/May/2025 13:16:24] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-05 23:34:30,625 [INFO] 127.0.0.1 - - [05/May/2025 23:34:30] "[33mPOST /auth/signup HTTP/1.1[0m" 404 -
+2025-05-05 23:35:33,672 [INFO] 127.0.0.1 - - [05/May/2025 23:35:33] "[33mPOST /auth/signup HTTP/1.1[0m" 404 -
+2025-05-05 23:36:35,622 [INFO] 127.0.0.1 - - [05/May/2025 23:36:35] "[33mPOST /auth/signin HTTP/1.1[0m" 404 -
+2025-05-10 16:46:26,456 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-10 16:46:26,457 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-10 16:46:26,460 [INFO]  * Restarting with stat
+2025-05-10 16:46:26,746 [WARNING]  * Debugger is active!
+2025-05-10 16:46:26,756 [INFO]  * Debugger PIN: 140-956-481
+2025-05-10 17:01:44,728 [INFO] Incoming request to /verify-cin
+2025-05-10 17:01:44,734 [DEBUG] Reading image from uploaded file
+2025-05-10 17:01:44,789 [DEBUG] Running Tesseract OCR
+2025-05-10 17:01:45,011 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_pt2glz9t_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_pt2glz9t', '--psm', '6', 'txt']
+2025-05-10 17:01:45,756 [INFO] OCR Text Extracted:
+ROYAUME DU MAROC se ap pre) AS l.0)
+CARTE NATIONALE D'IDENTITE Ge ee iy  Aydl gJ} 43a)
+Agee
+ooo
+_. YOUSRA ;
+E = AMAMI
+2 a-CHARF MGHOGHA TANGER ASSILAH
+a Sale = o
+a wie gl et plall sult ~- 3S
+- = = ; _- <
+F ptigem ich ace &
+w  K608798 ay Valablejusquiau 09.05.2031  _-! sas
+
+2025-05-10 17:01:45,756 [INFO] Extracted CIN: K608798
+2025-05-10 17:01:45,758 [INFO] 127.0.0.1 - - [10/May/2025 17:01:45] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-10 17:51:57,331 [INFO] Incoming request to /verify-cin
+2025-05-10 17:51:57,343 [DEBUG] Reading image from uploaded file
+2025-05-10 17:51:57,384 [DEBUG] Running Tesseract OCR
+2025-05-10 17:51:57,410 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_t70z3242_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_t70z3242', '--psm', '6', 'txt']
+2025-05-10 17:51:57,680 [INFO] OCR Text Extracted:
+;
+ROVAUME DU MAROC 6 Age Ac!) aal.))
+CARTE NATIONALE DIDENTITE wr teby yal) Agile 3) 4aU
+BENAISSA
+yl
+AMAMI
+Ne le 14.04.1960 fej
+| a TAFERSIT DRIOUCH
+2 ¢ \
+oe pila gt eb pall yes “_° z
++ get ae> ible ce)
+w K85438 ac Valablejusquiau 07.12.2030 ae (| dae
+
+2025-05-10 17:51:57,682 [INFO] Extracted CIN: None
+2025-05-10 17:51:57,684 [WARNING] CIN extraction failed from OCR text
+2025-05-10 17:51:57,687 [INFO] 127.0.0.1 - - [10/May/2025 17:51:57] "[31m[1mPOST /verify-cin HTTP/1.1[0m" 400 -
+2025-05-10 17:52:09,156 [INFO] Incoming request to /verify-cin
+2025-05-10 17:52:09,157 [DEBUG] Reading image from uploaded file
+2025-05-10 17:52:09,174 [DEBUG] Running Tesseract OCR
+2025-05-10 17:52:09,189 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_8_r6jtmf_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_8_r6jtmf', '--psm', '6', 'txt']
+2025-05-10 17:52:09,428 [INFO] OCR Text Extracted:
+- ROYAUMEDUMAROC =§ EG as pte BSW
+| GARTE NATIONALE D'IDENTITE (ae: ey el Ay ile gi 48Ulay!1
+ee, YOUSRA
+eo a CHARF MGHOGHA TANGER ASSILAH
+x K608798 i, Vatablejusqu’au 09.05.2031 ape 1) dade
+
+2025-05-10 17:52:09,428 [INFO] Extracted CIN: K608798
+2025-05-10 17:52:09,429 [INFO] 127.0.0.1 - - [10/May/2025 17:52:09] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-10 22:35:49,485 [INFO]  * Detected change in 'C:\\Users\\amami\\laravel-vue-fullstack\\pythonAPI\\app.py', reloading
+2025-05-10 22:35:49,861 [INFO]  * Restarting with stat
+2025-05-10 22:36:56,372 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-10 22:36:56,373 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-10 22:36:56,374 [INFO]  * Restarting with stat
+2025-05-10 22:36:56,678 [WARNING]  * Debugger is active!
+2025-05-10 22:36:56,690 [INFO]  * Debugger PIN: 140-956-481
+2025-05-10 22:36:59,045 [INFO] Incoming request to /verify-cin
+2025-05-10 22:36:59,047 [DEBUG] Reading image from uploaded file
+2025-05-10 22:36:59,084 [DEBUG] Running Tesseract OCR
+2025-05-10 22:36:59,127 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_6avkvftf_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_6avkvftf', '--psm', '6', 'txt']
+2025-05-10 22:36:59,448 [INFO] OCR Text Extracted:
+- ROYAUMEDUMAROC =§ EG as pte BSW
+| GARTE NATIONALE D'IDENTITE (ae: ey el Ay ile gi 48Ulay!1
+ee, YOUSRA
+eo a CHARF MGHOGHA TANGER ASSILAH
+x K608798 i, Vatablejusqu’au 09.05.2031 ape 1) dade
+
+2025-05-10 22:36:59,449 [INFO] Extracted CIN: K608798
+2025-05-10 22:36:59,449 [INFO] Extracted Name: None
+2025-05-10 22:36:59,449 [WARNING] CIN or Name extraction failed
+2025-05-10 22:36:59,451 [INFO] 127.0.0.1 - - [10/May/2025 22:36:59] "[31m[1mPOST /verify-cin HTTP/1.1[0m" 400 -
+2025-05-10 22:37:16,557 [INFO] Incoming request to /verify-cin
+2025-05-10 22:37:16,558 [DEBUG] Reading image from uploaded file
+2025-05-10 22:37:16,565 [DEBUG] Running Tesseract OCR
+2025-05-10 22:37:16,572 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_tw37ohrd_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_tw37ohrd', '--psm', '6', 'txt']
+2025-05-10 22:37:16,833 [INFO] OCR Text Extracted:
+ROYAUME DU MAROC se ap pre) AS l.0)
+CARTE NATIONALE D'IDENTITE Ge ee iy  Aydl gJ} 43a)
+Agee
+ooo
+_. YOUSRA ;
+E = AMAMI
+2 a-CHARF MGHOGHA TANGER ASSILAH
+a Sale = o
+a wie gl et plall sult ~- 3S
+- = = ; _- <
+F ptigem ich ace &
+w  K608798 ay Valablejusquiau 09.05.2031  _-! sas
+
+2025-05-10 22:37:16,834 [INFO] Extracted CIN: K608798
+2025-05-10 22:37:16,834 [INFO] Extracted Name: None
+2025-05-10 22:37:16,834 [WARNING] CIN or Name extraction failed
+2025-05-10 22:37:16,835 [INFO] 127.0.0.1 - - [10/May/2025 22:37:16] "[31m[1mPOST /verify-cin HTTP/1.1[0m" 400 -
+2025-05-10 22:37:21,890 [INFO]  * Detected change in 'C:\\Users\\amami\\laravel-vue-fullstack\\pythonAPI\\app.py', reloading
+2025-05-10 22:37:21,943 [INFO]  * Restarting with stat
+2025-05-10 22:37:22,428 [WARNING]  * Debugger is active!
+2025-05-10 22:37:22,432 [INFO]  * Debugger PIN: 140-956-481
+2025-05-10 22:37:22,711 [INFO] Incoming request to /verify-cin
+2025-05-10 22:37:22,713 [DEBUG] Reading image from uploaded file
+2025-05-10 22:37:22,723 [DEBUG] Running Tesseract OCR
+2025-05-10 22:37:22,741 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_pb7cfg5w_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_pb7cfg5w', '--psm', '6', 'txt']
+2025-05-10 22:37:23,000 [INFO] OCR Text Extracted:
+ROYAUME DU MAROC se ap pre) AS l.0)
+CARTE NATIONALE D'IDENTITE Ge ee iy  Aydl gJ} 43a)
+Agee
+ooo
+_. YOUSRA ;
+E = AMAMI
+2 a-CHARF MGHOGHA TANGER ASSILAH
+a Sale = o
+a wie gl et plall sult ~- 3S
+- = = ; _- <
+F ptigem ich ace &
+w  K608798 ay Valablejusquiau 09.05.2031  _-! sas
+
+2025-05-10 22:37:23,005 [INFO] Extracted CIN: K608798
+2025-05-10 22:37:23,006 [INFO] 127.0.0.1 - - [10/May/2025 22:37:23] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-10 23:05:55,000 [INFO]  * Detected change in 'C:\\Users\\amami\\laravel-vue-fullstack\\pythonAPI\\app.py', reloading
+2025-05-10 23:05:55,102 [INFO]  * Restarting with stat
+2025-05-10 23:05:56,235 [WARNING]  * Debugger is active!
+2025-05-10 23:05:56,239 [INFO]  * Debugger PIN: 140-956-481
+2025-05-10 23:06:03,836 [INFO] Incoming request to /verify-cin
+2025-05-10 23:06:03,838 [DEBUG] Reading image from uploaded file
+2025-05-10 23:06:03,849 [DEBUG] Running Tesseract OCR
+2025-05-10 23:06:03,871 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_dm1fjpol_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_dm1fjpol', '--psm', '6', 'txt']
+2025-05-10 23:06:04,154 [INFO] OCR Text Extracted:
+ROYAUME DU MAROC se ap pre) AS l.0)
+CARTE NATIONALE D'IDENTITE Ge ee iy  Aydl gJ} 43a)
+Agee
+ooo
+_. YOUSRA ;
+E = AMAMI
+2 a-CHARF MGHOGHA TANGER ASSILAH
+a Sale = o
+a wie gl et plall sult ~- 3S
+- = = ; _- <
+F ptigem ich ace &
+w  K608798 ay Valablejusquiau 09.05.2031  _-! sas
+
+2025-05-10 23:06:04,154 [INFO] Extracted CIN: K608798
+2025-05-10 23:06:04,156 [INFO] 127.0.0.1 - - [10/May/2025 23:06:04] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-10 23:07:51,994 [INFO]  * Detected change in 'C:\\Users\\amami\\laravel-vue-fullstack\\pythonAPI\\app.py', reloading
+2025-05-10 23:07:52,042 [INFO]  * Restarting with stat
+2025-05-10 23:26:52,401 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-10 23:26:52,402 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-10 23:26:52,403 [INFO]  * Restarting with stat
+2025-05-10 23:26:52,711 [WARNING]  * Debugger is active!
+2025-05-10 23:26:52,719 [INFO]  * Debugger PIN: 140-956-481
+2025-05-10 23:26:55,335 [INFO] Incoming request to /verify-cin
+2025-05-10 23:26:55,338 [DEBUG] Reading image from uploaded file
+2025-05-10 23:26:55,371 [DEBUG] Running Tesseract OCR
+2025-05-10 23:26:55,398 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_gqtfnuai_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_gqtfnuai', '--psm', '6', 'txt']
+2025-05-10 23:26:55,754 [INFO] OCR Text Extracted:
+ROYAUME DU MAROC se ap pre) AS l.0)
+CARTE NATIONALE D'IDENTITE Ge ee iy  Aydl gJ} 43a)
+Agee
+ooo
+_. YOUSRA ;
+E = AMAMI
+2 a-CHARF MGHOGHA TANGER ASSILAH
+a Sale = o
+a wie gl et plall sult ~- 3S
+- = = ; _- <
+F ptigem ich ace &
+w  K608798 ay Valablejusquiau 09.05.2031  _-! sas
+
+2025-05-10 23:26:55,755 [INFO] Extracted CIN: K608798
+2025-05-10 23:26:55,756 [INFO] 127.0.0.1 - - [10/May/2025 23:26:55] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-10 23:41:50,117 [INFO] Incoming request to /verify-cin
+2025-05-10 23:41:50,118 [DEBUG] Reading image from uploaded file
+2025-05-10 23:41:50,126 [DEBUG] Running Tesseract OCR
+2025-05-10 23:41:50,136 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_gsc2ue7__input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_gsc2ue7_', '--psm', '6', 'txt']
+2025-05-10 23:41:50,419 [INFO] OCR Text Extracted:
+ROYAUME DU MAROC se ap pre) AS l.0)
+CARTE NATIONALE D'IDENTITE Ge ee iy  Aydl gJ} 43a)
+Agee
+ooo
+_. YOUSRA ;
+E = AMAMI
+2 a-CHARF MGHOGHA TANGER ASSILAH
+a Sale = o
+a wie gl et plall sult ~- 3S
+- = = ; _- <
+F ptigem ich ace &
+w  K608798 ay Valablejusquiau 09.05.2031  _-! sas
+
+2025-05-10 23:41:50,419 [INFO] Extracted CIN: K608798
+2025-05-10 23:41:50,420 [INFO] 127.0.0.1 - - [10/May/2025 23:41:50] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-10 23:42:26,314 [INFO]  * Detected change in 'C:\\Users\\amami\\laravel-vue-fullstack\\pythonAPI\\app.py', reloading
+2025-05-10 23:42:26,375 [INFO]  * Restarting with stat
+2025-05-10 23:42:26,974 [WARNING]  * Debugger is active!
+2025-05-10 23:42:26,979 [INFO]  * Debugger PIN: 140-956-481
+2025-05-10 23:42:30,562 [INFO] Incoming request to /verify-cin
+2025-05-10 23:42:30,564 [DEBUG] Reading image from uploaded file
+2025-05-10 23:42:30,576 [DEBUG] Running Tesseract OCR
+2025-05-10 23:42:30,599 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_1rxmahoq_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_1rxmahoq', '--psm', '6', 'txt']
+2025-05-10 23:42:30,874 [INFO] OCR Text Extracted:
+ROYAUME DU MAROC se ap pre) AS l.0)
+CARTE NATIONALE D'IDENTITE Ge ee iy  Aydl gJ} 43a)
+Agee
+ooo
+_. YOUSRA ;
+E = AMAMI
+2 a-CHARF MGHOGHA TANGER ASSILAH
+a Sale = o
+a wie gl et plall sult ~- 3S
+- = = ; _- <
+F ptigem ich ace &
+w  K608798 ay Valablejusquiau 09.05.2031  _-! sas
+
+2025-05-10 23:42:30,875 [INFO] Extracted CIN: K608798
+2025-05-10 23:42:30,875 [INFO] Extracted Full Name: None
+2025-05-10 23:42:30,876 [INFO] 127.0.0.1 - - [10/May/2025 23:42:30] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-11 01:07:07,587 [INFO]  * Detected change in 'C:\\Users\\amami\\laravel-vue-fullstack\\pythonAPI\\app.py', reloading
+2025-05-11 01:07:07,843 [INFO]  * Restarting with stat
+2025-05-11 01:07:24,058 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-11 01:07:24,058 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-11 01:07:24,061 [INFO]  * Restarting with stat
+2025-05-11 01:07:24,384 [WARNING]  * Debugger is active!
+2025-05-11 01:07:24,392 [INFO]  * Debugger PIN: 140-956-481
+2025-05-11 01:07:40,387 [INFO]  * Detected change in 'C:\\Users\\amami\\laravel-vue-fullstack\\pythonAPI\\app.py', reloading
+2025-05-11 01:07:40,436 [INFO]  * Restarting with stat
+2025-05-11 01:07:41,041 [WARNING]  * Debugger is active!
+2025-05-11 01:07:41,045 [INFO]  * Debugger PIN: 140-956-481
+2025-05-11 01:07:44,207 [INFO] Incoming request to /verify-cin
+2025-05-11 01:07:44,209 [DEBUG] Reading image from uploaded file
+2025-05-11 01:07:44,241 [DEBUG] Running Tesseract OCR
+2025-05-11 01:07:44,276 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_w761ufyz_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_w761ufyz', '--psm', '6', 'txt']
+2025-05-11 01:07:44,621 [INFO] OCR Text Extracted:
+ROYAUME DU MAROC se ap pre) AS l.0)
+CARTE NATIONALE D'IDENTITE Ge ee iy  Aydl gJ} 43a)
+Agee
+ooo
+_. YOUSRA ;
+E = AMAMI
+2 a-CHARF MGHOGHA TANGER ASSILAH
+a Sale = o
+a wie gl et plall sult ~- 3S
+- = = ; _- <
+F ptigem ich ace &
+w  K608798 ay Valablejusquiau 09.05.2031  _-! sas
+
+2025-05-11 01:07:44,622 [INFO] Extracted CIN: K608798
+2025-05-11 01:07:44,622 [INFO] Extracted Name: None
+2025-05-11 01:07:44,623 [INFO] 127.0.0.1 - - [11/May/2025 01:07:44] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-11 01:08:43,269 [INFO] Incoming request to /verify-cin
+2025-05-11 01:08:43,270 [DEBUG] Reading image from uploaded file
+2025-05-11 01:08:43,278 [DEBUG] Running Tesseract OCR
+2025-05-11 01:08:43,289 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_mqvckebb_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_mqvckebb', '--psm', '6', 'txt']
+2025-05-11 01:08:43,548 [INFO] OCR Text Extracted:
+ROYAUME DU MAROC se ap pre) AS l.0)
+CARTE NATIONALE D'IDENTITE Ge ee iy  Aydl gJ} 43a)
+Agee
+ooo
+_. YOUSRA ;
+E = AMAMI
+2 a-CHARF MGHOGHA TANGER ASSILAH
+a Sale = o
+a wie gl et plall sult ~- 3S
+- = = ; _- <
+F ptigem ich ace &
+w  K608798 ay Valablejusquiau 09.05.2031  _-! sas
+
+2025-05-11 01:08:43,549 [INFO] Extracted CIN: K608798
+2025-05-11 01:08:43,549 [INFO] Extracted Name: None
+2025-05-11 01:08:43,550 [INFO] 127.0.0.1 - - [11/May/2025 01:08:43] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-11 01:09:13,511 [INFO]  * Detected change in 'C:\\Users\\amami\\laravel-vue-fullstack\\pythonAPI\\app.py', reloading
+2025-05-11 01:09:13,594 [INFO]  * Restarting with stat
+2025-05-11 01:09:14,209 [WARNING]  * Debugger is active!
+2025-05-11 01:09:14,213 [INFO]  * Debugger PIN: 140-956-481
+2025-05-11 01:09:16,969 [INFO] Incoming request to /verify-cin
+2025-05-11 01:09:16,970 [DEBUG] Reading image from uploaded file
+2025-05-11 01:09:16,981 [DEBUG] Running Tesseract OCR
+2025-05-11 01:09:16,999 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_1gdvcio6_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_1gdvcio6', '--psm', '6', 'txt']
+2025-05-11 01:09:17,266 [INFO] OCR Text Extracted:
+ROYAUME DU MAROC se ap pre) AS l.0)
+CARTE NATIONALE D'IDENTITE Ge ee iy  Aydl gJ} 43a)
+Agee
+ooo
+_. YOUSRA ;
+E = AMAMI
+2 a-CHARF MGHOGHA TANGER ASSILAH
+a Sale = o
+a wie gl et plall sult ~- 3S
+- = = ; _- <
+F ptigem ich ace &
+w  K608798 ay Valablejusquiau 09.05.2031  _-! sas
+
+2025-05-11 01:09:17,266 [INFO] Extracted CIN: K608798
+2025-05-11 01:09:17,267 [INFO] Extracted Name: {'first_name': 'ooo', 'last_name': 'Agee'}
+2025-05-11 01:09:17,268 [INFO] 127.0.0.1 - - [11/May/2025 01:09:17] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-11 01:10:29,719 [INFO]  * Detected change in 'C:\\Users\\amami\\laravel-vue-fullstack\\pythonAPI\\app.py', reloading
+2025-05-11 01:10:29,774 [INFO]  * Restarting with stat
+2025-05-11 01:10:30,221 [WARNING]  * Debugger is active!
+2025-05-11 01:10:30,225 [INFO]  * Debugger PIN: 140-956-481
+2025-05-11 01:10:32,036 [INFO] Incoming request to /verify-cin
+2025-05-11 01:10:32,037 [DEBUG] Reading image from uploaded file
+2025-05-11 01:10:32,060 [DEBUG] Running Tesseract OCR
+2025-05-11 01:10:32,085 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_r82kthg2_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_r82kthg2', '--psm', '4', 'txt']
+2025-05-11 01:10:32,278 [INFO] OCR Text Extracted:
+K608798 , , 09.05.2031 a2 Na.
+
+2025-05-11 01:10:32,279 [INFO] Extracted CIN: K608798
+2025-05-11 01:10:32,279 [INFO] Extracted Name: None
+2025-05-11 01:10:32,280 [INFO] 127.0.0.1 - - [11/May/2025 01:10:32] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-11 01:10:43,746 [INFO] Incoming request to /verify-cin
+2025-05-11 01:10:43,747 [DEBUG] Reading image from uploaded file
+2025-05-11 01:10:43,768 [DEBUG] Running Tesseract OCR
+2025-05-11 01:10:43,805 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_sisjwhoh_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_sisjwhoh', '--psm', '4', 'txt']
+2025-05-11 01:10:44,170 [INFO] OCR Text Extracted:
+Poe
+
+GHOGHA-TANGE
+
+Sts
+
+
+2025-05-11 01:10:44,171 [INFO] Extracted CIN: None
+2025-05-11 01:10:44,171 [INFO] Extracted Name: None
+2025-05-11 01:10:44,171 [WARNING] CIN extraction failed from OCR text
+2025-05-11 01:10:44,172 [INFO] 127.0.0.1 - - [11/May/2025 01:10:44] "[31m[1mPOST /verify-cin HTTP/1.1[0m" 400 -
+2025-05-11 01:10:46,657 [INFO] Incoming request to /verify-cin
+2025-05-11 01:10:46,660 [DEBUG] Reading image from uploaded file
+2025-05-11 01:10:46,681 [DEBUG] Running Tesseract OCR
+2025-05-11 01:10:46,722 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_jsfe30kn_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_jsfe30kn', '--psm', '4', 'txt']
+2025-05-11 01:10:47,076 [INFO] OCR Text Extracted:
+Poe
+
+GHOGHA-TANGE
+
+Sts
+
+
+2025-05-11 01:10:47,077 [INFO] Extracted CIN: None
+2025-05-11 01:10:47,077 [INFO] Extracted Name: None
+2025-05-11 01:10:47,077 [WARNING] CIN extraction failed from OCR text
+2025-05-11 01:10:47,078 [INFO] 127.0.0.1 - - [11/May/2025 01:10:47] "[31m[1mPOST /verify-cin HTTP/1.1[0m" 400 -
+2025-05-11 01:10:56,426 [INFO] Incoming request to /verify-cin
+2025-05-11 01:10:56,427 [DEBUG] Reading image from uploaded file
+2025-05-11 01:10:56,445 [DEBUG] Running Tesseract OCR
+2025-05-11 01:10:56,461 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_yiyih0oi_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_yiyih0oi', '--psm', '4', 'txt']
+2025-05-11 01:10:56,641 [INFO] OCR Text Extracted:
+K608798 , , 09.05.2031 a2 Na.
+
+2025-05-11 01:10:56,641 [INFO] Extracted CIN: K608798
+2025-05-11 01:10:56,642 [INFO] Extracted Name: None
+2025-05-11 01:10:56,643 [INFO] 127.0.0.1 - - [11/May/2025 01:10:56] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-11 01:11:10,015 [INFO] Incoming request to /verify-cin
+2025-05-11 01:11:10,017 [DEBUG] Reading image from uploaded file
+2025-05-11 01:11:10,029 [DEBUG] Running Tesseract OCR
+2025-05-11 01:11:10,047 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_rp8dtxmt_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_rp8dtxmt', '--psm', '4', 'txt']
+2025-05-11 01:11:10,253 [INFO] OCR Text Extracted:
+K608798 , , 09.05.2031 a2 Na.
+
+2025-05-11 01:11:10,254 [INFO] Extracted CIN: K608798
+2025-05-11 01:11:10,254 [INFO] Extracted Name: None
+2025-05-11 01:11:10,255 [INFO] 127.0.0.1 - - [11/May/2025 01:11:10] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-11 01:11:10,347 [INFO]  * Detected change in 'C:\\Users\\amami\\laravel-vue-fullstack\\pythonAPI\\app.py', reloading
+2025-05-11 01:11:10,407 [INFO]  * Restarting with stat
+2025-05-11 01:11:10,712 [WARNING]  * Debugger is active!
+2025-05-11 01:11:10,716 [INFO]  * Debugger PIN: 140-956-481
+2025-05-11 01:11:17,716 [INFO]  * Detected change in 'C:\\Users\\amami\\laravel-vue-fullstack\\pythonAPI\\app.py', reloading
+2025-05-11 01:11:17,775 [INFO]  * Restarting with stat
+2025-05-11 01:11:18,100 [WARNING]  * Debugger is active!
+2025-05-11 01:11:18,104 [INFO]  * Debugger PIN: 140-956-481
+2025-05-11 01:11:20,684 [INFO] Incoming request to /verify-cin
+2025-05-11 01:11:20,690 [DEBUG] Reading image from uploaded file
+2025-05-11 01:11:20,702 [DEBUG] Running Tesseract OCR
+2025-05-11 01:11:20,718 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_6gkp7e27_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_6gkp7e27', '--psm', '6', 'txt']
+2025-05-11 01:11:20,988 [INFO] OCR Text Extracted:
+ROYAUME DU MAROC se ap pre) AS l.0)
+CARTE NATIONALE D'IDENTITE Ge ee iy  Aydl gJ} 43a)
+Agee
+ooo
+_. YOUSRA ;
+E = AMAMI
+2 a-CHARF MGHOGHA TANGER ASSILAH
+a Sale = o
+a wie gl et plall sult ~- 3S
+- = = ; _- <
+F ptigem ich ace &
+w  K608798 ay Valablejusquiau 09.05.2031  _-! sas
+
+2025-05-11 01:11:20,988 [INFO] Extracted CIN: K608798
+2025-05-11 01:11:20,988 [INFO] Extracted Name: None
+2025-05-11 01:11:20,989 [INFO] 127.0.0.1 - - [11/May/2025 01:11:20] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-11 01:12:11,775 [INFO] Incoming request to /verify-cin
+2025-05-11 01:12:11,778 [DEBUG] Reading image from uploaded file
+2025-05-11 01:12:11,785 [DEBUG] Running Tesseract OCR
+2025-05-11 01:12:11,793 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_mtyt83oh_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_mtyt83oh', '--psm', '6', 'txt']
+2025-05-11 01:12:12,066 [INFO] OCR Text Extracted:
+ROYAUME DU MAROC se ap pre) AS l.0)
+CARTE NATIONALE D'IDENTITE Ge ee iy  Aydl gJ} 43a)
+Agee
+ooo
+_. YOUSRA ;
+E = AMAMI
+2 a-CHARF MGHOGHA TANGER ASSILAH
+a Sale = o
+a wie gl et plall sult ~- 3S
+- = = ; _- <
+F ptigem ich ace &
+w  K608798 ay Valablejusquiau 09.05.2031  _-! sas
+
+2025-05-11 01:12:12,067 [INFO] Extracted CIN: K608798
+2025-05-11 01:12:12,067 [INFO] Extracted Name: None
+2025-05-11 01:12:12,068 [INFO] 127.0.0.1 - - [11/May/2025 01:12:12] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-11 01:15:34,211 [INFO]  * Detected change in 'C:\\Users\\amami\\laravel-vue-fullstack\\pythonAPI\\app.py', reloading
+2025-05-11 01:15:34,272 [INFO]  * Restarting with stat
+2025-05-11 01:15:35,112 [WARNING]  * Debugger is active!
+2025-05-11 01:15:35,116 [INFO]  * Debugger PIN: 140-956-481
+2025-05-11 01:15:36,888 [INFO] Incoming request to /verify-cin
+2025-05-11 01:15:36,889 [DEBUG] Reading image from uploaded file
+2025-05-11 01:15:36,900 [DEBUG] Running Tesseract OCR
+2025-05-11 01:15:36,919 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_w7yvooo4_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_w7yvooo4', '--psm', '6', 'txt']
+2025-05-11 01:15:37,179 [INFO] OCR Text Extracted:
+ROYALIME DU MAROC 7. Sys pre) ASeal 3)
+
+CARTE NATIONALE DIDENTITE Fn a 2 Agi gt 43a)
+so
+
+; YOUSRA
+me = AMAMI
+Noe ia 25.04.2005 Sree
+a , 4 Dine! dein 2 ge bs
+ian a CHARF MGHOGHA TANGER ASSILAd
+
+wort yl) 0 plall ypralt ~~ 3
+Cr = 2
+. v4 = <
+ere tell sc o
+»  K608798 4, Valablo pus au 09 05.2031 sa wh
+
+2025-05-11 01:15:37,185 [INFO] Extracted CIN: K608798
+2025-05-11 01:15:37,185 [INFO] Extracted Name: None
+2025-05-11 01:15:37,186 [INFO] 127.0.0.1 - - [11/May/2025 01:15:37] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-11 01:16:37,064 [INFO]  * Detected change in 'C:\\Users\\amami\\laravel-vue-fullstack\\pythonAPI\\app.py', reloading
+2025-05-11 01:16:37,123 [INFO]  * Restarting with stat
+2025-05-11 01:16:37,506 [WARNING]  * Debugger is active!
+2025-05-11 01:16:37,511 [INFO]  * Debugger PIN: 140-956-481
+2025-05-11 01:16:52,192 [INFO] Incoming request to /verify-cin
+2025-05-11 01:16:52,193 [DEBUG] Reading image from uploaded file
+2025-05-11 01:16:52,203 [DEBUG] Running Tesseract OCR
+2025-05-11 01:16:52,220 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_b4xbim_v_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_b4xbim_v', '--psm', '6', 'txt']
+2025-05-11 01:16:52,474 [INFO] OCR Text Extracted:
+ROYALIME DU MAROC 7. Sys pre) ASeal 3)
+
+CARTE NATIONALE DIDENTITE Fn a 2 Agi gt 43a)
+so
+
+; YOUSRA
+me = AMAMI
+Noe ia 25.04.2005 Sree
+a , 4 Dine! dein 2 ge bs
+ian a CHARF MGHOGHA TANGER ASSILAd
+
+wort yl) 0 plall ypralt ~~ 3
+Cr = 2
+. v4 = <
+ere tell sc o
+»  K608798 4, Valablo pus au 09 05.2031 sa wh
+
+2025-05-11 01:16:52,475 [INFO] Extracted CIN: K608798
+2025-05-11 01:16:52,476 [INFO] Extracted Name: {'first_name': 'Yousra', 'last_name': 'So'}
+2025-05-11 01:16:52,477 [INFO] 127.0.0.1 - - [11/May/2025 01:16:52] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-11 01:19:40,980 [INFO]  * Detected change in 'C:\\Users\\amami\\laravel-vue-fullstack\\pythonAPI\\app.py', reloading
+2025-05-11 01:19:41,040 [INFO]  * Restarting with stat
+2025-05-11 01:19:41,472 [WARNING]  * Debugger is active!
+2025-05-11 01:19:41,476 [INFO]  * Debugger PIN: 140-956-481
+2025-05-11 01:19:52,577 [INFO] Incoming request to /verify-cin
+2025-05-11 01:19:52,579 [DEBUG] Reading image from uploaded file
+2025-05-11 01:19:52,593 [DEBUG] Running Tesseract OCR
+2025-05-11 01:19:52,610 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_sdhpmvsi_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_sdhpmvsi', '--psm', '6', 'txt']
+2025-05-11 01:19:52,884 [INFO] OCR Text Extracted:
+ROYALIME DU MAROC 7. Sys pre) ASeal 3)
+
+CARTE NATIONALE DIDENTITE Fn a 2 Agi gt 43a)
+so
+
+; YOUSRA
+me = AMAMI
+Noe ia 25.04.2005 Sree
+a , 4 Dine! dein 2 ge bs
+ian a CHARF MGHOGHA TANGER ASSILAd
+
+wort yl) 0 plall ypralt ~~ 3
+Cr = 2
+. v4 = <
+ere tell sc o
+»  K608798 4, Valablo pus au 09 05.2031 sa wh
+
+2025-05-11 01:19:52,885 [INFO] Extracted CIN: K608798
+2025-05-11 01:19:52,885 [INFO] Extracted Name: {'first_name': 'Carte Nationale Didentite Fn A  Agi Gt A', 'last_name': 'Royalime Du Maroc  Sys Pre Aseal'}
+2025-05-11 01:19:52,886 [INFO] 127.0.0.1 - - [11/May/2025 01:19:52] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-11 01:19:57,648 [INFO] Incoming request to /verify-cin
+2025-05-11 01:19:57,649 [DEBUG] Reading image from uploaded file
+2025-05-11 01:19:57,661 [DEBUG] Running Tesseract OCR
+2025-05-11 01:19:57,670 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_ttr18q7v_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_ttr18q7v', '--psm', '6', 'txt']
+2025-05-11 01:19:57,944 [INFO] OCR Text Extracted:
+ROYALIME DU MAROC 7. Sys pre) ASeal 3)
+
+CARTE NATIONALE DIDENTITE Fn a 2 Agi gt 43a)
+so
+
+; YOUSRA
+me = AMAMI
+Noe ia 25.04.2005 Sree
+a , 4 Dine! dein 2 ge bs
+ian a CHARF MGHOGHA TANGER ASSILAd
+
+wort yl) 0 plall ypralt ~~ 3
+Cr = 2
+. v4 = <
+ere tell sc o
+»  K608798 4, Valablo pus au 09 05.2031 sa wh
+
+2025-05-11 01:19:57,945 [INFO] Extracted CIN: K608798
+2025-05-11 01:19:57,945 [INFO] Extracted Name: {'first_name': 'Carte Nationale Didentite Fn A  Agi Gt A', 'last_name': 'Royalime Du Maroc  Sys Pre Aseal'}
+2025-05-11 01:19:57,946 [INFO] 127.0.0.1 - - [11/May/2025 01:19:57] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-11 01:20:10,613 [INFO]  * Detected change in 'C:\\Users\\amami\\laravel-vue-fullstack\\pythonAPI\\app.py', reloading
+2025-05-11 01:20:10,667 [INFO]  * Restarting with stat
+2025-05-11 01:20:10,998 [WARNING]  * Debugger is active!
+2025-05-11 01:20:11,002 [INFO]  * Debugger PIN: 140-956-481
+2025-05-11 01:20:18,809 [INFO] Incoming request to /verify-cin
+2025-05-11 01:20:18,811 [DEBUG] Reading image from uploaded file
+2025-05-11 01:20:18,822 [DEBUG] Running Tesseract OCR
+2025-05-11 01:20:18,849 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_ua7anb0q_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_ua7anb0q', '--psm', '6', 'txt']
+2025-05-11 01:20:19,119 [INFO] OCR Text Extracted:
+ROYALIME DU MAROC 7. Sys pre) ASeal 3)
+
+CARTE NATIONALE DIDENTITE Fn a 2 Agi gt 43a)
+so
+
+; YOUSRA
+me = AMAMI
+Noe ia 25.04.2005 Sree
+a , 4 Dine! dein 2 ge bs
+ian a CHARF MGHOGHA TANGER ASSILAd
+
+wort yl) 0 plall ypralt ~~ 3
+Cr = 2
+. v4 = <
+ere tell sc o
+»  K608798 4, Valablo pus au 09 05.2031 sa wh
+
+2025-05-11 01:20:19,120 [INFO] Extracted CIN: K608798
+2025-05-11 01:20:19,120 [INFO] Extracted Name: {'first_name': 'Yousra', 'last_name': 'So'}
+2025-05-11 01:20:19,122 [INFO] 127.0.0.1 - - [11/May/2025 01:20:19] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-11 01:21:00,946 [INFO]  * Detected change in 'C:\\Users\\amami\\laravel-vue-fullstack\\pythonAPI\\app.py', reloading
+2025-05-11 01:21:00,995 [INFO]  * Restarting with stat
+2025-05-11 01:21:01,383 [WARNING]  * Debugger is active!
+2025-05-11 01:21:01,387 [INFO]  * Debugger PIN: 140-956-481
+2025-05-11 01:21:05,753 [INFO]  * Detected change in 'C:\\Users\\amami\\laravel-vue-fullstack\\pythonAPI\\app.py', reloading
+2025-05-11 01:21:05,804 [INFO]  * Restarting with stat
+2025-05-11 01:21:06,206 [WARNING]  * Debugger is active!
+2025-05-11 01:21:06,210 [INFO]  * Debugger PIN: 140-956-481
+2025-05-11 01:21:13,199 [INFO] Incoming request to /verify-cin
+2025-05-11 01:21:13,201 [DEBUG] Reading image from uploaded file
+2025-05-11 01:21:13,212 [DEBUG] Running Tesseract OCR
+2025-05-11 01:21:13,230 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_849zdoel_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_849zdoel', '--psm', '6', 'txt']
+2025-05-11 01:21:13,518 [INFO] OCR Text Extracted:
+ROYALIME DU MAROC 7. Sys pre) ASeal 3)
+
+CARTE NATIONALE DIDENTITE Fn a 2 Agi gt 43a)
+so
+
+; YOUSRA
+me = AMAMI
+Noe ia 25.04.2005 Sree
+a , 4 Dine! dein 2 ge bs
+ian a CHARF MGHOGHA TANGER ASSILAd
+
+wort yl) 0 plall ypralt ~~ 3
+Cr = 2
+. v4 = <
+ere tell sc o
+»  K608798 4, Valablo pus au 09 05.2031 sa wh
+
+2025-05-11 01:21:13,519 [INFO] Extracted CIN: K608798
+2025-05-11 01:21:13,519 [INFO] Extracted Name: {'first_name': 'So', 'last_name': 'Yousra'}
+2025-05-11 01:21:13,520 [INFO] 127.0.0.1 - - [11/May/2025 01:21:13] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-11 01:21:25,251 [INFO]  * Detected change in 'C:\\Users\\amami\\laravel-vue-fullstack\\pythonAPI\\app.py', reloading
+2025-05-11 01:21:25,307 [INFO]  * Restarting with stat
+2025-05-11 01:21:25,627 [WARNING]  * Debugger is active!
+2025-05-11 01:21:25,631 [INFO]  * Debugger PIN: 140-956-481
+2025-05-11 01:21:27,991 [INFO] Incoming request to /verify-cin
+2025-05-11 01:21:27,992 [DEBUG] Reading image from uploaded file
+2025-05-11 01:21:28,003 [DEBUG] Running Tesseract OCR
+2025-05-11 01:21:28,019 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_e3lp5f0x_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_e3lp5f0x', '--psm', '6', 'txt']
+2025-05-11 01:21:28,288 [INFO] OCR Text Extracted:
+ROYALIME DU MAROC 7. Sys pre) ASeal 3)
+
+CARTE NATIONALE DIDENTITE Fn a 2 Agi gt 43a)
+so
+
+; YOUSRA
+me = AMAMI
+Noe ia 25.04.2005 Sree
+a , 4 Dine! dein 2 ge bs
+ian a CHARF MGHOGHA TANGER ASSILAd
+
+wort yl) 0 plall ypralt ~~ 3
+Cr = 2
+. v4 = <
+ere tell sc o
+»  K608798 4, Valablo pus au 09 05.2031 sa wh
+
+2025-05-11 01:21:28,288 [INFO] Extracted CIN: K608798
+2025-05-11 01:21:28,288 [INFO] Extracted Name: {'first_name': 'Yousra', 'last_name': 'So'}
+2025-05-11 01:21:28,289 [INFO] 127.0.0.1 - - [11/May/2025 01:21:28] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-11 01:22:28,933 [INFO]  * Detected change in 'C:\\Users\\amami\\laravel-vue-fullstack\\pythonAPI\\app.py', reloading
+2025-05-11 01:22:29,019 [INFO]  * Restarting with stat
+2025-05-11 01:22:31,340 [WARNING]  * Debugger is active!
+2025-05-11 01:22:31,344 [INFO]  * Debugger PIN: 140-956-481
+2025-05-11 01:22:31,640 [INFO] Incoming request to /verify-cin
+2025-05-11 01:22:31,642 [DEBUG] Reading image from uploaded file
+2025-05-11 01:22:31,654 [DEBUG] Running Tesseract OCR
+2025-05-11 01:22:31,672 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_9whhhs0t_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_9whhhs0t', '--psm', '6', 'txt']
+2025-05-11 01:22:31,945 [INFO] OCR Text Extracted:
+ROYALIME DU MAROC 7. Sys pre) ASeal 3)
+
+CARTE NATIONALE DIDENTITE Fn a 2 Agi gt 43a)
+so
+
+; YOUSRA
+me = AMAMI
+Noe ia 25.04.2005 Sree
+a , 4 Dine! dein 2 ge bs
+ian a CHARF MGHOGHA TANGER ASSILAd
+
+wort yl) 0 plall ypralt ~~ 3
+Cr = 2
+. v4 = <
+ere tell sc o
+»  K608798 4, Valablo pus au 09 05.2031 sa wh
+
+2025-05-11 01:22:31,946 [INFO] Extracted CIN: K608798
+2025-05-11 01:22:31,946 [INFO] Extracted Name: None
+2025-05-11 01:22:31,947 [INFO] 127.0.0.1 - - [11/May/2025 01:22:31] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-11 01:22:38,268 [INFO]  * Detected change in 'C:\\Users\\amami\\laravel-vue-fullstack\\pythonAPI\\app.py', reloading
+2025-05-11 01:22:38,310 [INFO]  * Restarting with stat
+2025-05-11 01:22:38,609 [WARNING]  * Debugger is active!
+2025-05-11 01:22:38,612 [INFO]  * Debugger PIN: 140-956-481
+2025-05-11 01:22:41,267 [INFO] Incoming request to /verify-cin
+2025-05-11 01:22:41,268 [DEBUG] Reading image from uploaded file
+2025-05-11 01:22:41,279 [DEBUG] Running Tesseract OCR
+2025-05-11 01:22:41,294 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_4k8puykb_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_4k8puykb', '--psm', '6', 'txt']
+2025-05-11 01:22:41,565 [INFO] OCR Text Extracted:
+ROYALIME DU MAROC 7. Sys pre) ASeal 3)
+
+CARTE NATIONALE DIDENTITE Fn a 2 Agi gt 43a)
+so
+
+; YOUSRA
+me = AMAMI
+Noe ia 25.04.2005 Sree
+a , 4 Dine! dein 2 ge bs
+ian a CHARF MGHOGHA TANGER ASSILAd
+
+wort yl) 0 plall ypralt ~~ 3
+Cr = 2
+. v4 = <
+ere tell sc o
+»  K608798 4, Valablo pus au 09 05.2031 sa wh
+
+2025-05-11 01:22:41,566 [INFO] Extracted CIN: K608798
+2025-05-11 01:22:41,566 [INFO] Extracted Name: {'first_name': 'Yousra', 'last_name': 'So'}
+2025-05-11 01:22:41,567 [INFO] 127.0.0.1 - - [11/May/2025 01:22:41] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-11 01:23:38,998 [INFO]  * Detected change in 'C:\\Users\\amami\\laravel-vue-fullstack\\pythonAPI\\app.py', reloading
+2025-05-11 01:23:39,064 [INFO]  * Restarting with stat
+2025-05-11 01:23:41,346 [WARNING]  * Debugger is active!
+2025-05-11 01:23:41,350 [INFO]  * Debugger PIN: 140-956-481
+2025-05-11 01:23:41,829 [INFO] Incoming request to /verify-cin
+2025-05-11 01:23:41,831 [DEBUG] Reading image from uploaded file
+2025-05-11 01:23:41,842 [DEBUG] Running Tesseract OCR
+2025-05-11 01:23:41,859 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_x0nqc84w_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_x0nqc84w', '--psm', '6', 'txt']
+2025-05-11 01:23:42,126 [INFO] OCR Text Extracted:
+ROYALIME DU MAROC 7. Sys pre) ASeal 3)
+
+CARTE NATIONALE DIDENTITE Fn a 2 Agi gt 43a)
+so
+
+; YOUSRA
+me = AMAMI
+Noe ia 25.04.2005 Sree
+a , 4 Dine! dein 2 ge bs
+ian a CHARF MGHOGHA TANGER ASSILAd
+
+wort yl) 0 plall ypralt ~~ 3
+Cr = 2
+. v4 = <
+ere tell sc o
+»  K608798 4, Valablo pus au 09 05.2031 sa wh
+
+2025-05-11 01:23:42,126 [INFO] Extracted CIN: K608798
+2025-05-11 01:23:42,128 [INFO] Extracted Name: {'first_name': 'Yousra', 'last_name': 'Amami'}
+2025-05-11 01:23:42,129 [INFO] 127.0.0.1 - - [11/May/2025 01:23:42] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-11 01:26:03,056 [INFO] Incoming request to /verify-cin
+2025-05-11 01:26:03,058 [DEBUG] Reading image from uploaded file
+2025-05-11 01:26:03,073 [DEBUG] Running Tesseract OCR
+2025-05-11 01:26:03,077 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_rnqxaiai_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_rnqxaiai', '--psm', '6', 'txt']
+2025-05-11 01:26:03,277 [INFO] OCR Text Extracted:
+‘ >
+wet
+Haw
+sane
+woe
+a . ce
+= 7 Pass i es
+fo sna 3
+S ureser sete a ETT a
+ghee
+
+2025-05-11 01:26:03,279 [INFO] Extracted CIN: None
+2025-05-11 01:26:03,279 [INFO] Extracted Name: None
+2025-05-11 01:26:03,279 [WARNING] CIN extraction failed from OCR text
+2025-05-11 01:26:03,280 [INFO] 127.0.0.1 - - [11/May/2025 01:26:03] "[31m[1mPOST /verify-cin HTTP/1.1[0m" 400 -
+2025-05-11 01:26:26,222 [INFO] Incoming request to /verify-cin
+2025-05-11 01:26:26,223 [DEBUG] Reading image from uploaded file
+2025-05-11 01:26:26,230 [DEBUG] Running Tesseract OCR
+2025-05-11 01:26:26,239 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_33cb9pox_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_33cb9pox', '--psm', '6', 'txt']
+2025-05-11 01:26:26,500 [INFO] OCR Text Extracted:
+ROYALIME DU MAROC 7. Sys pre) ASeal 3)
+
+CARTE NATIONALE DIDENTITE Fn a 2 Agi gt 43a)
+so
+
+; YOUSRA
+me = AMAMI
+Noe ia 25.04.2005 Sree
+a , 4 Dine! dein 2 ge bs
+ian a CHARF MGHOGHA TANGER ASSILAd
+
+wort yl) 0 plall ypralt ~~ 3
+Cr = 2
+. v4 = <
+ere tell sc o
+»  K608798 4, Valablo pus au 09 05.2031 sa wh
+
+2025-05-11 01:26:26,501 [INFO] Extracted CIN: K608798
+2025-05-11 01:26:26,501 [INFO] Extracted Name: {'first_name': 'Yousra', 'last_name': 'Amami'}
+2025-05-11 01:26:26,502 [INFO] 127.0.0.1 - - [11/May/2025 01:26:26] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-11 01:30:07,648 [INFO] Incoming request to /verify-cin
+2025-05-11 01:30:07,649 [DEBUG] Reading image from uploaded file
+2025-05-11 01:30:07,661 [DEBUG] Running Tesseract OCR
+2025-05-11 01:30:07,668 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_l9lra3pb_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_l9lra3pb', '--psm', '6', 'txt']
+2025-05-11 01:30:07,938 [INFO] OCR Text Extracted:
+ROYALIME DU MAROC 7. Sys pre) ASeal 3)
+
+CARTE NATIONALE DIDENTITE Fn a 2 Agi gt 43a)
+so
+
+; YOUSRA
+me = AMAMI
+Noe ia 25.04.2005 Sree
+a , 4 Dine! dein 2 ge bs
+ian a CHARF MGHOGHA TANGER ASSILAd
+
+wort yl) 0 plall ypralt ~~ 3
+Cr = 2
+. v4 = <
+ere tell sc o
+»  K608798 4, Valablo pus au 09 05.2031 sa wh
+
+2025-05-11 01:30:07,939 [INFO] Extracted CIN: K608798
+2025-05-11 01:30:07,939 [INFO] Extracted Name: {'first_name': 'Yousra', 'last_name': 'Amami'}
+2025-05-11 01:30:07,940 [INFO] 127.0.0.1 - - [11/May/2025 01:30:07] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-11 01:32:05,544 [INFO] 127.0.0.1 - - [11/May/2025 01:32:05] "[33mPOST /api/verify-cin HTTP/1.1[0m" 404 -
+2025-05-11 01:32:21,120 [INFO] Incoming request to /verify-cin
+2025-05-11 01:32:21,121 [DEBUG] Reading image from uploaded file
+2025-05-11 01:32:21,128 [DEBUG] Running Tesseract OCR
+2025-05-11 01:32:21,136 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_cerq2x29_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_cerq2x29', '--psm', '6', 'txt']
+2025-05-11 01:32:21,417 [INFO] OCR Text Extracted:
+ROYALIME DU MAROC 7. Sys pre) ASeal 3)
+
+CARTE NATIONALE DIDENTITE Fn a 2 Agi gt 43a)
+so
+
+; YOUSRA
+me = AMAMI
+Noe ia 25.04.2005 Sree
+a , 4 Dine! dein 2 ge bs
+ian a CHARF MGHOGHA TANGER ASSILAd
+
+wort yl) 0 plall ypralt ~~ 3
+Cr = 2
+. v4 = <
+ere tell sc o
+»  K608798 4, Valablo pus au 09 05.2031 sa wh
+
+2025-05-11 01:32:21,417 [INFO] Extracted CIN: K608798
+2025-05-11 01:32:21,418 [INFO] Extracted Name: {'first_name': 'Yousra', 'last_name': 'Amami'}
+2025-05-11 01:32:21,419 [INFO] 127.0.0.1 - - [11/May/2025 01:32:21] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-11 01:32:57,698 [INFO] Incoming request to /verify-cin
+2025-05-11 01:32:57,699 [DEBUG] Reading image from uploaded file
+2025-05-11 01:32:57,706 [DEBUG] Running Tesseract OCR
+2025-05-11 01:32:57,712 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_2ou0_35u_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_2ou0_35u', '--psm', '6', 'txt']
+2025-05-11 01:32:57,975 [INFO] OCR Text Extracted:
+ROYALIME DU MAROC 7. Sys pre) ASeal 3)
+
+CARTE NATIONALE DIDENTITE Fn a 2 Agi gt 43a)
+so
+
+; YOUSRA
+me = AMAMI
+Noe ia 25.04.2005 Sree
+a , 4 Dine! dein 2 ge bs
+ian a CHARF MGHOGHA TANGER ASSILAd
+
+wort yl) 0 plall ypralt ~~ 3
+Cr = 2
+. v4 = <
+ere tell sc o
+»  K608798 4, Valablo pus au 09 05.2031 sa wh
+
+2025-05-11 01:32:57,976 [INFO] Extracted CIN: K608798
+2025-05-11 01:32:57,976 [INFO] Extracted Name: {'first_name': 'Yousra', 'last_name': 'Amami'}
+2025-05-11 01:32:57,977 [INFO] 127.0.0.1 - - [11/May/2025 01:32:57] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-11 01:33:10,211 [INFO] Incoming request to /verify-cin
+2025-05-11 01:33:10,212 [DEBUG] Reading image from uploaded file
+2025-05-11 01:33:10,219 [DEBUG] Running Tesseract OCR
+2025-05-11 01:33:10,228 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_bdws38t7_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_bdws38t7', '--psm', '6', 'txt']
+2025-05-11 01:33:10,491 [INFO] OCR Text Extracted:
+ROYALIME DU MAROC 7. Sys pre) ASeal 3)
+
+CARTE NATIONALE DIDENTITE Fn a 2 Agi gt 43a)
+so
+
+; YOUSRA
+me = AMAMI
+Noe ia 25.04.2005 Sree
+a , 4 Dine! dein 2 ge bs
+ian a CHARF MGHOGHA TANGER ASSILAd
+
+wort yl) 0 plall ypralt ~~ 3
+Cr = 2
+. v4 = <
+ere tell sc o
+»  K608798 4, Valablo pus au 09 05.2031 sa wh
+
+2025-05-11 01:33:10,492 [INFO] Extracted CIN: K608798
+2025-05-11 01:33:10,492 [INFO] Extracted Name: {'first_name': 'Yousra', 'last_name': 'Amami'}
+2025-05-11 01:33:10,493 [INFO] 127.0.0.1 - - [11/May/2025 01:33:10] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-11 01:34:32,212 [INFO] Incoming request to /verify-cin
+2025-05-11 01:34:32,214 [DEBUG] Reading image from uploaded file
+2025-05-11 01:34:32,221 [DEBUG] Running Tesseract OCR
+2025-05-11 01:34:32,229 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_athvpl59_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_athvpl59', '--psm', '6', 'txt']
+2025-05-11 01:34:32,522 [INFO] OCR Text Extracted:
+ROYALIME DU MAROC 7. Sys pre) ASeal 3)
+
+CARTE NATIONALE DIDENTITE Fn a 2 Agi gt 43a)
+so
+
+; YOUSRA
+me = AMAMI
+Noe ia 25.04.2005 Sree
+a , 4 Dine! dein 2 ge bs
+ian a CHARF MGHOGHA TANGER ASSILAd
+
+wort yl) 0 plall ypralt ~~ 3
+Cr = 2
+. v4 = <
+ere tell sc o
+»  K608798 4, Valablo pus au 09 05.2031 sa wh
+
+2025-05-11 01:34:32,522 [INFO] Extracted CIN: K608798
+2025-05-11 01:34:32,523 [INFO] Extracted Name: {'first_name': 'Yousra', 'last_name': 'Amami'}
+2025-05-11 01:34:32,524 [INFO] 127.0.0.1 - - [11/May/2025 01:34:32] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-11 01:39:42,294 [INFO] Incoming request to /verify-cin
+2025-05-11 01:39:42,296 [DEBUG] Reading image from uploaded file
+2025-05-11 01:39:42,315 [DEBUG] Running Tesseract OCR
+2025-05-11 01:39:42,328 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_3foad2rc_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_3foad2rc', '--psm', '6', 'txt']
+2025-05-11 01:39:42,646 [INFO] OCR Text Extracted:
+~'ROYAUME DU MAROC Bas Cool 2S lov Il
+CARTE NATIONALE D'IDENTITE. - _ 2 44 pei duilagll agli
+AICHA oS p7 -
+AMEZIAN ¢ gSek Ai ( iid
+
+S Néele 7 PMAZASTES BRO NUE solo Ee
+
+| a TAFERSIT ORIOUCH =" SNES Se ees Lik
+Valable jusqu'au =. 16.12:2028 - = le Ji alo hl _
+
+log! GoW plall saaiE K220841 FF
+
+2025-05-11 01:39:42,646 [INFO] Extracted CIN: K220841
+2025-05-11 01:39:42,647 [INFO] Extracted Name: None
+2025-05-11 01:39:42,648 [INFO] 127.0.0.1 - - [11/May/2025 01:39:42] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-11 01:41:58,679 [INFO]  * Detected change in 'C:\\Users\\amami\\laravel-vue-fullstack\\pythonAPI\\app.py', reloading
+2025-05-11 01:41:58,769 [INFO]  * Restarting with stat
+2025-05-11 01:42:40,021 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-11 01:42:40,021 [INFO] [33mPress CTRL+C to quit[0m
+2025-05-11 01:42:40,023 [INFO]  * Restarting with stat
+2025-05-11 01:42:40,328 [WARNING]  * Debugger is active!
+2025-05-11 01:42:40,332 [INFO]  * Debugger PIN: 140-956-481
+2025-05-11 01:42:48,362 [INFO] Incoming request to /verify-cin
+2025-05-11 01:42:48,364 [DEBUG] Reading image from uploaded file
+2025-05-11 01:42:48,375 [DEBUG] Running Tesseract OCR
+2025-05-11 01:42:48,401 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess__hm5tywz_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess__hm5tywz', '--psm', '6', 'txt']
+2025-05-11 01:42:48,678 [INFO] OCR Text Extracted:
+ROYALIME DU MAROC 7. Sys pre) ASeal 3)
+
+CARTE NATIONALE DIDENTITE Fn a 2 Agi gt 43a)
+so
+
+; YOUSRA
+me = AMAMI
+Noe ia 25.04.2005 Sree
+a , 4 Dine! dein 2 ge bs
+ian a CHARF MGHOGHA TANGER ASSILAd
+
+wort yl) 0 plall ypralt ~~ 3
+Cr = 2
+. v4 = <
+ere tell sc o
+»  K608798 4, Valablo pus au 09 05.2031 sa wh
+
+2025-05-11 01:42:48,679 [INFO] Extracted CIN: K608798
+2025-05-11 01:42:48,679 [INFO] Extracted Name: {'first_name': 'Yousra', 'last_name': 'So'}
+2025-05-11 01:42:48,682 [INFO] 127.0.0.1 - - [11/May/2025 01:42:48] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-11 01:43:03,135 [INFO]  * Detected change in 'C:\\Users\\amami\\laravel-vue-fullstack\\pythonAPI\\app.py', reloading
+2025-05-11 01:43:03,186 [INFO]  * Restarting with stat
+2025-05-11 01:43:03,664 [WARNING]  * Debugger is active!
+2025-05-11 01:43:03,669 [INFO]  * Debugger PIN: 140-956-481
+2025-05-11 01:43:04,731 [INFO] Incoming request to /verify-cin
+2025-05-11 01:43:04,732 [DEBUG] Reading image from uploaded file
+2025-05-11 01:43:04,744 [DEBUG] Running Tesseract OCR
+2025-05-11 01:43:04,761 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_0dmassi6_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_0dmassi6', '--psm', '6', 'txt']
+2025-05-11 01:43:05,022 [INFO] OCR Text Extracted:
+ROYALIME DU MAROC 7. Sys pre) ASeal 3)
+
+CARTE NATIONALE DIDENTITE Fn a 2 Agi gt 43a)
+so
+
+; YOUSRA
+me = AMAMI
+Noe ia 25.04.2005 Sree
+a , 4 Dine! dein 2 ge bs
+ian a CHARF MGHOGHA TANGER ASSILAd
+
+wort yl) 0 plall ypralt ~~ 3
+Cr = 2
+. v4 = <
+ere tell sc o
+»  K608798 4, Valablo pus au 09 05.2031 sa wh
+
+2025-05-11 01:43:05,023 [INFO] Extracted CIN: K608798
+2025-05-11 01:43:05,023 [INFO] Extracted Name: {'first_name': 'Yousra', 'last_name': 'Amami'}
+2025-05-11 01:43:05,024 [INFO] 127.0.0.1 - - [11/May/2025 01:43:05] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-11 01:43:46,011 [INFO]  * Detected change in 'C:\\Users\\amami\\laravel-vue-fullstack\\pythonAPI\\app.py', reloading
+2025-05-11 01:43:46,064 [INFO]  * Restarting with stat
+2025-05-11 01:43:46,484 [WARNING]  * Debugger is active!
+2025-05-11 01:43:46,489 [INFO]  * Debugger PIN: 140-956-481
+2025-05-11 01:43:57,533 [INFO] Incoming request to /verify-cin
+2025-05-11 01:43:57,535 [DEBUG] Reading image from uploaded file
+2025-05-11 01:43:57,850 [DEBUG] Running Tesseract OCR
+2025-05-11 01:43:57,875 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_wudt2jvm_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_wudt2jvm', '--psm', '6', 'txt']
+2025-05-11 01:43:58,181 [INFO] OCR Text Extracted:
+ROYAUME DU MAROC Ry Coll 2S igo il
+CARTE NATIONALE D'DENTITE - 4 poi dailag!| asl!
+, = se “5 ae A
+AICHA . aS aitx wy i |
+= 4 eps fol fo
+AMEZIAN - ¢ GEA \ :
+. Neée le 24AZA97ES BK N- QIK oalo 50 aa - -
+a TAFERSIT DRIOUCH = “NSS ee Dy S
+Valable jusquiay  =.16.12:2028 Mlb intl 2
+= fo
+
+2025-05-11 01:43:58,182 [INFO] Extracted CIN: None
+2025-05-11 01:43:58,182 [INFO] Extracted Name: None
+2025-05-11 01:43:58,183 [WARNING] CIN extraction failed from OCR text
+2025-05-11 01:43:58,184 [INFO] 127.0.0.1 - - [11/May/2025 01:43:58] "[31m[1mPOST /verify-cin HTTP/1.1[0m" 400 -
+2025-05-11 01:44:06,897 [INFO] Incoming request to /verify-cin
+2025-05-11 01:44:06,898 [DEBUG] Reading image from uploaded file
+2025-05-11 01:44:07,162 [DEBUG] Running Tesseract OCR
+2025-05-11 01:44:07,170 [DEBUG] ['C:\\Program Files\\Tesseract-OCR\\tesseract.exe', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_i0kyc34c_input.PNG', 'C:\\Users\\amami\\AppData\\Local\\Temp\\tess_i0kyc34c', '--psm', '6', 'txt']
+2025-05-11 01:44:07,432 [INFO] OCR Text Extracted:
+ROYAUME DU MAROC é 4 ap pro) AS 1.)
+CARTE NATIONALE D'IDENTITE oe way Ad ys! 2 BLe
+YOUSRA ~
+
+_
+
+— AMAMI
+Née le 25.04.2005 =m
+= = Rano! doce 26 geo 3 —
+—_ = a CHARF MGHOGHA TANGER ASSILAH
+
+-_ J
+
+wtb gl 0M ball ypull z= 5
+
+3
+
+~ <
+
+ete abl sc S)
+
+Ly K608788 as Valable jus a. C9 05 2031 .- | a
+
+2025-05-11 01:44:07,433 [INFO] Extracted CIN: K608788
+2025-05-11 01:44:07,434 [INFO] Extracted Name: None
+2025-05-11 01:44:07,435 [INFO] 127.0.0.1 - - [11/May/2025 01:44:07] "POST /verify-cin HTTP/1.1" 200 -
+2025-05-11 01:44:14,311 [INFO]  * Detected change in 'C:\\Users\\amami\\laravel-vue-fullstack\\pythonAPI\\app.py', reloading
+2025-05-11 01:44:14,391 [INFO]  * Restarting with stat
+2025-05-11 01:44:14,755 [WARNING]  * Debugger is active!
+2025-05-11 01:44:14,759 [INFO]  * Debugger PIN: 140-956-481

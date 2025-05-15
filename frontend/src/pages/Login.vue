@@ -11,19 +11,26 @@ export default {
   },
   methods: {
     async handleLogin() {
-        try{
-            const response = await axios.post('http://127.0.0.1:8000/api/login', {
-                email: this.email,
-                password: this.password
-            }, {
-                withCredentials: true
-               });
-               console.log('Login successful', response.data);
-               this.$router.push('/dashboard');
-        } catch (err) {
-            this.error = err.response?.data?.message || 'Login failed';
-        }   
-    }
+  try {
+    const response = await axios.post('http://127.0.0.1:8000/api/login', {
+      email: this.email,
+      password: this.password
+    }, {
+      withCredentials: true
+    });
+
+    const token = response.data.access_token;
+    localStorage.setItem('token', token); 
+    
+    this.$router.push('/services');
+   
+    console.log('Login successful', response.data);
+    this.$router.push('/dashboard');
+  } catch (err) {
+    this.error = err.response?.data?.message || 'Login failed';
+  }   
+}
+
   }
 };
 </script>

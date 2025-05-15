@@ -15,8 +15,8 @@ class User extends Authenticatable
     use HasApiTokens, HasFactory, Notifiable;
     
     public const ROLE_HIERARCHY = [
-        'user' => 1,
-        'instructor' => 2,
+        'client' => 1,
+        'service_provider' => 2,
         'admin' => 3,
     ];
 
@@ -48,6 +48,12 @@ class User extends Authenticatable
         'password',
         'remember_token',
     ];
+
+    public function Booking(){
+
+    return $this->hasMany(Booking::class);
+    }
+
 
     /**
      * Get the attributes that should be cast.

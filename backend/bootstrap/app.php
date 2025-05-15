@@ -6,7 +6,7 @@ use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
 use App\Http\Middleware\RoleMiddleware;
 use Illuminate\Foundation\Configuration\Middleware;
-use Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful;
+//use Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful;
 //use Illuminate\Http\Middleware\AddLinkHeadersForPreloadedAssets;
 
 return Application::configure(basePath: dirname(__DIR__))
@@ -37,15 +37,15 @@ return Application::configure(basePath: dirname(__DIR__))
     ->withMiddleware(function (Middleware $middleware) {
         $middleware->alias([
             'role' => RoleMiddleware::class,
-            'frontend' => EnsureFrontendRequestsAreStateful::class,
+            //'frontend' => EnsureFrontendRequestsAreStateful::class,
         ]);
     
         $middleware->web(append: [
-            EnsureFrontendRequestsAreStateful::class,
+           // EnsureFrontendRequestsAreStateful::class,
         ]);
 
         $middleware->api(prepend: [
-            EnsureFrontendRequestsAreStateful::class,
+          //  EnsureFrontendRequestsAreStateful::class,
         ]);        
     })
     ->withExceptions(function (Exceptions $exceptions) {

@@ -31,17 +31,23 @@ class CinVerificationController extends Controller
                     file_get_contents($path),
                     $file->getClientOriginalName()
                 )->post('http://127.0.0.1:5000/verify-cin');
-
+                
+                // Log the response data
+                Log::debug('Flask Response Body:', ['body' => $response->body()]);
+                
                 if ($response->successful()) {
                     $data = $response->json();
-
+                
                     return response()->json([
                         'cin' => $data['cin'] ?? null,
+                        'first_name' => $data['first_name'] ?? null,
+                        'last_name' => $data['last_name'] ?? null,
                         'ocr_text' => $data['ocr_text'] ?? null,
                     ]);
                 }
-
+                
                 return response()->json(['error' => 'CIN verification failed from AI service.'], 400);
+                
 
             } catch (\Exception $e) {
                 Log::error('Failed to connect to Flask API', ['error' => $e->getMessage()]);
