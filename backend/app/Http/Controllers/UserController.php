@@ -164,4 +164,18 @@ class UserController extends Controller
     }*/
 
 
+    public function verifyServiceProvider(Request $request, $id)
+{
+    $user = User::findOrFail($id);
+
+    if ($user->role !== 'provider') {
+        return response()->json(['error' => 'User is not a service provider'], 400);
+    }
+
+    $user->is_verified = $request->input('is_verified', true); // true or false
+    $user->save();
+
+    return response()->json(['message' => 'Service provider verification status updated.']);
+}
+
 }
