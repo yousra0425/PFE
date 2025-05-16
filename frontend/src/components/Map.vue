@@ -29,7 +29,10 @@
             <div>
               <strong>{{ provider.name }}</strong><br />
               Rating: {{ provider.rating }}<br />
-              {{ provider.service_name }}
+              {{ provider.service_type }}
+              <br />
+              Email: {{ provider.email }}<br />
+              Phone: {{ provider.phone }}
             </div>
           </GMapInfoWindow>
         </GMapMarker>
@@ -38,18 +41,13 @@
   </template>
   
   <script setup>
-  import { ref, onMounted, defineProps } from 'vue';
+  import { ref, onMounted } from 'vue';
   
-  const center = ref({ lat: 33.5731, lng: -7.5898 }); // Morocco (Casablanca) default
+  const center = ref({ lat: 33.5731, lng: -7.5898 }); // Default Morocco (Casablanca)
+  const providers = ref([]);
   
-  const props = defineProps({
-    providers: {
-      type: Array,
-      required: true,
-    },
-  });
-  
-  onMounted(() => {
+  onMounted(async () => {
+    // Try to get user geolocation
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
         (pos) => {
@@ -62,6 +60,15 @@
           console.warn('Using default Morocco location');
         }
       );
+    }
+  
+    // Fetch providers from backend API
+    try {
+      const res = await fetch('/api/service-providers/map');
+      if (!res.ok) throw new Error('Failed to fetch providers');
+      providers.value = await res.json();
+    } catch (error) {
+      console.error('Error fetching providers:', error);
     }
   
     initAutocomplete();

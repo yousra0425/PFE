@@ -9,7 +9,7 @@
           
           <div class="cta-section">
             <h3 class="cta-title">What service do you need?</h3>
-            <button class="cta-button">Find Services</button>
+            <button class="cta-button" @click="scrollToHowItWorks">Find Services</button>
           </div>
           
           <div class="guarantees">
@@ -36,6 +36,19 @@
       </div>
     </section>
   </template>
+  
+<script>
+export default {
+  methods: {
+    scrollToHowItWorks() {
+      const element = document.getElementById('how-it-works');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }
+}
+</script>
   
   <style scoped>
   .hero-section {

@@ -1,26 +1,10 @@
 <template>
   <div class="services-page">
-    <header class="header">
-      <div class="logo-container">
-        <span class="logo">DomiFix</span>
-        <span class="logo-tagline">Your trusted home service partners</span>
-      </div>
-      <div class="search-bar">
-        <input type="text" placeholder="Search for services..." class="search-input" />
-        <button class="search-button">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="11" cy="11" r="8"></circle>
-            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-          </svg>
-        </button>
-      </div>
-      <div class="auth-buttons">
-        <button class="auth-btn login">Login</button>
-        <button class="auth-btn sign-up">Sign Up</button>
-      </div>
-    </header>
+    <Header />
     <Hero />
-    <HowItWorks />
+    <div id="how-it-works">
+     <HowItWorks />
+    </div>
     
 
     <main class="main-content">
@@ -39,7 +23,7 @@
         >
           <div class="category-header">
             <div class="category-info">
-              <h2 class="category-title">{{ category.name }}</h2>
+              <h2 class="category-title">{{ category.label }}</h2>
               <p class="category-description">{{ category.description }}</p>
             </div>
             <span class="toggle-icon">
@@ -59,7 +43,7 @@
                 @click.stop="selectService(service)"
               >
                 <div class="service-details">
-                  <h3 class="service-title">{{ service.name }}</h3>
+                  <h6 class="service-title">{{ service.name }}</h6>
                   <p class="service-description">{{ service.description }}</p>
                 </div>
                 <div class="service-cta">
@@ -76,91 +60,33 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
+import axios from 'axios'
 import HowItWorks from '../components/HowItWorks.vue'
 import Hero from '../components/Hero.vue'
-import  BecomeProvider from '../components/ProviderForm.vue'
+import Header from '../components/Header.vue'
+import BecomeProvider from '../components/ProviderForm.vue'
 
 const activeCategory = ref(null)
 const selectedService = ref(null)
+const categories = ref([])
 const router = useRouter()
 
-const categories = ref([
-  {
-    id: 1,
-    name: 'Plumbing',
-    description: 'Expert solutions for all your water and drainage needs',
-    services: [
-      { 
-        id: 101, 
-        name: 'Pipe Installation & Repair', 
-        description: 'Professional installation and repair of all pipe systems'
-      },
-      { 
-        id: 102, 
-        name: 'Drain Cleaning', 
-        description: 'Advanced techniques to clear stubborn clogs'
-      },
-      { 
-        id: 103, 
-        name: 'Leak Detection', 
-        description: 'Find and fix hidden leaks to prevent water damage'
-      }
-    ]
-  },
-  {
-    id: 2,
-    name: 'Electrical',
-    description: 'Certified electricians for safe installations and repairs',
-    services: [
-      { 
-        id: 201, 
-        name: 'Wiring Installation', 
-        description: 'Safe installation of new electrical wiring'
-      },
-      { 
-        id: 202, 
-        name: 'Light Fixtures', 
-        description: 'Installation of all lighting types'
-      }
-    ]
-  },
-  {
-    id: 3,
-    name: 'Cleaning',
-    description: 'Professional cleaning for homes and offices',
-    services: [
-      { 
-        id: 301, 
-        name: 'Residential Cleaning', 
-        description: 'Thorough cleaning for your living space'
-      },
-      { 
-        id: 302, 
-        name: 'Carpet Cleaning', 
-        description: 'Deep cleaning to remove stains and allergens'
-      }
-    ]
-  },
-  {
-    id: 4,
-    name: 'Home Improvement',
-    description: 'Transform your space with our renovation experts',
-    services: [
-      { 
-        id: 401, 
-        name: 'Painting Services', 
-        description: 'Interior and exterior painting'
-      },
-      { 
-        id: 402, 
-        name: 'Floor Installation', 
-        description: 'Professional flooring installation'
-      }
-    ]
+// Fetch categories with services from backend
+const fetchCategories = async () => {
+  try {
+    const response = await axios.get('http://localhost:8000/api/categories-with-services') 
+    categories.value = response.data
+  } catch (error) {
+    console.error('Failed to fetch categories:', error)
   }
-])
+}
+
+// Fetch on component mount
+onMounted(() => {
+  fetchCategories()
+})
 
 const toggleCategory = (categoryId) => {
   activeCategory.value = activeCategory.value === categoryId ? null : categoryId
@@ -169,7 +95,7 @@ const toggleCategory = (categoryId) => {
 const selectService = (service) => {
   selectedService.value = service
   console.log('Selected service:', service)
-  router.push({ name: 'ServiceDetails', params: { id: service.id } })
+  router.push({ name: 'nearbyprovidersmap', params: { id: service.id } })
 }
 </script>
 
@@ -342,7 +268,7 @@ const selectService = (service) => {
 
 .category-card {
   background-color: white;
-  border-radius: var(--border-radius);
+  border-radius: 10px;
   box-shadow: var(--shadow-sm);
   overflow: hidden;
   transition: var(--transition);
@@ -355,7 +281,7 @@ const selectService = (service) => {
 .category-card.expanded {
   box-shadow: var(--shadow-lg);
   border: 2px solid var(--primary);
-  background-color: #eef2ff;
+  background-color: #d7f0ef;
 }
 
 .category-header {
@@ -371,7 +297,7 @@ const selectService = (service) => {
 
 .category-title {
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: bolder;
   color: var(--dark);
   margin-bottom: 0.5rem;
 }
@@ -389,7 +315,7 @@ const selectService = (service) => {
 }
 
 .category-card.expanded .toggle-icon {
-  color: var(--primary);
+  color: var(--primary-color);
 }
 
 .services-list {

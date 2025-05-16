@@ -18,15 +18,12 @@ const routes = [
     { path: '/login', component: Login },
     { path: '/signup', component: Signup },
     { path: '/dashboard', component: Dashboard },
-    {
-        path: '/clientdashboard',
-        component: ClientDashboard,  // Use the imported component
-    },
+    {path: '/clientdashboard', component: ClientDashboard},
     { path: '/services', component: Services },
     { path: '/cinverif', component: CinVerif },
     { path: '/cinverificationpanel', component: CinVerificationPanel },
     { path: '/adminpanel', component: AdminPanel },
-    { path: '/nearbyprovidersmap', component: NearbyProvidersMap },
+    {path: '/nearby-providers/:id', name: 'nearbyprovidersmap',component: NearbyProvidersMap,},
     { path: '/providerform', component: ProviderForm },
     // { path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFound }, 
 ];
