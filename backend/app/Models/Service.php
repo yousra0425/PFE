@@ -15,4 +15,12 @@ class Service extends Model
     {
         return $this->belongsTo(Category::class);
     }
+
+    public function serviceProviders(){
+    return $this->belongsToMany(ServiceProvider::class);
+    }
+
+    
+
+    
 }

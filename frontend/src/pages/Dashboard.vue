@@ -1,93 +1,102 @@
 <template>
-  <div class="dashboard-wrapper">
-    <h2 class="dashboard-title">Welcome, {{ profile.first_name }} {{ profile.last_name }} </h2>
+  <div>
 
-    <!-- Tabs -->
-    <div class="nav-tabs">
-      <span :class="{ active: activeTab === 'appointments' }" @click="activeTab = 'appointments'">Appointments</span>
-      <span :class="{ active: activeTab === 'profile' }" @click="activeTab = 'profile'">Profile</span>
-    </div>
+    <!-- Centered dashboard content -->
+    <div class="dashboard-wrapper">
+      <h2 class="dashboard-title">Welcome, {{ profile.first_name }} {{ profile.last_name }}</h2>
 
-    <!-- APPOINTMENTS SECTION -->
-    <div v-if="activeTab === 'appointments'">
-      <h3>Upcoming Appointments</h3>
-      <div class="card" v-for="appointment in appointments" :key="appointment.id">
-        <div>
-          <strong>{{ appointment.title }}</strong><br />
-          {{ appointment.provider }}<br />
-          Date: {{ appointment.date }}<br />
-          Time: {{ appointment.time }}
-        </div>
-        <button @click="reschedule(appointment.id)">Reschedule</button>
-      </div>
-    </div>
-
-    <!-- PROFILE SECTION -->
-    <!-- Profile Card -->
-    <div v-if="activeTab === 'profile'" class="profile-card">
-      <div class="card-header">
-        <h4>Profile Information</h4>
-        <button v-if="!isEditing" @click="startEditing" class="edit-btn">Edit Profile</button>
+      <!-- Tabs -->
+      <div class="nav-tabs">
+        <span :class="{ active: activeTab === 'appointments' }" @click="activeTab = 'appointments'">Appointments</span>
+        <span :class="{ active: activeTab === 'profile' }" @click="activeTab = 'profile'">Profile</span>
       </div>
 
-      <!-- View Mode -->
-      <div v-if="!isEditing" class="card-body">
-        <div class="info-grid">
+      <!-- APPOINTMENTS SECTION -->
+      <div v-if="activeTab === 'appointments'">
+        <h3>Upcoming Appointments</h3>
+        <div class="card" v-for="appointment in appointments" :key="appointment.id">
           <div>
-            <small class="label">Full Name</small>
-            <div class="value"><strong>{{ profile.first_name }} {{ profile.last_name }}</strong></div>
+            <strong>{{ appointment.title }}</strong><br />
+            {{ appointment.provider }}<br />
+            Date: {{ appointment.date }}<br />
+            Time: {{ appointment.time }}
           </div>
-          <div>
-            <small class="label">Email</small>
-            <div class="value"><strong>{{ profile.email }}</strong></div>
-          </div>
-          <div>
-            <small class="label">Phone</small>
-            <div class="value"><strong>{{ profile.telephone }}</strong></div>
-          </div>
-          <div>
-            <small class="label">Address</small>
-            <div class="value"><strong>{{ profile.address }}</strong></div>
-          </div>
+          <button @click="reschedule(appointment.id)">Reschedule</button>
         </div>
       </div>
 
-      <!-- Edit Mode -->
-      <div v-else class="card-body">
-        <div class="form-grid">
-          <div>
-            <label>First Name</label>
-            <input v-model="editProfile.first_name" type="text" class="form-control" />
-          </div>
-          <div>
-            <label>Last Name</label>
-            <input v-model="editProfile.last_name" type="text" class="form-control" />
-          </div>
-          <div>
-            <label>Email</label>
-            <input v-model="editProfile.email" type="email" class="form-control" />
-          </div>
-          <div>
-            <label>Phone</label>
-            <input v-model="editProfile.telephone" type="text" class="form-control" />
-          </div>
-          <div class="col-12">
-            <label>Address</label>
-            <textarea v-model="editProfile.address" class="form-control"></textarea>
+      <!-- PROFILE SECTION -->
+      <div v-if="activeTab === 'profile'" class="profile-card">
+        <div class="card-header">
+          <h4>Profile Information</h4>
+          <button v-if="!isEditing" @click="startEditing" class="edit-btn">Edit Profile</button>
+        </div>
+
+        <!-- View Mode -->
+        <div v-if="!isEditing" class="card-body">
+          <div class="info-grid">
+            <div>
+              <small class="label">Full Name</small>
+              <div class="value"><strong>{{ profile.first_name }} {{ profile.last_name }}</strong></div>
+            </div>
+            <div>
+              <small class="label">Email</small>
+              <div class="value"><strong>{{ profile.email }}</strong></div>
+            </div>
+            <div>
+              <small class="label">Phone</small>
+              <div class="value"><strong>{{ profile.telephone }}</strong></div>
+            </div>
+            <div>
+              <small class="label">Address</small>
+              <div class="value"><strong>{{ profile.address }}</strong></div>
+            </div>
           </div>
         </div>
-        <div class="edit-actions">
-          <button @click="saveProfile" class="btn btn-primary">Save Changes</button>
-          <button @click="cancelEditing" class="btn btn-secondary">Cancel</button>
+
+        <!-- Edit Mode -->
+        <div v-else class="card-body">
+          <div class="form-grid">
+            <div>
+              <label>First Name</label>
+              <input v-model="editProfile.first_name" type="text" class="form-control" />
+            </div>
+            <div>
+              <label>Last Name</label>
+              <input v-model="editProfile.last_name" type="text" class="form-control" />
+            </div>
+            <div>
+              <label>Email</label>
+              <input v-model="editProfile.email" type="email" class="form-control" />
+            </div>
+            <div>
+              <label>Phone</label>
+              <input v-model="editProfile.telephone" type="text" class="form-control" />
+            </div>
+            <div class="col-12">
+              <label>Address</label>
+              <textarea v-model="editProfile.address" class="form-control"></textarea>
+            </div>
+          </div>
+          <div class="edit-actions">
+            <button @click="saveProfile" class="btn btn-primary">Save Changes</button>
+            <button @click="cancelEditing" class="btn btn-secondary">Cancel</button>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </template>
 
+
 <script>
+import Header from '../components/Header.vue';
+
 export default {
   name: 'UserDashboard',
+  components: {
+    Header
+  },
   data() {
     return {
       isEditing: false,
@@ -236,13 +245,19 @@ button {
   padding: 6px 12px;
   border-radius: 6px;
   cursor: pointer;
+  
+  width: 40%;
   font-size: 0.9rem;
   color: #1f2937;
   transition: background-color 0.3s;
+
+  display: block;         /* Make it a block element so margin auto works */
+  margin: 0 490px;         /* This centers it horizontally */
 }
 
+
 button:hover {
-  background-color: #f1f5f9;
+  background-color: var(--primary-hover);
 }
 
 .card-header {
@@ -259,15 +274,15 @@ h4 {
 .edit-btn {
   padding: 6px 12px;
   background-color: transparent;
-  border: 1px solid #0d6efd;
-  color: #0d6efd;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
   border-radius: 4px;
   font-size: 14px;
   cursor: pointer;
 }
 
 .edit-btn:hover {
-  background-color: #0d6efd;
+  background-color: var(--primary-hover);
   color: white;
 }
 

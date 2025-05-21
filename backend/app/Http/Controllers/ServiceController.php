@@ -18,13 +18,29 @@ class ServiceController extends Controller {
         $validatedData = $request->validate([
             'name' => 'required|string|max:255',
             'description' => 'nullable|string',
-            'price' => 'required|numeric|min:0',
+            'price' => 'nullable|numeric|min:0',
             'category_id' => 'required|exists:categories,id',
         ]);
 
         $service = Service::create($validatedData);
         return response()->json($service, 201);
     }
+
+    public function storeByCategory(Request $request, $id)
+{
+    $validatedData = $request->validate([
+        'name' => 'required|string|max:255',
+        'description' => 'nullable|string',
+        'price' => 'nullable|numeric|min:0',
+    ]);
+
+    $validatedData['category_id'] = $id;
+
+    $service = Service::create($validatedData);
+
+    return response()->json($service, 201);
+}
+
 
     public function show($id) {
         $service = Service::with('category')->findOrFail($id);
@@ -37,7 +53,7 @@ class ServiceController extends Controller {
         $validatedData = $request->validate([
             'name' => 'required|string|max:255',
             'description' => 'nullable|string',
-            'price' => 'required|numeric|min:0',
+            'price' => 'nullable|numeric|min:0',
             'category_id' => 'required|exists:categories,id',
         ]);
 

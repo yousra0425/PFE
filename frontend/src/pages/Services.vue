@@ -1,6 +1,5 @@
 <template>
   <div class="services-page">
-    <Header />
     <Hero />
     <div id="how-it-works">
      <HowItWorks />
@@ -55,7 +54,10 @@
         </div>
       </div>
     </main>
-    <BecomeProvider />
+    <section id="provider-form">
+       <BecomeProvider />
+    </section>
+
   </div>
 </template>
 
@@ -65,7 +67,6 @@ import { useRouter } from 'vue-router'
 import axios from 'axios'
 import HowItWorks from '../components/HowItWorks.vue'
 import Hero from '../components/Hero.vue'
-import Header from '../components/Header.vue'
 import BecomeProvider from '../components/ProviderForm.vue'
 
 const activeCategory = ref(null)

@@ -1,21 +1,26 @@
 <template>
   <div>
-    <Header />
     <h3>Find Providers Near You</h3>
     <Map :providers="providers" />
+    
   </div>
 </template>
 
 <script setup>
 import { ref, onMounted } from 'vue';
+import { useRoute } from 'vue-router';
 import Map from './Map.vue';
-import Header from './Header.vue'
+
+
 
 const providers = ref([]);
+const route = useRoute();
 
 onMounted(async () => {
+  const serviceId = route.params.id;
   try {
-    const response = await fetch('/api/service-providers/map'); // your API endpoint
+    // Include serviceId as query param or in URL depending on your backend API design
+    const response = await fetch(`http://localhost:8000/api/service-providers/map?service_type=${serviceId}`);
     if (!response.ok) throw new Error('Failed to fetch providers');
     providers.value = await response.json();
   } catch (error) {
@@ -23,6 +28,7 @@ onMounted(async () => {
   }
 });
 </script>
+
 
 <style scoped>
 

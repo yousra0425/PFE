@@ -11,6 +11,8 @@ class ServiceProvider extends Model
 
     protected $fillable = [
         'user_id',
+        'first_name',
+        'last_name',
         'service_type',
         'experience',
         'description',
@@ -29,8 +31,12 @@ class ServiceProvider extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function reviews()
-{
+    public function reviews(){
     return $this->hasMany(Review::class);
-}
+    }
+
+    public function services(){
+    return $this->belongsToMany(Service::class, 'service_provider_service');
+    }
+
 }

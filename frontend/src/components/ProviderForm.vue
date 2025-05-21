@@ -11,15 +11,22 @@
         <div class="form-box">
           <h3>Fill out the form to apply</h3>
           <form @submit.prevent="submitApplication">
-            <label for="name">Full Name</label>
-            <input v-model="form.name" id="name" type="text" required />
+            <label for="first_name">First Name</label>
+            <input v-model="form.first_name" id="first_name" type="text" required />
+
+            <label for="last_name">Last Name</label>
+            <input v-model="form.last_name" id="last_name" type="text" required />
 
             <label for="service">Service Type</label>
             <select v-model="form.service" id="service" required>
+              <option value="Security Services">Security Services</option>
+              <option value="Electrician">Electrician</option>
+              <option value="Gardening">Gardening</option>
+              <option value="Painting">Painting</option>
+              <option value="Carpentry">Carpentry</option>
               <option value="Plumbing">Plumbing</option>
-              <option value="Electrical">Electrical</option>
-              <option value="Cleaning">Cleaning</option>
-              <option value="Home Improvement">Home Improvement</option>
+              <option value="Locksmith">Locksmith</option>
+              <option value="Moving Services">Moving Services</option>
             </select>
 
             <label for="experience">Years of Experience</label>
@@ -48,9 +55,11 @@
 <script setup>
 import { ref } from 'vue';
 
+
 const showForm = ref(false)
 const form = ref({
-  name: '',
+  first_name: '',
+  last_name: '',
   service: '',
   experience: '',
   description: '',
@@ -66,7 +75,8 @@ const handleFileUpload = (event) => {
 
 const submitApplication = () => {
   const formData = new FormData()
-  formData.append('name', form.value.name)
+  formData.append('first_name', form.value.first_name)
+  formData.append('last_name', form.value.last_name)
   formData.append('service', form.value.service)
   formData.append('experience', form.value.experience)
   formData.append('description', form.value.description)
@@ -79,7 +89,7 @@ const submitApplication = () => {
   alert('Your application has been submitted!')
 
   // Reset form after submission
-  form.value = { name: '', service: '', experience: '', description: '', cinFile: null }
+  form.value = { first_name:'', last_name: '', service: '', experience: '', description: '', cinFile: null }
   showForm.value = false
 }
 </script>

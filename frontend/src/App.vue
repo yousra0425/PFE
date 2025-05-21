@@ -1,6 +1,28 @@
 <template>
+  <div>
+    <!-- Your existing app layout -->
 
- <router-view></router-view>
+    <Header />
+    
+    <!-- Main content rendered by vue-router -->
+    <router-view></router-view>
+    
+    
+
+    <!-- Add ChatBubble and ChatPopup here -->
+    <ChatBubble @toggle="toggleChat" />
+
+    <ChatPopup v-if="chatOpen" @close="toggleChat">
+      <!-- Pass your chat component in the default slot -->
+      <template #default>
+        <ChatRoom />
+      </template>
+      <template #input>
+        <!-- You can put a message input here or inside ChatRoom -->
+      </template>
+    </ChatPopup>
+    
+  </div>
 </template>
 
 <script>
@@ -14,6 +36,12 @@ import Map from './components/Map.vue';
 import Services from './pages/Services.vue';
 import AdminPanel from './components/AdminPanel.vue';
 import ProviderForm from './components/ProviderForm.vue';
+
+// Import chat components
+import ChatBubble from './components/ChatBubble.vue';
+import ChatPopup from './components/ChatPopup.vue';
+import ChatRoom from './components/ChatRoom.vue';
+
 export default {
   name: 'App',
   components: {
@@ -26,12 +54,25 @@ export default {
     Map,
     CINVerificationPanel,
     AdminPanel,
-    ProviderForm
-  }
+    ProviderForm,
+
+    // Register chat components
+    ChatBubble,
+    ChatPopup,
+    ChatRoom,
+  },
+  data() {
+    return {
+      chatOpen: false,
+    };
+  },
+  methods: {
+    toggleChat() {
+      this.chatOpen = !this.chatOpen;
+    },
+  },
 }
 </script>
-
-
 
 <style>
 :root {
@@ -45,7 +86,4 @@ export default {
 .container {
   margin-top: 60px;
 }
-
-
-
 </style>

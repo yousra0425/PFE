@@ -15,6 +15,7 @@
       </button>
     </div>
     <div class="auth-buttons">
+      <button class="auth-btn become-provider" @click="scrollToProviderForm">Become Provider</button>
       <router-link to="/login" class="auth-btn login">Login</router-link>
       <router-link to="/signup" class="auth-btn sign-up">Sign Up</router-link>
     </div>
@@ -23,7 +24,17 @@
 
 <script>
 export default {
-  name: 'Header'
+  name: 'Header',
+  methods: {
+    scrollToProviderForm() {
+      const target = document.getElementById('provider-form');
+      if (target) {
+        const yOffset = 80; // Offset for sticky header
+        const y = target.getBoundingClientRect().top + window.pageYOffset - yOffset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }
+    }
+  }
 }
 </script>
 
@@ -129,4 +140,14 @@ export default {
   border-color: var(--primary-hover);
 }
     
+.become-provider {
+  background-color: #1ca79b;
+  color: white;
+  border: none;
+}
+
+.become-provider:hover {
+  background-color: var(--primary-hover);
+}
+
 </style>
