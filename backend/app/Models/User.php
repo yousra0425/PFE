@@ -11,12 +11,12 @@ use Laravel\Sanctum\HasApiTokens;
 class User extends Authenticatable
 {
     /** @use HasFactory<\Database\Factories\UserFactory> */
-    use HasFactory, Notifiable;
-    use HasApiTokens, HasFactory, Notifiable;
+    use HasFactory, Notifiable, HasApiTokens;
+
     
     public const ROLE_HIERARCHY = [
         'client' => 1,
-        'service_provider' => 2,
+        'tutor' => 2,
         'admin' => 3,
     ];
 
@@ -37,6 +37,8 @@ class User extends Authenticatable
         'cin',
         'cin_status',
         'role', 
+        'latitude',
+        'longitude',
     ];
 
     /**
@@ -53,6 +55,16 @@ class User extends Authenticatable
 
     return $this->hasMany(Booking::class);
     }
+    
+    public function tutor(){
+    return $this->hasOne(Tutor::class);
+    } 
+    
+    public function reviews()
+    {
+        return $this->hasMany(Review::class, 'tutor_id');
+    }
+    
 
 
     /**

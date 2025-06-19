@@ -15,8 +15,18 @@ class Category extends Model
 
     ];
 
-    public function services(){
+    /*public function services(){
     return $this->hasMany(Service::class);
+    }*/
+
+    public function tutors(){
+        return $this->belongsToMany(Tutor::class, 'tutor_category');
     }
+
+    public function subcategories(){
+        return $this->hasMany(Subcategory::class);
+    }
+
+
 
 }

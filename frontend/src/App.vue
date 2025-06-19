@@ -1,29 +1,26 @@
 <template>
-  <div>
-    <!-- Your existing app layout -->
-
+  <div id="app" class="app-container">
     <Header />
-    
-    <!-- Main content rendered by vue-router -->
-    <router-view></router-view>
-    
-    
 
-    <!-- Add ChatBubble and ChatPopup here -->
+    <main class="main-content">
+      <router-view></router-view>
+    </main>
+
     <ChatBubble @toggle="toggleChat" />
 
     <ChatPopup v-if="chatOpen" @close="toggleChat">
-      <!-- Pass your chat component in the default slot -->
       <template #default>
         <ChatRoom />
       </template>
       <template #input>
-        <!-- You can put a message input here or inside ChatRoom -->
+        <!-- Optional input slot -->
       </template>
     </ChatPopup>
-    
+
+    <Footer />
   </div>
 </template>
+
 
 <script>
 import Header from './components/Header.vue';
@@ -34,13 +31,21 @@ import CINVerificationPanel from './components/CINVerificationPanel.vue';
 import ClientDashboard from './pages/ClientDashboard.vue';
 import Map from './components/Map.vue';
 import Services from './pages/Services.vue';
-import AdminPanel from './components/AdminPanel.vue';
-import ProviderForm from './components/ProviderForm.vue';
+import BecomeTutor from './components/BecomeTutor.vue';
 
 // Import chat components
 import ChatBubble from './components/ChatBubble.vue';
 import ChatPopup from './components/ChatPopup.vue';
 import ChatRoom from './components/ChatRoom.vue';
+import FilterBar from './components/FilterBar.vue';
+import FilterSelect from './components/FilterSelect.vue';
+import StepOne from './components/BecomeTutor/StepOne.vue';
+import StepTwo from './components/BecomeTutor/StepTwo.vue';
+import BookLesson from './components/BookLesson.vue';
+import MyTutorAccount from './components/TutorDashboard/MyTutorAccount.vue';
+import StepThree from './components/BecomeTutor/StepThree.vue';
+import StepFour from './components/BecomeTutor/StepFour.vue';
+
 
 export default {
   name: 'App',
@@ -53,13 +58,20 @@ export default {
     Services,
     Map,
     CINVerificationPanel,
-    AdminPanel,
-    ProviderForm,
+    BecomeTutor,
+    FilterBar,
+    FilterSelect,
+    StepOne,
+    StepTwo,
+    StepThree,
+    StepFour,
+    MyTutorAccount,
 
     // Register chat components
-    ChatBubble,
-    ChatPopup,
-    ChatRoom,
+    //ChatBubble,
+    //ChatPopup,
+    //ChatRoom,
+    BookLesson,
   },
   data() {
     return {
@@ -78,9 +90,31 @@ export default {
 :root {
   --primary-color: #1ca79b;
   --primary-hover: #1ca79bce;
-  --secondary-color: #6c757d;
-  --background-light: #f4f7fa;
-  --text-dark: #333;
+  --success-color: #10b981;
+    --error-color: #ef4444;
+    --text-primary: #1f2937;
+    --text-secondary: #6b7280;
+    --border-color: #e5e7eb;
+    --background-light: #f9fafb;
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    color: #1ca79b68;
+}
+
+html, body, #app {
+  height: 100%;
+  margin: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* full viewport height */
+}
+
+.main-content {
+  flex: 1; /* take all remaining vertical space */
+  /* Optional: add padding or margin as needed */
 }
 
 .container {

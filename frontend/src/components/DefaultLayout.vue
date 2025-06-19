@@ -16,5 +16,14 @@ import Footer from './Footer.vue'
 </template>
 
 <style scoped>
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
+.content {
+  flex: 1;
+  padding-bottom: 2rem; /* Optional: to avoid overlap with footer */
+}
 </style>

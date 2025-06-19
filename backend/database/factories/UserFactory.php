@@ -1,44 +1,54 @@
 <?php
 
+// database/factories/UserFactory.php
+
 namespace Database\Factories;
 
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Hash;
+use Database\Seeders\TutorSeeder;
 
-/**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\User>
- */
 class UserFactory extends Factory
 {
-    /**
-     * The current password being used by the factory.
-     */
-    protected static ?string $password;
+    protected $model = User::class;
 
-    /**
-     * Define the model's default state.
-     *
-     * @return array<string, mixed>
-     */
-    public function definition(): array
+    public function definition()
     {
+        $baseLat = 35.7595;
+        $baseLng = -5.83395;
+
+        // Generate small random offset within ±0.01 degrees
+        $latOffset = $this->faker->randomFloat(6, -0.01, 0.01);
+        $lngOffset = $this->faker->randomFloat(6, -0.01, 0.01);
+
         return [
-            'name' => fake()->name(),
-            'email' => fake()->unique()->safeEmail(),
-            'email_verified_at' => now(),
-            'password' => static::$password ??= Hash::make('password'),
+            'first_name' => $this->faker->firstName(),
+            'last_name' => $this->faker->lastName(),
+            'email' => $this->faker->unique()->safeEmail(),
+            'password' => Hash::make('password123'),
+            'address' => 'Tangier, Morocco',
+            'birth_date' => $this->faker->date(),
+            'telephone' => $this->faker->phoneNumber(),
+            'city' => 'Tangier',
+            'cin' => $this->faker->numerify('##########'),
+            'cin_status' => 'approved',
+            'role' => 'tutor',
+            'latitude' => $baseLat + $latOffset,
+            'longitude' => $baseLng + $lngOffset,
             'remember_token' => Str::random(10),
         ];
     }
 
-    /**
-     * Indicate that the model's email address should be unverified.
-     */
-    public function unverified(): static
-    {
-        return $this->state(fn (array $attributes) => [
-            'email_verified_at' => null,
-        ]);
-    }
+    public function run()
+{
+    // Create 20 tutors
+    \App\Models\User::factory()->count(20)->create([
+        'role' => 'tutor',
+    ]);
+
+    // Then create matching Tutor profiles
+    $this->call(TutorSeeder::class);
+}
 }

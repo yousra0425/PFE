@@ -11,7 +11,7 @@ class ReviewController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'service_provider_id' => 'required|exists:service_providers,id',
+            'tutor_id' => 'required|exists:tutors,id',
             'rating' => 'required|integer|min:1|max:5',
             'comment' => 'nullable|string',
         ]);
@@ -19,7 +19,7 @@ class ReviewController extends Controller
         $user = Auth::user();
 
         $existingReview = Review::where('user_id', $user->id)
-            ->where('service_provider_id', $request->service_provider_id)
+            ->where('tutor_id', $request->tutor_id)
             ->first();
 
         if ($existingReview) {
@@ -27,7 +27,7 @@ class ReviewController extends Controller
         }
 
         $review = Review::create([
-            'service_provider_id' => $request->service_provider_id,
+            'tutor_id' => $request->tutor_id,
             'user_id' => $user->id,
             'rating' => $request->rating,
             'comment' => $request->comment,

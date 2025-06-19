@@ -37,7 +37,6 @@
         <input
           v-model="newMessage"
           placeholder="Type your message..."
-          @keyup.enter="sendMessage"
           ref="messageInput"
         />
   
@@ -97,6 +96,7 @@
   
   <script setup>
   import { ref, onMounted, onUnmounted, nextTick } from 'vue'
+
   import { db } from '../firebase.js'
   import {
     collection,
@@ -114,6 +114,8 @@
     uploadBytesResumable,
     getDownloadURL,
   } from 'firebase/storage'
+  
+
   
   const storage = getStorage()
   
@@ -343,27 +345,29 @@
   }
   
   .chat-form button {
-    width: 44px;
-    height: 44px;
-    border: none;
-    border-radius: 50%;
-    background: #bababa;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: background 0.2s;
-  }
-  
-  .chat-form button:disabled {
-    background: #cbd5e1;
-    cursor: not-allowed;
-  }
-  
-  .chat-form button:not(:disabled):hover {
-    background: var(--primary-color);
-  }
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  color: var(--primary-color);
+  padding: 0.2rem;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.chat-form button:disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.chat-form button:hover:not(:disabled) {
+  background-color: rgba(0, 123, 255, 0.1);
+}
+
+.file-attach-btn svg,
+.chat-form button svg {
+  display: block;
+}
   
   .loading-indicator {
     text-align: center;

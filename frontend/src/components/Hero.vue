@@ -1,156 +1,259 @@
 <template>
-    <section class="hero-section">
-      <div class="container">
-        <div class="hero-content">
-          <h1 class="hero-title">Your Home Deserves <span>Expert Care</span></h1>
-          <p class="hero-description">
-            Connect with trusted professionals for all your home service needs. From plumbing and electrical work to cleaning and maintenance — all in one place.
-          </p>
-          
-          <div class="cta-section">
-            <h3 class="cta-title">What service do you need?</h3>
-            <button class="cta-button" @click="scrollToHowItWorks">Find Services</button>
-          </div>
-          
-          <div class="guarantees">
-            <div class="guarantee-item">
-              <svg class="check-icon" viewBox="0 0 24 24">
-                <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              <span>100% Satisfaction Guarantee</span>
-            </div>
-            <div class="guarantee-item">
-              <svg class="check-icon" viewBox="0 0 24 24">
-                <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              <span>Verified Professionals</span>
-            </div>
-            <div class="guarantee-item">
-              <svg class="check-icon" viewBox="0 0 24 24">
-                <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              <span>Secure Payments</span>
-            </div>
+  <section class="hero-wrapper">
+    <div class="hero-content">
+      <h1>Find your<br /><strong>perfect tutor</strong></h1>
+
+      <div class="search-bar">
+        <!-- Category Dropdown -->
+        <div class="input-group">
+          <select v-model="selectedCategory" class="category-dropdown">
+  <option disabled value="">Select a Subject</option>
+  <option
+    v-for="category in categories"
+    :key="category.id"
+    :value="category.id"
+  >
+    {{ category.label }}
+  </option>
+</select>
+
+        </div>
+
+        <div class="separator"></div>
+
+        <!-- Location Popup -->
+        <div class="input-group location-group" @click="toggleDropdown" @blur="hideDropdown" tabindex="0">
+          <input type="text" placeholder="Online or Nearby" :value="locationInput" readonly />
+          <div v-if="showDropdown" class="popup-options">
+            <div class="option" @click.stop="selectOption('Around me')">Around me</div>
+            <div class="option" @click.stop="selectOption('Online')">Online</div>
           </div>
         </div>
+
+        <!-- Search Button -->
+        <button class="search-button" @click="onSearch">Search</button>
       </div>
-    </section>
-  </template>
-  
+    </div>
+  </section>
+</template>
+
 <script>
+import axios from 'axios';
+
 export default {
-  methods: {
-    scrollToHowItWorks() {
-      const element = document.getElementById('how-it-works');
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+  data() {
+    return {
+      showDropdown: false,
+      selectedCategory: '',
+      locationMode: '',
+      locationInput: '',
+      categories: [],
+      coordinates: {
+        lat: null,
+        lng: null
       }
+    };
+  },
+  mounted() {
+    axios.get('http://localhost:8000/api/categories')
+      .then(response => {
+        this.categories = response.data;
+      })
+      .catch(error => {
+        console.error("Failed to load categories:", error);
+      });
+  },
+  methods: {
+    toggleDropdown() {
+      this.showDropdown = !this.showDropdown;
+    },
+    hideDropdown() {
+      setTimeout(() => {
+        this.showDropdown = false;
+      }, 200);
+    },
+    selectOption(option) {
+  this.locationMode = option === 'Around me' ? 'around' : 'online';
+  this.locationInput = option;
+  this.showDropdown = false;
+
+  if (this.locationMode === 'around') {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          this.coordinates.lat = position.coords.latitude;
+          this.coordinates.lng = position.coords.longitude;
+
+          // Optionally, if you want to auto-search immediately here:
+          // this.onSearch();
+        },
+        (error) => {
+          alert("Unable to access your location.");
+          console.error(error);
+        }
+      );
+    } else {
+      alert("Geolocation is not supported by your browser.");
     }
   }
-}
+},
+
+    onSearch() {
+      if (this.locationMode === 'around') {
+    if (this.coordinates.lat && this.coordinates.lng) {
+      this.$router.push({
+        name: 'FindTutors',
+        query: {
+          category_id: this.selectedCategory,
+          mode: this.locationMode,
+          lat: this.coordinates.lat,
+          lng: this.coordinates.lng,
+        },
+      });
+    } else {
+      alert("Waiting for your location. Please try again.");
+    }
+  } else if (this.locationMode === 'online') {
+    this.$router.push({
+  name: 'OnlineTutors',
+  query: {
+    category: this.selectedCategory,
+    mode: this.locationMode,
+    location: this.locationInput
+  }
+});
+
+  } else {
+    alert("Please select a location option.");
+  }
+},
+
+deleteCategory(categoryId) {
+    axios.delete(`http://localhost:8000/api/categories/${categoryId}`)
+      .then(() => {
+        // Refetch categories after successful delete
+        return axios.get('http://localhost:8000/api/categories');
+      })
+      .then(response => {
+        this.categories = response.data;
+      })
+      .catch(error => {
+        console.error("Failed to delete or refresh categories:", error);
+      });
+  }
+
+
+  }
+};
 </script>
-  
-  <style scoped>
-  .hero-section {
-    background-color: #f8f9fa;
-    padding: 5rem 1rem;
-    text-align: center;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .hero-content {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .hero-title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 1.2;
-    color: #1a1a1a;
-    margin-bottom: 1.5rem;
-  }
-  
-  .hero-title span {
-    color: #1ec9ba;
-  }
-  
-  .hero-description {
-    font-size: 1.1rem;
-    color: #4a5568;
-    line-height: 1.6;
-    margin-bottom: 2.5rem;
-  }
-  
-  .cta-section {
-    margin: 2.5rem 0;
-  }
-  
-  .cta-title {
-    font-size: 1.25rem;
-    color: #4a5568;
-    margin-bottom: 1rem;
-  }
-  
-  .cta-button {
-    background-color: #1ca79b;
-    color: white;
-    border: none;
-    padding: 0.75rem 2rem;
-    font-size: 1rem;
-    font-weight: 600;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .cta-button:hover {
-    background-color: #1a978dcc;
-    transform: translateY(-2px);
-  }
-  
-  .guarantees {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    margin-top: 3rem;
-  }
-  
-  .guarantee-item {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 0.95rem;
-    color: #4a5568;
-  }
-  
-  .check-icon {
-    width: 18px;
-    height: 18px;
-    color: #10b981;
-  }
-  
-  @media (max-width: 768px) {
-    .hero-section {
-      padding: 3rem 1rem;
-    }
-    
-    .hero-title {
-      font-size: 2rem;
-    }
-    
-    .hero-description {
-      font-size: 1rem;
-    }
-    
-    .guarantees {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-  </style>
+
+
+<style scoped>
+.hero-wrapper {
+  background: linear-gradient(to bottom, #fff, #1ca79b55);
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1rem;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  background: white;
+  border-radius: 50px;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 5px 15px rgba(255, 94, 94, 0.1);
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  flex: 1;
+  min-width: 200px;
+}
+
+.input-group input {
+  border: none;
+  outline: none;
+  margin-left: 0.5rem;
+  flex: 1;
+}
+
+.category-dropdown {
+  border: none;
+  padding: 0.5rem;
+  border-radius: 10px;
+  flex: 1;
+  outline: none;
+  font-size: 1rem;
+  background-color: #fff;
+  width: 100%;
+}
+
+.search-button {
+  background: var(--primary-color, #ff5e5e);
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.search-button:hover {
+  background: var(--primary-hover, #ff4040);
+}
+
+.separator {
+  width: 3px;
+  background-color: #e5e7eb;
+  height: 2rem;
+  align-self: center;
+}
+
+.location-group {
+  position: relative;
+}
+
+.popup-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 0.5rem;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  padding: 0.75rem 1rem;
+  z-index: 10;
+  width: max-content;
+  min-width: 150px;
+}
+
+.popup-options .option {
+  padding: 0.5rem 0;
+  cursor: pointer;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.popup-options .option:hover {
+  color: var(--primary-color);
+}
+</style>

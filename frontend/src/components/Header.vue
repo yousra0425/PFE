@@ -1,12 +1,14 @@
-<!-- Header.vue -->
 <template>
   <header class="header">
     <div class="logo-container">
-      <span class="logo">DomiFix</span>
-      <span class="logo-tagline">Your trusted home service partners</span>
+      <router-link to="/services" class="logo-link">
+        <span class="logo">ProxiTutor</span>
+      </router-link>
+      <span class="logo-tagline">Find trusted tutors near you</span>
     </div>
+
     <div class="search-bar">
-      <input type="text" placeholder="Search for services..." class="search-input" />
+      <input type="text" placeholder="Search for subjects or tutors..." class="search-input" />
       <button class="search-button">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <circle cx="11" cy="11" r="8"></circle>
@@ -14,28 +16,75 @@
         </svg>
       </button>
     </div>
+
     <div class="auth-buttons">
-      <button class="auth-btn become-provider" @click="scrollToProviderForm">Become Provider</button>
-      <router-link to="/login" class="auth-btn login">Login</router-link>
-      <router-link to="/signup" class="auth-btn sign-up">Sign Up</router-link>
-    </div>
+  <!-- If user is NOT logged in -->
+  <template v-if="!isLoggedIn">
+    <router-link to="/tutor-signup" class="auth-btn become-provider">Become a Tutor</router-link>
+    <router-link to="/login" class="auth-btn login">Login</router-link>
+    <router-link to="/signup" class="auth-btn sign-up">Sign Up</router-link>
+  </template>
+
+  <!-- If user IS logged in and is an admin -->
+  <template v-else-if="userRole === 'admin'">
+    <router-link to="/admindashboard" class="auth-btn login">Dashboard</router-link>
+    <button @click="logout" class="auth-btn sign-up">Logout</button>
+  </template>
+
+  <!-- If user IS logged in and is a tutor -->
+  <template v-else-if="userRole === 'tutor'">
+    <router-link to="/tutordashboard" class="auth-btn login">Dashboard</router-link>
+    <button @click="logout" class="auth-btn sign-up">Logout</button>
+  </template>
+
+  <!-- If user IS logged in and is a client -->
+  <template v-else-if="userRole === 'client'">
+    <router-link to="/tutor-signup" class="auth-btn become-provider">Become a Tutor</router-link>
+    <router-link to="/clientdashboard" class="auth-btn login">Dashboard</router-link>
+    <button @click="logout" class="auth-btn sign-up">Logout</button>
+  </template>
+</div>
+
   </header>
 </template>
 
 <script>
 export default {
   name: 'Header',
+  data() {
+    return {
+      isLoggedIn: false,
+      userRole: null,
+    };
+  },
+  created() {
+    this.checkAuth();
+  },
+  watch: {
+    // When route changes, check auth again
+    $route() {
+      this.checkAuth();
+    }
+  },
   methods: {
-    scrollToProviderForm() {
-      const target = document.getElementById('provider-form');
-      if (target) {
-        const yOffset = 80; // Offset for sticky header
-        const y = target.getBoundingClientRect().top + window.pageYOffset - yOffset;
-        window.scrollTo({ top: y, behavior: 'smooth' });
-      }
+    checkAuth() {
+      const token = localStorage.getItem('token');
+      const role = localStorage.getItem('user_role');
+      this.isLoggedIn = !!token;
+      this.userRole = role;
+    },
+    logout() {
+      localStorage.removeItem('token');
+      localStorage.removeItem('user_id');
+      localStorage.removeItem('user_role');
+
+      this.checkAuth();
+
+      this.$router.push('/services');
     }
   }
-}
+};
+
 </script>
 
 <style scoped>
@@ -68,6 +117,20 @@ export default {
   color: var(--gray);
   margin-top: 0.25rem;
 }
+
+.logo-link {
+  text-decoration: none;
+}
+
+.logo-link .logo {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.logo-link .logo:hover {
+  color: var(--primary-hover);
+}
+
 
 .search-bar {
   display: flex;
@@ -139,7 +202,7 @@ export default {
   background-color: var(--primary-hover);
   border-color: var(--primary-hover);
 }
-    
+
 .become-provider {
   background-color: #1ca79b;
   color: white;
@@ -149,5 +212,4 @@ export default {
 .become-provider:hover {
   background-color: var(--primary-hover);
 }
-
 </style>

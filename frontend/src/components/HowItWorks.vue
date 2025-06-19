@@ -1,64 +1,64 @@
 <template>
-    <section class="how-it-works">
-      <div class="container">
-        <h1 class="section-title">How DomiFix Works</h1>
-        <p class="section-subtitle">Getting help around your home has never been easier</p>
-        
-        <div class="divider"></div>
-        
-        <div class="steps-container">
-          <!-- Step 1 -->
-          <div class="step">
-            <div class="step-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-              </svg>
-            </div>
-            <h2 class="step-title">Find the right service</h2>
-            <p class="step-description">Browse through our categories and find the service that meets your home needs.</p>
+  <section class="how-it-works">
+    <div class="container">
+      <h1 class="section-title">How ProxiTutor Works</h1>
+      <p class="section-subtitle">Connecting you with qualified tutors near you</p>
+
+      <div class="divider"></div>
+
+      <div class="steps-container">
+        <!-- Step 1 -->
+        <div class="step">
+          <div class="step-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
           </div>
-          
-          <!-- Step 2 (New Map Step) -->
-          <div class="step">
-            <div class="step-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                <circle cx="12" cy="10" r="3"></circle>
-              </svg>
-            </div>
-            <h2 class="step-title">Choose nearby provider</h2>
-            <p class="step-description">View available professionals in your area on our interactive map.</p>
+          <h2 class="step-title">Choose a subject</h2>
+          <p class="step-description">Start by selecting the subject you need help with, from math to languages.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step">
+          <div class="step-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
           </div>
-          
-          <!-- Step 3 -->
-          <div class="step">
-            <div class="step-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                <line x1="16" y1="2" x2="16" y2="6"></line>
-                <line x1="8" y1="2" x2="8" y2="6"></line>
-                <line x1="3" y1="10" x2="21" y2="10"></line>
-              </svg>
-            </div>
-            <h2 class="step-title">Book with confidence</h2>
-            <p class="step-description">Select your preferred date and time, and book a verified professional instantly.</p>
+          <h2 class="step-title">Find nearby tutors</h2>
+          <p class="step-description">Browse through available tutors in your area with real ratings and reviews.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step">
+          <div class="step-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
           </div>
-          
-          <!-- Step 4 -->
-          <div class="step">
-            <div class="step-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                <polyline points="22 4 12 14.01 9 11.01"></polyline>
-              </svg>
-            </div>
-            <h2 class="step-title">Get it done</h2>
-            <p class="step-description">Your pro arrives and completes the job to your satisfaction, guaranteed.</p>
+          <h2 class="step-title">Schedule a session</h2>
+          <p class="step-description">Pick a date and time that works for you, and book the tutor instantly.</p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="step">
+          <div class="step-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
           </div>
+          <h2 class="step-title">Start learning</h2>
+          <p class="step-description">Meet your tutor at the chosen location and begin improving your skills.</p>
         </div>
       </div>
-    </section>
-  </template>
+    </div>
+  </section>
+</template>
   
   <style scoped>
   .how-it-works {

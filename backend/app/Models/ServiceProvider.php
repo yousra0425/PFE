@@ -35,8 +35,9 @@ class ServiceProvider extends Model
     return $this->hasMany(Review::class);
     }
 
-    public function services(){
-    return $this->belongsToMany(Service::class, 'service_provider_service');
+    public function services()
+    {
+        return $this->belongsToMany(Service::class);
     }
-
+    
 }

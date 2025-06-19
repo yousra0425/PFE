@@ -1,0 +1,43 @@
+// src/utils/chatService.js
+import { db } from "../firebase";
+import {
+  collection,
+  addDoc,
+  serverTimestamp,
+  query,
+  orderBy,
+  onSnapshot,
+} from "firebase/firestore";
+
+// Get consistent chat ID between two users
+export function getChatId(user1Id, user2Id) {
+  return [user1Id, user2Id].sort().join("_");
+}
+
+// Send a message
+export async function sendMessage(senderId, receiverId, text) {
+  const chatId = getChatId(senderId, receiverId);
+  const messagesRef = collection(db, `privateChats/${chatId}/messages`);
+
+  await addDoc(messagesRef, {
+    senderId,
+    receiverId,
+    text,
+    timestamp: serverTimestamp(),
+  });
+}
+
+// Listen to messages between 2 users
+export function listenToMessages(user1Id, user2Id, callback) {
+  const chatId = getChatId(user1Id, user2Id);
+  const messagesRef = collection(db, `privateChats/${chatId}/messages`);
+  const q = query(messagesRef, orderBy("timestamp"));
+
+  return onSnapshot(q, (snapshot) => {
+    const messages = snapshot.docs.map((doc) => ({
+      id: doc.id,
+      ...doc.data(),
+    }));
+    callback(messages);
+  });
+}

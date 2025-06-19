@@ -72,24 +72,46 @@ class ServiceProviderController extends Controller
     }
 
     // Get verified providers with minimal info for map
-    public function verifiedProvidersForMap(Request $request){
-    $query = ServiceProvider::with('user:id,first_name,last_name')
+    public function verifiedProvidersForMap(Request $request)
+{
+    $query = ServiceProvider::with(['user:id,first_name,last_name', 'services'])
                 ->where('is_verified', true);
 
-    // If service_type param exists, filter providers by it
+    // Filter by service_type if provided
     if ($request->has('service_type')) {
         $serviceType = $request->input('service_type');
         $query->where('service_type', $serviceType);
     }
 
-    $providers = $query->get(['id', 'user_id', 'service_type', 'phone', 'email', 'location', 'latitude', 'longitude', 'rating']);
+    // Filter by distance if lat & lng provided
+    if ($request->has('lat') && $request->has('lng')) {
+        $lat = $request->input('lat');
+        $lng = $request->input('lng');
+        $radius = 10; // radius in kilometers
+
+        $query->selectRaw("*, ( 6371 * acos( cos( radians(?) ) * cos( radians(latitude) ) 
+            * cos( radians(longitude) - radians(?) ) + sin( radians(?) ) * sin( radians(latitude) ) ) ) AS distance", [$lat, $lng, $lat])
+              ->having("distance", "<", $radius)
+              ->orderBy("distance");
+    }
+
+    $providers = $query->get([
+        'id',
+        'user_id',
+        'service_type',
+        'phone',
+        'email',
+        'location',
+        'latitude',
+        'longitude',
+        'rating',
+    ]);
 
     $result = $providers->map(function($provider) {
         return [
             'id' => $provider->id,
             'name' => $provider->user->first_name . ' ' . $provider->user->last_name,
-            'services' => 'required|array',
-            'services.*' => 'exists:services,id',
+            'services' => $provider->services->pluck('name'),  // list of service names
             'phone' => $provider->phone,
             'email' => $provider->email,
             'location' => $provider->location,
@@ -101,6 +123,7 @@ class ServiceProviderController extends Controller
 
     return response()->json($result);
 }
+
 
 
     // Helper to get coordinates from Google Maps API

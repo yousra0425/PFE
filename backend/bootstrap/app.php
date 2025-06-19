@@ -39,6 +39,7 @@ return Application::configure(basePath: dirname(__DIR__))
         $middleware->alias([
             'role' => RoleMiddleware::class,
             'is_admin' => IsAdmin::class,
+            'is_tutor' => \App\Http\Middleware\EnsureUserIsTutor::class,
             //'frontend' => EnsureFrontendRequestsAreStateful::class,
         ]);
     

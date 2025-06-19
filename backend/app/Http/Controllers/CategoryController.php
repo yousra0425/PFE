@@ -60,9 +60,9 @@ class CategoryController extends Controller
         return response()->json(['message' => 'Category deleted successfully']);
     }
 
-    public function getCategoriesWithServices()
+    public function getCategoriesWithSubcategories()
     {
-        $categories = Category::with('services')->get();
+        $categories = Category::with('subcategories')->get();
 
         return response()->json($categories);
     }

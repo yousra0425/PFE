@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Real-Time Chat</title>
+  <script src="https://js.pusher.com/8.4.0/pusher.min.js"></script>
+  <style>
+    #messages { max-height: 300px; overflow-y: auto; border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; }
+    #messageInput { width: 80%; padding: 10px; }
+    #sendBtn { padding: 10px; }
+  </style>
+</head>
+<body>
+
+  <h2>Chat with User</h2>
+  <div id="messages"></div>
+  <input type="text" id="messageInput" placeholder="Type a message..." />
+  <button id="sendBtn">Send</button>
+
+  <script>
+    const userId = 1; // Authenticated user ID
+    const receiverId = 2; // The person you're chatting with
+
+    // Enable logging (disable in production)
+    Pusher.logToConsole = true;
+
+    // Initialize Pusher
+    const pusher = new Pusher('YOUR_PUSHER_APP_KEY', {
+      cluster: 'YOUR_PUSHER_APP_CLUSTER',
+      authEndpoint: '/broadcasting/auth',
+      auth: {
+        headers: {
+          'Authorization': 'Bearer ' + localStorage.getItem('token') // if you're using API tokens
+        }
+      }
+    });
+
+    // Subscribe to private channel for the user
+    const channel = pusher.subscribe(`private-chat.${userId}`);
+    channel.bind('MessageSent', function(data) {
+      const msg = document.createElement('div');
+      msg.innerText = `User ${data.sender_id}: ${data.content}`;
+      document.getElementById('messages').appendChild(msg);
+    });
+
+    // Send message
+    document.getElementById('sendBtn').addEventListener('click', async () => {
+      const content = document.getElementById('messageInput').value.trim();
+      if (!content) return;
+
+      try {
+        const response = await fetch('/api/messages', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer ' + localStorage.getItem('token'),
+          },
+          body: JSON.stringify({
+            receiver_id: receiverId,
+            content: content,
+          }),
+        });
+
+        const result = await response.json();
+        document.getElementById('messageInput').value = '';
+      } catch (err) {
+        console.error('Failed to send message:', err);
+      }
+    });
+  </script>
+
+</body>
+</html>
