@@ -13,7 +13,7 @@
         <ChatRoom />
       </template>
       <template #input>
-        <!-- Optional input slot -->
+        
       </template>
     </ChatPopup>
 
@@ -34,9 +34,9 @@ import Services from './pages/Services.vue';
 import BecomeTutor from './components/BecomeTutor.vue';
 
 // Import chat components
-import ChatBubble from './components/ChatBubble.vue';
-import ChatPopup from './components/ChatPopup.vue';
-import ChatRoom from './components/ChatRoom.vue';
+//import ChatBubble from './components/ChatBubble.vue';
+//import ChatPopup from './components/ChatPopup.vue';
+//import ChatRoom from './components/ChatRoom.vue';
 import FilterBar from './components/FilterBar.vue';
 import FilterSelect from './components/FilterSelect.vue';
 import StepOne from './components/BecomeTutor/StepOne.vue';

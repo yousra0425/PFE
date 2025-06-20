@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-if="profile.first_name">
+    <div v-if="profile && profile.first_name !== undefined">
       <!-- Centered dashboard content -->
       <div class="dashboard-wrapper">
         <h2 class="dashboard-title">Welcome, {{ profile.first_name }} {{ profile.last_name }}</h2>
@@ -534,33 +534,47 @@ export default {
       localStorage.setItem("user", JSON.stringify(this.profile));
       this.isEditing = false;
     },
-    loadProfile() {
-      try {
-        const userString = localStorage.getItem("user");
+    async loadProfile() {
+  try {
+    const token = localStorage.getItem("token");
+    if (!token) {
+      this.$router.push("/login");
+      return;
+    }
+    
+    const res = await fetch("http://localhost:8000/api/profile", {
+      headers: {
+        Authorization: `Bearer ${token}`,
+        "Content-Type": "application/json",
+      },
+    });
 
-        if (!userString) {
-          this.$router.push("/login");
-          return;
-        }
+    if (!res.ok) {
+      this.$router.push("/login");
+      return;
+    }
 
-        const user = JSON.parse(userString);
-        if (!user || !user.first_name) {
-          this.$router.push("/login");
-          return;
-        }
+    const user = await res.json();
 
-        this.profile = {
-          first_name: user.first_name || "",
-          last_name: user.last_name || "",
-          telephone: user.telephone || "",
-          email: user.email || "",
-          address: user.address || "",
-        };
-      } catch (e) {
-        console.error("Error parsing user data:", e);
-        this.$router.push("/login");
-      }
-    },
+    if (!user || !user.first_name) {
+      this.$router.push("/login");
+      return;
+    }
+
+    this.profile = {
+      first_name: user.first_name || "",
+      last_name: user.last_name || "",
+      telephone: user.telephone || "",
+      email: user.email || "",
+      address: user.address || "",
+    };
+
+  } catch (e) {
+    console.error("Error loading profile:", e);
+    this.$router.push("/login");
+  }
+},
+
 
     // Fetch categories from API
     async fetchCategories() {

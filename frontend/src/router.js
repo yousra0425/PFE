@@ -18,22 +18,18 @@ import BecomeTutor from './pages/BecomeTutor.vue';
 import ClientsMap from './pages/ClientsMap.vue';
 
 const routes = [
-  {
-    path: '/',
-    component: DefaultLayout,
-  },
+  { path: '/', component: DefaultLayout },
   { path: '/login', component: Login },
   { path: '/signup', component: Signup },
   { path: '/tutor-signup', component: TutorSignup },
   { path: '/becometutor', component: BecomeTutor },
   { path: '/dashboard', component: Dashboard },
-  { path: '/clientdashboard', component: ClientDashboard },  
+  { path: '/clientdashboard', component: ClientDashboard },
   { path: '/tutordashboard', component: TutorDashboard },
   { path: '/admindashboard', name: 'AdminDashboard', component: AdminDashboard },
   { path: '/services', component: Services },
   { path: '/cinverif', component: CinVerif },
   { path: '/cinverificationpanel', component: CinVerificationPanel },
-
   { path: '/providerform', component: ProviderForm },
   {
     path: '/findtutors',
@@ -48,16 +44,29 @@ const routes = [
     }),
   },
   { path: '/onlinetutors', name: 'OnlineTutors', component: OnlineTutors },
-
   { path: '/clientsmap', name: 'ClientsMap', component: ClientsMap },
 
-  // Optional: catch-all route for 404s
+  // Optional: catch-all 404
   // { path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFound },
 ];
 
 const router = createRouter({
   history: createWebHistory(),
   routes,
+});
+
+// Navigation guard to redirect logged-in users away from login/signup pages
+router.beforeEach((to, from, next) => {
+  const token = localStorage.getItem('token');
+  const role = localStorage.getItem('user_role');
+
+  if (token && (to.path === '/login' || to.path === '/signup')) {
+    if (role === 'admin') return next('/admindashboard');
+    if (role === 'tutor') return next('/tutordashboard');
+    return next('/clientdashboard');
+  }
+
+  next();
 });
 
 export default router;

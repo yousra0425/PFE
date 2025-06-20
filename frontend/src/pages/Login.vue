@@ -16,27 +16,29 @@ export default {
         const response = await axios.post('http://127.0.0.1:8000/api/login', {
           email: this.email,
           password: this.password
-        }, {
-          withCredentials: true
         });
 
         const token = response.data.access_token;
         const user = response.data.user;
 
+        // ✅ Save token and user info
         localStorage.setItem('token', token);
         localStorage.setItem('user_id', user.id);
         localStorage.setItem('user_role', user.role);
 
-        // 👇 Register FCM Token
+        // ✅ Set default Authorization header for future requests
+        axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
+
+        // ✅ Register FCM Token
         await registerFCMToken();
 
-        // Redirect admin immediately
+        // ✅ Redirect based on role
         if (user.role === 'admin') {
           this.$router.push('/admindashboard');
           return;
         }
 
-        // Get user's location and redirect
+        // ✅ For tutors and clients, update location then redirect
         if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(
             async position => {
@@ -44,8 +46,6 @@ export default {
               await axios.post('http://127.0.0.1:8000/api/update-location', {
                 latitude,
                 longitude
-              }, {
-                headers: { Authorization: `Bearer ${token}` }
               });
 
               this.$router.push(user.role === 'tutor' ? '/tutordashboard' : '/clientdashboard');
@@ -61,11 +61,27 @@ export default {
       } catch (err) {
         this.error = err.response?.data?.message || 'Login failed';
       }
+    },
+  mounted() {
+    const token = localStorage.getItem('token');
+    const role = localStorage.getItem('user_role');
+
+    if (token) {
+      if (role === 'admin') this.$router.push('/admindashboard');
+      else if (role === 'tutor') this.$router.push('/tutordashboard');
+      else this.$router.push('/clientdashboard');
+    }
+  },
+  computed: {
+    isAuthenticated() {
+      return !!localStorage.getItem('token');
     }
   }
-  
+}
+
 };
 </script>
+
 
 
 
